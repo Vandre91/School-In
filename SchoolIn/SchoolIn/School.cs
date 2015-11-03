@@ -87,5 +87,10 @@ namespace SchoolIn
             get { return _address; }
             set { _address = value; }
         }
+
+        public int NbPromotion()
+        {
+            return _listpromotion.Count();
+        }
     }
 }
