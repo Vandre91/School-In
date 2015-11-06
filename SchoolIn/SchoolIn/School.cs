@@ -22,7 +22,7 @@ namespace SchoolIn
                
             _name = name;
             _listpromotion = new Dictionary<string, Promotion>();
-        }
+        } 
 
         public Promotion AddPromotion(string name)
         {

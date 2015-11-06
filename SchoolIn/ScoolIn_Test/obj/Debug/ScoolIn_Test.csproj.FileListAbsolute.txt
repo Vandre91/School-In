@@ -1,0 +1,9 @@
+C:\Users\victor\Documents\School' In\SchoolIn\ScoolIn_Test\bin\Debug\ScoolIn_Test.dll
+C:\Users\victor\Documents\School' In\SchoolIn\ScoolIn_Test\bin\Debug\ScoolIn_Test.pdb
+C:\Users\victor\Documents\School' In\SchoolIn\ScoolIn_Test\bin\Debug\nunit.framework.dll
+C:\Users\victor\Documents\School' In\SchoolIn\ScoolIn_Test\bin\Debug\SchoolIn.dll
+C:\Users\victor\Documents\School' In\SchoolIn\ScoolIn_Test\bin\Debug\SchoolIn.pdb
+C:\Users\victor\Documents\School' In\SchoolIn\ScoolIn_Test\bin\Debug\nunit.framework.xml
+C:\Users\victor\Documents\School' In\SchoolIn\ScoolIn_Test\obj\Debug\ScoolIn_Test.csprojResolveAssemblyReference.cache
+C:\Users\victor\Documents\School' In\SchoolIn\ScoolIn_Test\obj\Debug\ScoolIn_Test.dll
+C:\Users\victor\Documents\School' In\SchoolIn\ScoolIn_Test\obj\Debug\ScoolIn_Test.pdb
