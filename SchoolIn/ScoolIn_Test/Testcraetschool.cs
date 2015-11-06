@@ -14,6 +14,7 @@ namespace SchoolIn.Test
         public void Creat_school()
         {
             Assert.Throws<ArgumentException>(() => new School(null));
+            Assert.Throws<ArgumentException>(() => new School(""));
         }
     }
 }
