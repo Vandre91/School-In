@@ -24,6 +24,24 @@ namespace SchoolIn
             _listpromotion = new Dictionary<string, Promotion>();
         }
 
+        public void Save(string path)
+        {
+            BinaryFormatter formatter = new BinaryFormatter();
+            using (FileStream file = new System.IO.FileStream(path, FileMode.Create, FileAccess.Write))
+            {
+                formatter.Serialize(file, this);
+            }
+        }
+
+        public static School Load(string path)
+        {
+            BinaryFormatter formatter = new BinaryFormatter();
+            using (FileStream file = new FileStream(path, FileMode.Open, FileAccess.Read))
+            {
+                return (School)formatter.Deserialize(file);
+            }
+        }
+
         public Promotion AddPromotion(string name)
         {
             if (string.IsNullOrWhiteSpace(name))
