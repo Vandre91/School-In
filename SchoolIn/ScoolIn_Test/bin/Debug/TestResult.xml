@@ -1,21 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="C:\Users\victor\Documents\School' In\SchoolIn\ScoolIn_Test\bin\Debug\ScoolIn_Test.dll" total="5" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-11-09" time="10:11:42">
+<test-results name="C:\Users\victor\Documents\School' In\SchoolIn\ScoolIn_Test\bin\Debug\ScoolIn_Test.dll" total="1" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-11-09" time="12:20:33">
   <environment nunit-version="2.6.4.14350" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\Users\victor\Documents\School' In\SchoolIn\ScoolIn_Test\bin\Debug" machine-name="VIVI" user="victor" user-domain="VIVI" />
   <culture-info current-culture="fr-FR" current-uiculture="fr-FR" />
-  <test-suite type="Assembly" name="C:\Users\victor\Documents\School' In\SchoolIn\ScoolIn_Test\bin\Debug\ScoolIn_Test.dll" executed="True" result="Success" success="True" time="3.181" asserts="0">
+  <test-suite type="Assembly" name="C:\Users\victor\Documents\School' In\SchoolIn\ScoolIn_Test\bin\Debug\ScoolIn_Test.dll" executed="True" result="Success" success="True" time="0.007" asserts="0">
     <results>
-      <test-suite type="Namespace" name="SchoolIn" executed="True" result="Success" success="True" time="3.137" asserts="0">
+      <test-suite type="Namespace" name="SchoolIn" executed="True" result="Success" success="True" time="0.006" asserts="0">
         <results>
-          <test-suite type="Namespace" name="Test" executed="True" result="Success" success="True" time="3.136" asserts="0">
+          <test-suite type="Namespace" name="Test" executed="True" result="Success" success="True" time="0.005" asserts="0">
             <results>
-              <test-suite type="TestFixture" name="Testcreatschool" executed="True" result="Success" success="True" time="3.133" asserts="0">
+              <test-suite type="TestFixture" name="Testcreatschool" executed="True" result="Success" success="True" time="0.005" asserts="0">
                 <results>
-                  <test-case name="SchoolIn.Test.Testcreatschool.Creat_classroom" executed="True" result="Success" success="True" time="0.749" asserts="2" />
-                  <test-case name="SchoolIn.Test.Testcreatschool.Creat_promotion" executed="True" result="Success" success="True" time="0.555" asserts="2" />
-                  <test-case name="SchoolIn.Test.Testcreatschool.Creat_pupil" executed="True" result="Success" success="True" time="0.592" asserts="2" />
-                  <test-case name="SchoolIn.Test.Testcreatschool.Creat_school" executed="True" result="Success" success="True" time="0.548" asserts="2" />
-                  <test-case name="SchoolIn.Test.Testcreatschool.Creat_teatcher" executed="True" result="Success" success="True" time="0.587" asserts="2" />
+                  <test-case name="SchoolIn.Test.Testcreatschool.Remove_promotion_by_school" executed="True" result="Success" success="True" time="0.000" asserts="2" />
                 </results>
               </test-suite>
             </results>

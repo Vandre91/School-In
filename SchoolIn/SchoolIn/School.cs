@@ -86,7 +86,7 @@ namespace SchoolIn
 
             if (_listpromotion.ContainsKey(name))
             {
-                Promotion myingredientinrecipe = _listpromotion[name];
+                Promotion p = _listpromotion[name];
                 _listpromotion.Remove(name);
 
                 return true;
