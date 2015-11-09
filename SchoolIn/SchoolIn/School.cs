@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -84,7 +86,7 @@ namespace SchoolIn
 
             if (_listpromotion.ContainsKey(name))
             {
-                Promotion myingredientinrecipe = _listpromotion[name];
+                Promotion p = _listpromotion[name];
                 _listpromotion.Remove(name);
 
                 return true;

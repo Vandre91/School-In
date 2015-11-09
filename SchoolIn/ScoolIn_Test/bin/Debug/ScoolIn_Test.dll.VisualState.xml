@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VisualState xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ShowCheckBoxes="false">
-  <TopNode>[0-1002]C:\Users\victor\Documents\School' In\SchoolIn\ScoolIn_Test\bin\Debug\ScoolIn_Test.dll</TopNode>
-  <SelectedNode>[0-1002]C:\Users\victor\Documents\School' In\SchoolIn\ScoolIn_Test\bin\Debug\ScoolIn_Test.dll</SelectedNode>
+  <TopNode>[0-1009]C:\Users\victor\Documents\School' In\SchoolIn\ScoolIn_Test\bin\Debug\ScoolIn_Test.dll</TopNode>
+  <SelectedNode>[0-1000]SchoolIn.Test.Testcreatschool</SelectedNode>
   <ExcludeCategories>false</ExcludeCategories>
   <Nodes>
-    <Node UniqueName="[0-1002]C:\Users\victor\Documents\School' In\SchoolIn\ScoolIn_Test\bin\Debug\ScoolIn_Test.dll" Expanded="true" />
-    <Node UniqueName="[0-1003]SchoolIn" Expanded="true" />
-    <Node UniqueName="[0-1004]SchoolIn.Test" Expanded="true" />
+    <Node UniqueName="[0-1009]C:\Users\victor\Documents\School' In\SchoolIn\ScoolIn_Test\bin\Debug\ScoolIn_Test.dll" Expanded="true" />
+    <Node UniqueName="[0-1010]SchoolIn" Expanded="true" />
+    <Node UniqueName="[0-1011]SchoolIn.Test" Expanded="true" />
     <Node UniqueName="[0-1000]SchoolIn.Test.Testcreatschool" Expanded="true" />
   </Nodes>
 </VisualState>
