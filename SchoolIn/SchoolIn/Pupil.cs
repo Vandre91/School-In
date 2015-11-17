@@ -13,7 +13,7 @@ namespace SchoolIn
         string _city;
         int _phone;
         Dictionary<string, int> _listnote;
-
+        bool _ismissing;
 
         public Pupil(string name, string firstname)
         {
@@ -44,8 +44,7 @@ namespace SchoolIn
                 _listnote.Remove(teaching);
             }
         }
-
-
+        
         public string Name
         {
             get { return _name; }
@@ -68,6 +67,12 @@ namespace SchoolIn
         {
             get { return _city; }
             set { _city = value; }
+        }
+        
+        public bool IsMissing
+        {
+            get { return _ismissing; }
+            set { _ismissing = value; }
         }
     }
 }

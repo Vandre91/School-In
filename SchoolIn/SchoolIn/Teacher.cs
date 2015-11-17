@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace SchoolIn
 {
-    class Teacher
+    public class Teacher
     {
         string _name;
         string _firstname;
         string _city;
         int _phone;
         string _teaching;
+        bool _ismissing;
     
         public Teacher(string name, string firstname)
         {
@@ -52,6 +53,12 @@ namespace SchoolIn
         {
             get { return _teaching; }
             set { _teaching = value; }
+        }
+        
+        public bool IsMissing
+        {
+            get { return _ismissing; }
+            set { _ismissing = value; }
         }
     }
 }
