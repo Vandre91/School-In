@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ITISchool
+namespace Schoolin
 {
     public partial class CreerControl : UserControl
     {

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ITISchool.Properties
+namespace Schoolin.Properties
 {
 
 

@@ -1,4 +1,4 @@
-﻿namespace ITISchool
+﻿namespace Schoolin
 {
     partial class Form1
     {
@@ -38,12 +38,12 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.userControl21 = new ITISchool.UserControl2();
-            this.userControl11 = new ITISchool.UserControl1();
-            this.planning1 = new ITISchool.Planning();
-            this.ajouter1 = new ITISchool.Ajouter();
-            this.creerControl1 = new ITISchool.CreerControl();
-            this.acceuil1 = new ITISchool.Acceuil();
+            this.userControl21 = new Schoolin.UserControl2();
+            this.userControl11 = new Schoolin.UserControl1();
+            this.planning1 = new Schoolin.Planning();
+            this.ajouter1 = new Schoolin.Ajouter();
+            this.creerControl1 = new Schoolin.CreerControl();
+            this.acceuil1 = new Schoolin.Acceuil();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();

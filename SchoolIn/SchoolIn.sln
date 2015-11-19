@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolIn", "SchoolIn\School
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScoolIn_Test", "ScoolIn_Test\ScoolIn_Test.csproj", "{496E74E3-8108-4C51-B95B-A48E99E65DAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITISchool", "ITISchool\ITISchool.csproj", "{E69960FE-C0C5-4D39-93D1-06B7847920D4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITISchool", "ITISchool\ITISchool\ITISchool.csproj", "{E69960FE-C0C5-4D39-93D1-06B7847920D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

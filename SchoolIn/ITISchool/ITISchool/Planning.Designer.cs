@@ -1,4 +1,4 @@
-﻿namespace ITISchool
+﻿namespace Schoolin
 {
     partial class Planning
     {

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ITISchool
+namespace Schoolin
 {
     public partial class UserControl2 : UserControl
     {
@@ -44,6 +44,7 @@ namespace ITISchool
         // Supprimer
         private void delete()
         {
+            
             if (MessageBox.Show("Are you Sure??", "DELETE", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.None);
             {
                 listView1.Items.RemoveAt(listView1.SelectedIndices[0]);
@@ -101,6 +102,11 @@ namespace ITISchool
             txtDepartment.Text = "";
             txtEmail.Text = "";
             txtPhone.Text = "";
+        }
+
+        private void txtFirstname_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
     }
