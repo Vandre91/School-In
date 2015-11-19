@@ -19,6 +19,21 @@ namespace ITISchool
 
         private void userControl11_Click(object sender, EventArgs e)
         {
+            panel3.Visible = true;
+        }
+
+        private void acceuil1_Load(object sender, EventArgs e)
+        {
+            panel4.Visible = true;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            panel6.Visible = true;
+        }
+
+        private void userControl21_Load(object sender, EventArgs e)
+        {
 
         }
     }

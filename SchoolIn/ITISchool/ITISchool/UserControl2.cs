@@ -16,97 +16,91 @@ namespace ITISchool
         {
             InitializeComponent();
         }
+        // Ajout dans la listview
+        private void add(string Firstname, string Name, string Department, string Email, string Phone)
+        {
+            string[] row = { Firstname, Name, Department, Email, Phone };
+
+            ListViewItem item = new ListViewItem(row);
+
+            listView1.Items.Add(item);
+        }
+        // Mettre à jour
+        private void  update()
+        {
+            listView1.SelectedItems[0].SubItems[0].Text = txtFirstname.Text;
+            listView1.SelectedItems[0].SubItems[1].Text = txtName.Text;
+            listView1.SelectedItems[0].SubItems[2].Text = txtDepartment.Text;
+            listView1.SelectedItems[0].SubItems[3].Text = txtEmail.Text;
+            listView1.SelectedItems[0].SubItems[4].Text = txtPhone.Text;
+
+            // Vider listbox
+            txtFirstname.Text = "";
+            txtName.Text = "";
+            txtDepartment.Text = "";
+            txtEmail.Text = "";
+            txtPhone.Text = "";
+        }
+        // Supprimer
+        private void delete()
+        {
+            if (MessageBox.Show("Are you Sure??", "DELETE", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.None);
+            {
+                listView1.Items.RemoveAt(listView1.SelectedIndices[0]);
+                // Vider listbox
+                txtFirstname.Text = "";
+                txtName.Text = "";
+                txtDepartment.Text = "";
+                txtEmail.Text = "";
+                txtPhone.Text = "";
+            }
+        }
+        private void btAdd_Click(object sender, EventArgs e)
+        {
+            add(txtFirstname.Text, txtName.Text, txtDepartment.Text, txtEmail.Text, txtPhone.Text);
+
+            txtFirstname.Text = "";
+            txtName.Text = "";
+            txtDepartment.Text = "";
+            txtEmail.Text = "";
+            txtPhone.Text = "";
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            listView1.Items.Clear();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            panel2.Visible = true;
+        }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Pupil pp = new Pupil();
-            pp.Firstname = txtFirstname.Text;
-            pp.Name = txtName.Text;
-            pp.Department = txtDepartment.Text;
-            pp.Email = txtEmail.Text;
-            pp.Phone = txtPhone.Text;
-
-            ListViewItem newlist = new ListViewItem(pp.Firstname);
-            newlist.SubItems.Add(pp.Name);
-            newlist.SubItems.Add(pp.Department);
-            newlist.SubItems.Add(pp.Email);
-            newlist.SubItems.Add(pp.Phone);
-            listViewinfo.Items.Add(newlist);
-
-            
+            delete();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void button7_Click(object sender, EventArgs e)
         {
-            TextBox tb = TextBox(sender);
-            if (string.IsNullOrEmpty(tb.Text))
-            {
-                tb.Text = "Firstname";
-            }
-            TextBox cc = TextBox(sender);
-
-            else if (cc.Text == "Firstname")
-            {
-                cc.Clear();
-            }
-
+            update();
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void listView1_MouseClick(object sender, MouseEventArgs e)
         {
-            TextBox ss = TextBox(sender);
-            if (string.IsNullOrEmpty(ss.Text))
-            {
-                ss.Text = "Name";
-            }
-            TextBox gg = TextBox(sender);
-            else if (gg.Text == "Name")
-            {
-                ss.Clear();
-            }
-        }
+            txtFirstname.Text = listView1.SelectedItems[0].SubItems[0].Text;
+            txtName.Text = listView1.SelectedItems[0].SubItems[1].Text;
+            txtDepartment.Text = listView1.SelectedItems[0].SubItems[2].Text;
+            txtEmail.Text = listView1.SelectedItems[0].SubItems[3].Text;
+            txtPhone.Text = listView1.SelectedItems[0].SubItems[4].Text;
 
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-            TextBox tt = TextBox(sender);
-            if (string.IsNullOrEmpty(tt.Text))
-            {
-                tt.Text = "Department";
-            }
-            TextBox yy = TextBox(sender);
-            else if (tt.Text == "Department")
-            {
-                yy.Text = "Department";
-            }
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-            TextBox xx = TextBox(sender);
-            if (string.IsNullOrEmpty(xx.Text))
-            {
-                xx.Text = "Email";
-            }
-            TextBox xx = TextBox(sender);
-            else if (xx.Text == "Email")
-            {
-                xx.Text = "Email";
-            }
-
-        }
-
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-            TextBox jj = TextBox(sender);
-            if(string.IsNullOrEmpty(jj.text))
-            {
-                jj.Text = "Phone";
-            }
-            TextBox jj = TextBox(sender);
-            else if(jj.Text == "Phone")
-            {
-                jj.Text = "Phone";
-            }
+            // Vider listbox
+            txtFirstname.Text = "";
+            txtName.Text = "";
+            txtDepartment.Text = "";
+            txtEmail.Text = "";
+            txtPhone.Text = "";
         }
     }
-}
+    }
