@@ -16,3 +16,12 @@ C:\Users\victor\Documents\Schoolin\SchoolIn\ScoolIn_Test\bin\Debug\nunit.framewo
 C:\Users\victor\Documents\Schoolin\SchoolIn\ScoolIn_Test\obj\Debug\ScoolIn_Test.csprojResolveAssemblyReference.cache
 C:\Users\victor\Documents\Schoolin\SchoolIn\ScoolIn_Test\obj\Debug\ScoolIn_Test.dll
 C:\Users\victor\Documents\Schoolin\SchoolIn\ScoolIn_Test\obj\Debug\ScoolIn_Test.pdb
+C:\Users\Ander\Documents\PIGit\SchoolIn\ScoolIn_Test\bin\Debug\ScoolIn_Test.dll
+C:\Users\Ander\Documents\PIGit\SchoolIn\ScoolIn_Test\bin\Debug\ScoolIn_Test.pdb
+C:\Users\Ander\Documents\PIGit\SchoolIn\ScoolIn_Test\bin\Debug\nunit.framework.dll
+C:\Users\Ander\Documents\PIGit\SchoolIn\ScoolIn_Test\bin\Debug\SchoolIn.dll
+C:\Users\Ander\Documents\PIGit\SchoolIn\ScoolIn_Test\bin\Debug\SchoolIn.pdb
+C:\Users\Ander\Documents\PIGit\SchoolIn\ScoolIn_Test\bin\Debug\nunit.framework.xml
+C:\Users\Ander\Documents\PIGit\SchoolIn\ScoolIn_Test\obj\Debug\ScoolIn_Test.csprojResolveAssemblyReference.cache
+C:\Users\Ander\Documents\PIGit\SchoolIn\ScoolIn_Test\obj\Debug\ScoolIn_Test.dll
+C:\Users\Ander\Documents\PIGit\SchoolIn\ScoolIn_Test\obj\Debug\ScoolIn_Test.pdb

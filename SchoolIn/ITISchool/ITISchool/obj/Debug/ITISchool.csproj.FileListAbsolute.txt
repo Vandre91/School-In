@@ -28,3 +28,6 @@ C:\Users\victor\Documents\Schoolin\SchoolIn\ITISchool\ITISchool\obj\Debug\ITISch
 C:\Users\victor\Documents\Schoolin\SchoolIn\ITISchool\ITISchool\obj\Debug\Schoolin.UserControl1.resources
 C:\Users\victor\Documents\Schoolin\SchoolIn\ITISchool\ITISchool\obj\Debug\Schoolin.UserControl2.resources
 C:\Users\victor\Documents\Schoolin\SchoolIn\ITISchool\ITISchool\obj\Debug\ITISchool.csproj.GenerateResource.Cache
+C:\Users\Ander\Documents\PIGit\SchoolIn\ITISchool\ITISchool\bin\Debug\ITISchool.exe.config
+C:\Users\Ander\Documents\PIGit\SchoolIn\ITISchool\ITISchool\obj\Debug\ITISchool.exe
+C:\Users\Ander\Documents\PIGit\SchoolIn\ITISchool\ITISchool\obj\Debug\ITISchool.pdb
