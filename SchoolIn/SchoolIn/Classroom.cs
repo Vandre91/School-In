@@ -9,6 +9,7 @@ namespace SchoolIn
     public class Classroom
     {
         string _name;
+        int _nbpupil;
 
         public Classroom(string name)
         {
@@ -24,6 +25,11 @@ namespace SchoolIn
         {
             get { return _name; }
             set { _name = value; }
+        }
+        public int Nbpupil
+        {
+            get { return _nbpupil; }
+            set { _nbpupil = value; }
         }
 
     }
