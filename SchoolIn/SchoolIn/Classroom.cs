@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace SchoolIn
 {
+    [Serializable]
     public class Classroom
     {
         string _name;
-        int _nbpupil;
-
-        public Classroom(string name)
+        int _maxpupil;
+        School _school;
+        public Classroom(string name, School school)
         {
             if (string.IsNullOrWhiteSpace(name))
             {
@@ -19,8 +20,8 @@ namespace SchoolIn
             }
 
             _name = name;
+            _school = school;
         }
-
         public string Name
         {
             get { return _name; }
@@ -28,9 +29,8 @@ namespace SchoolIn
         }
         public int Nbpupil
         {
-            get { return _nbpupil; }
-            set { _nbpupil = value; }
+            get { return _maxpupil; }
+            set { _maxpupil = value; }
         }
-
     }
 }

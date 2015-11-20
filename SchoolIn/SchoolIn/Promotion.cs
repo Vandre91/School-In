@@ -6,18 +6,21 @@ using System.Threading.Tasks;
 
 namespace SchoolIn
 {
+    [Serializable]
     public class Promotion
     {
         string _name;
         Dictionary<string, Pupil> _listpupil;
+        School _school;
 
-        public Promotion(string name)
+        public Promotion(string name, School school)
         {
             if (string.IsNullOrWhiteSpace(name))
             {
                 throw new ArgumentException();
             }
             _name = name;
+            _school = school;
             _listpupil = new Dictionary<string, Pupil>();
         }
 
@@ -27,9 +30,9 @@ namespace SchoolIn
             set { _name = value; }
         }
 
-        public void AddPupil(string name, Pupil pupil)
+        public Pupil AddPupil(string name, string firstname)
         {
-            if (string.IsNullOrWhiteSpace(name))
+            if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(firstname))
             {
                 throw new ArgumentException();
             }
@@ -38,7 +41,9 @@ namespace SchoolIn
             {
                 throw new ArgumentException();
             }
-            _listpupil.Add(name,pupil);
+            Pupil pupil = new Pupil(name, firstname, this);
+            _listpupil.Add(name, pupil);
+            return pupil;
         }
 
         public bool ContainsPupil(string name)
@@ -65,9 +70,8 @@ namespace SchoolIn
             if (_listpupil.ContainsKey(name))
             {
                 _listpupil.Remove(name);
-            }      
+            }
         }
-
         public int NbPupil()
         {
             return _listpupil.Count();

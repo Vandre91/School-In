@@ -6,24 +6,27 @@ using System.Threading.Tasks;
 
 namespace SchoolIn
 {
+    [Serializable]
     public class Teacher
     {
         string _name;
         string _firstname;
         string _city;
-        int _phone;
+        string _phone;
         string _teaching;
         bool _ismissing;
-    
-        public Teacher(string name, string firstname)
+        School _school;
+
+        public Teacher(string name, string firstname, School school)
         {
-            if (string.IsNullOrWhiteSpace(name))
+            if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(firstname))
             {
                 throw new ArgumentException();
             }
 
             _name = name;
             _firstname = firstname;
+            _school = school;
         }
         public string Name
         {
@@ -37,7 +40,7 @@ namespace SchoolIn
             set { _firstname = value; }
         }
 
-        public int Phone
+        public string Phone
         {
             get { return _phone; }
             set { _phone = value; }
@@ -54,7 +57,7 @@ namespace SchoolIn
             get { return _teaching; }
             set { _teaching = value; }
         }
-        
+
         public bool IsMissing
         {
             get { return _ismissing; }
