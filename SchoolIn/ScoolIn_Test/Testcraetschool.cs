@@ -94,8 +94,6 @@ namespace SchoolIn.Test
             Assert.That(s.RemovePromotion(c), Is.True);
             Assert.That(s.RemovePromotion(c), Is.False);
 
-
-
         }
    }
 }
