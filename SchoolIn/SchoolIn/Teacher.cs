@@ -11,6 +11,7 @@ namespace SchoolIn
     {
         string _name;
         string _firstname;
+        string _birthday;
         string _city;
         string _phone;
         string _teaching;
@@ -32,6 +33,12 @@ namespace SchoolIn
         {
             get { return _name; }
             set { _name = value; }
+        }
+
+        public string birthday
+        {
+            get { return _birthday; }
+            set { _birthday = value; }
         }
 
         public string FirstName

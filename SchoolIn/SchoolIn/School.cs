@@ -75,6 +75,21 @@ namespace SchoolIn
                 throw new ArgumentException();
             }
         }
+
+        public ICollection<Teacher> Teachers
+        {
+            get { return _listteacher.Values; }
+        }
+
+        public ICollection<Classroom> Classrooms
+        {
+            get { return _listclassroom.Values; }
+        }
+
+        public ICollection<Promotion> Promotions
+        {
+            get { return _listpromotion.Values; }
+        }
         public bool RemovePromotion(Promotion i)
         {
             if (i == null)
