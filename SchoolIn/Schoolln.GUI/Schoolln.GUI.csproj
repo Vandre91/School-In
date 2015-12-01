@@ -58,6 +58,7 @@
     <Compile Include="ClassroomPage.Designer.cs">
       <DependentUpon>ClassroomPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="ControlExtension.cs" />
     <Compile Include="Header.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -116,6 +117,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Calendar\System.Windows.Forms.Calendar\System.Windows.Forms.Calendar.csproj">
+      <Project>{25649f08-3046-4891-adb8-7ea787b57063}</Project>
+      <Name>System.Windows.Forms.Calendar</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Calendar\WeekPlanner\WeekPlanner.csproj">
+      <Project>{0af500eb-6deb-4f00-a96b-91c2b1b8a012}</Project>
+      <Name>WeekPlanner</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SchoolIn\SchoolIn.csproj">
       <Project>{f841203f-3ca7-4c5e-93c9-7102d130d823}</Project>
       <Name>SchoolIn</Name>

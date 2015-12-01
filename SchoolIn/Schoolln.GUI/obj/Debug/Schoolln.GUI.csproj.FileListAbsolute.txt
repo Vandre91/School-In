@@ -13,3 +13,7 @@ C:\dev\SchoolIn\Schoolln.GUI\obj\Debug\Schoolln.GUI.ClassroomPage.resources
 C:\dev\SchoolIn\Schoolln.GUI\obj\Debug\Schoolln.GUI.TeacherPage.resources
 C:\dev\SchoolIn\Schoolln.GUI\bin\Debug\SchoolIn.dll
 C:\dev\SchoolIn\Schoolln.GUI\bin\Debug\SchoolIn.pdb
+C:\dev\SchoolIn\Schoolln.GUI\bin\Debug\System.Windows.Forms.Calendar.dll
+C:\dev\SchoolIn\Schoolln.GUI\bin\Debug\System.Windows.Forms.Calendar.pdb
+C:\dev\SchoolIn\Schoolln.GUI\bin\Debug\WeekPlanner.dll
+C:\dev\SchoolIn\Schoolln.GUI\bin\Debug\WeekPlanner.pdb

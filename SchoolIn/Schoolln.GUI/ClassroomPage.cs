@@ -16,5 +16,15 @@ namespace Schoolln.GUI
         {
             InitializeComponent();
         }
+
+        private void calendarPlanner1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ClassroomPage_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

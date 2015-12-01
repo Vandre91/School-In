@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalendarPlannerExample", "CalendarPlannerExample\CalendarPlannerExample.csproj", "{04FF91BC-C815-4D53-A18E-2E3B6BCA0267}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeekPlanner", "WeekPlanner\WeekPlanner.csproj", "{0AF500EB-6DEB-4F00-A96B-91C2B1B8A012}"

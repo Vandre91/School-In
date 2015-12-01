@@ -21,6 +21,8 @@ namespace Schoolln.GUI
             CurrentSchool = null;
         }
 
+        public event EventHandler CurrentSchoolChanged;
+
         public School CurrentSchool
         {
             get { return _currentSchool; }
@@ -30,6 +32,8 @@ namespace Schoolln.GUI
                 if (_currentSchool != value)
                 {
                     _currentSchool = value;
+                    var h = CurrentSchoolChanged;
+                    if (h != null) h(this, EventArgs.Empty);
                 }
             }
         }

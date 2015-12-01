@@ -18,6 +18,21 @@ namespace Schoolln.GUI
             InitializeComponent();
         }
 
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
+            if (!this.IsInDesignMode())
+            {
+                Root.CurrentSchoolChanged += Root_CurrentSchoolChanged;
+                UpdateFromCurrentSchool();
+            }
+        }
+
+        private void Root_CurrentSchoolChanged(object sender, EventArgs e)
+        {
+            UpdateFromCurrentSchool();
+        }
+
         public MainWindow Root
         {
             get { return (MainWindow)Parent.Parent.Parent.Parent; }
@@ -35,8 +50,15 @@ namespace Schoolln.GUI
 
         void UpdateFromCurrentSchool()
         {
-             // = Root.CurrentSchool.Classrooms;
-            
+             foreach ( var t in Root.CurrentSchool.Teachers)
+            {
+                string[] row = { t.FirstName, t.Name, t.birthday, t.City, t.Phone };
+                ListViewItem item = new ListViewItem(row);
+                Teacher_Listview.Items.Add(item);
+
+            }
+
+            //  ListViewItem item = new ListViewItem();
         }
         private void Add_ListView(string firstname, string name, string birthday, string city, string phone, string matiere)
         {

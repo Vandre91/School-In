@@ -31,5 +31,10 @@ namespace Schoolln.GUI
         {
 
         }
+
+        private void teacherPage1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
