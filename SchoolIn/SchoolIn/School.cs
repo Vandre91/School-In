@@ -16,6 +16,7 @@ namespace SchoolIn
         Dictionary<string, Promotion> _listpromotion;
         Dictionary<string, Classroom> _listclassroom;
         Dictionary<string, Teacher> _listteacher;
+        Dictionary<string, Pupil> _listpupil;
         public School(string name)
         {
             if (string.IsNullOrWhiteSpace(name))
@@ -27,6 +28,7 @@ namespace SchoolIn
             _listpromotion = new Dictionary<string, Promotion>();
             _listclassroom = new Dictionary<string, Classroom>();
             _listteacher = new Dictionary<string, Teacher>();
+            _listpupil = new Dictionary<string, Pupil>();
         }
         public void Save(string path)
         {
@@ -49,6 +51,9 @@ namespace SchoolIn
                 return (School)formatter.Deserialize(file);
             }
         }
+
+        //PROMOTION
+
         public Promotion AddPromotion(string name)
         {
             if (string.IsNullOrWhiteSpace(name))
@@ -104,6 +109,8 @@ namespace SchoolIn
             get { return _listpromotion.Values; }
         }
 
+        //Classroom
+
         public Classroom AddClassroom(string name)
         {
             if (string.IsNullOrWhiteSpace(name))
@@ -152,6 +159,9 @@ namespace SchoolIn
                 return false;
             }
         }
+
+        //TEACHER
+
         public Teacher AddTeacher(string name, string firstname)
         {
             if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(firstname))
@@ -205,6 +215,64 @@ namespace SchoolIn
         {
             get { return _listteacher.Values; }
         }
+
+        //PUPIL
+
+        public Pupil AddPupil(string name, string firstname)
+        {
+            if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(firstname))
+            {
+                throw new ArgumentException();
+            }
+
+            if (_listpromotion.ContainsKey(name))
+            {
+                throw new ArgumentException();
+            }
+
+            Pupil pupil = new Pupil(name,firstname, this);
+            _listpupil.Add(name, pupil);
+            return pupil;
+        }
+        public Pupil Findpupil(string name)
+        {
+            if (string.IsNullOrWhiteSpace(name))
+                throw new ArgumentException();
+
+            if (_listpupil.ContainsKey(name))
+            {
+                Pupil pupil = _listpupil[name];
+                return pupil;
+            }
+            else
+            {
+                throw new ArgumentException();
+            }
+        }
+        public bool Removepupil(Pupil p)
+        {
+            if (p == null)
+                throw new ArgumentException();
+
+            string name = p.Name;
+
+            if (_listpupil.ContainsKey(name))
+            {
+                _listpupil.Remove(name);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public ICollection<Pupil> Pupil
+        {
+            get { return _listpupil.Values; }
+        }
+
+        //CONTROL
+
         public string Name
         {
             get { return _name; }

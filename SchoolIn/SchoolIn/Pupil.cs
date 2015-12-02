@@ -12,11 +12,14 @@ namespace SchoolIn
         string _name;
         string _firstname;
         string _city;
+        string _age;
         string _phone;
         Dictionary<string, int> _listnote;
         bool _ismissing;
-        Promotion _currentpromotion;
-        public Pupil(string name, string firstname, Promotion currentpromotion)
+        School _school;
+
+
+        public Pupil(string name, string firstname, School school)
         {
             if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(firstname))
             {
@@ -25,7 +28,7 @@ namespace SchoolIn
 
             _name = name;
             _firstname = firstname;
-            _currentpromotion = currentpromotion;
+            _school = school;
             _listnote = _listnote = new Dictionary<string, int>();
         }
         public void AddNote(string teaching, int note)
@@ -48,10 +51,16 @@ namespace SchoolIn
             get { return _name; }
             set { _name = value; }
         }
+        
         public string FirstName
         {
             get { return _firstname; }
             set { _firstname = value; }
+        }
+        public string Age
+        {
+            get { return _age; }
+            set { _age = value; }
         }
         public string Phone
         {

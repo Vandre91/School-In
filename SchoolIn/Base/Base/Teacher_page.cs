@@ -60,6 +60,12 @@ namespace Base
         private void Add_Button_Click(object sender, EventArgs e)
         {
             Add_ListView(Firstname_Textbox.Text, Name_Textbox.Text, Age_Textbox.Text, City_Textbox.Text, PhoneNumber_Textbox.Text);
+
+            Firstname_Textbox.Text = "";
+            Name_Textbox.Text = "";
+            Age_Textbox.Text = "";
+            City_Textbox.Text = "";
+            PhoneNumber_Textbox.Text = "";
         }
     }
 }

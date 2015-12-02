@@ -32,11 +32,14 @@
             this.page_promotion = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.promotion_page1 = new Base.Promotion_page();
-            this.header = new Base.Header();
             this.teacher_page1 = new Base.Teacher_page();
+            this.header = new Base.Header();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.students_page1 = new Base.Students_page();
             this.tabControl1.SuspendLayout();
             this.page_promotion.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -46,6 +49,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.page_promotion);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Location = new System.Drawing.Point(13, 118);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -81,6 +85,13 @@
             this.promotion_page1.Size = new System.Drawing.Size(530, 314);
             this.promotion_page1.TabIndex = 0;
             // 
+            // teacher_page1
+            // 
+            this.teacher_page1.Location = new System.Drawing.Point(21, 22);
+            this.teacher_page1.Name = "teacher_page1";
+            this.teacher_page1.Size = new System.Drawing.Size(597, 252);
+            this.teacher_page1.TabIndex = 0;
+            // 
             // header
             // 
             this.header.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -90,12 +101,23 @@
             this.header.Size = new System.Drawing.Size(703, 112);
             this.header.TabIndex = 0;
             // 
-            // teacher_page1
+            // tabPage1
             // 
-            this.teacher_page1.Location = new System.Drawing.Point(21, 22);
-            this.teacher_page1.Name = "teacher_page1";
-            this.teacher_page1.Size = new System.Drawing.Size(597, 252);
-            this.teacher_page1.TabIndex = 0;
+            this.tabPage1.Controls.Add(this.students_page1);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(670, 373);
+            this.tabPage1.TabIndex = 2;
+            this.tabPage1.Text = "Students";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // students_page1
+            // 
+            this.students_page1.Location = new System.Drawing.Point(7, 7);
+            this.students_page1.Name = "students_page1";
+            this.students_page1.Size = new System.Drawing.Size(646, 325);
+            this.students_page1.TabIndex = 0;
             // 
             // Main
             // 
@@ -109,6 +131,7 @@
             this.tabControl1.ResumeLayout(false);
             this.page_promotion.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -121,6 +144,8 @@
         private System.Windows.Forms.TabPage tabPage2;
         private Promotion_page promotion_page1;
         private Teacher_page teacher_page1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private Students_page students_page1;
     }
 }
 

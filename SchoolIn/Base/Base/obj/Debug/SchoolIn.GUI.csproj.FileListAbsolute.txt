@@ -12,3 +12,4 @@ C:\Users\victor\Documents\SchoolIn\SchoolIn\Base\Base\obj\Debug\Base.Promotion_p
 C:\Users\victor\Documents\SchoolIn\SchoolIn\Base\Base\obj\Debug\Base.Properties.Resources.resources
 C:\Users\victor\Documents\SchoolIn\SchoolIn\Base\Base\obj\Debug\Base.Teacher_page.resources
 C:\Users\victor\Documents\SchoolIn\SchoolIn\Base\Base\obj\Debug\SchoolIn.GUI.csproj.GenerateResource.Cache
+C:\Users\victor\Documents\SchoolIn\SchoolIn\Base\Base\obj\Debug\Base.Students_page.resources
