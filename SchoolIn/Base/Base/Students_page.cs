@@ -57,7 +57,7 @@ namespace Base
 
             Pupil_Listview.Items.Add(item);
         }
-        private void Update_ListView()
+        private void Update()
         {
             Pupil_Listview.SelectedItems[0].SubItems[0].Text = Firstname_Textbox.Text;
             Pupil_Listview.SelectedItems[0].SubItems[1].Text = Name_Textbox.Text;
