@@ -46,11 +46,15 @@
             this.Name_Label = new System.Windows.Forms.Label();
             this.Firstname_Label = new System.Windows.Forms.Label();
             this.Clear_Button = new System.Windows.Forms.Button();
+            this.UpdateButton = new System.Windows.Forms.Button();
+            this.GroupBoxStudents_page = new System.Windows.Forms.GroupBox();
+            this.SelectLineButton = new System.Windows.Forms.Button();
+            this.GroupBoxStudents_page.SuspendLayout();
             this.SuspendLayout();
             // 
             // Add_Button
             // 
-            this.Add_Button.Location = new System.Drawing.Point(20, 220);
+            this.Add_Button.Location = new System.Drawing.Point(7, 22);
             this.Add_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Add_Button.Name = "Add_Button";
             this.Add_Button.Size = new System.Drawing.Size(100, 28);
@@ -70,7 +74,7 @@
             this.Pupil_Listview.Location = new System.Drawing.Point(377, 15);
             this.Pupil_Listview.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Pupil_Listview.Name = "Pupil_Listview";
-            this.Pupil_Listview.Size = new System.Drawing.Size(441, 197);
+            this.Pupil_Listview.Size = new System.Drawing.Size(441, 158);
             this.Pupil_Listview.TabIndex = 33;
             this.Pupil_Listview.UseCompatibleStateImageBehavior = false;
             this.Pupil_Listview.View = System.Windows.Forms.View.Details;
@@ -188,7 +192,7 @@
             // 
             // Clear_Button
             // 
-            this.Clear_Button.Location = new System.Drawing.Point(147, 220);
+            this.Clear_Button.Location = new System.Drawing.Point(382, 22);
             this.Clear_Button.Name = "Clear_Button";
             this.Clear_Button.Size = new System.Drawing.Size(103, 28);
             this.Clear_Button.TabIndex = 35;
@@ -196,12 +200,43 @@
             this.Clear_Button.UseVisualStyleBackColor = true;
             this.Clear_Button.Click += new System.EventHandler(this.Clear_Button_Click);
             // 
+            // UpdateButton
+            // 
+            this.UpdateButton.Location = new System.Drawing.Point(255, 22);
+            this.UpdateButton.Name = "UpdateButton";
+            this.UpdateButton.Size = new System.Drawing.Size(106, 28);
+            this.UpdateButton.TabIndex = 36;
+            this.UpdateButton.Text = "Update";
+            this.UpdateButton.UseVisualStyleBackColor = true;
+            this.UpdateButton.Click += new System.EventHandler(this.UpdateButton_Click);
+            // 
+            // GroupBoxStudents_page
+            // 
+            this.GroupBoxStudents_page.Controls.Add(this.SelectLineButton);
+            this.GroupBoxStudents_page.Controls.Add(this.Add_Button);
+            this.GroupBoxStudents_page.Controls.Add(this.UpdateButton);
+            this.GroupBoxStudents_page.Controls.Add(this.Clear_Button);
+            this.GroupBoxStudents_page.Location = new System.Drawing.Point(19, 197);
+            this.GroupBoxStudents_page.Name = "GroupBoxStudents_page";
+            this.GroupBoxStudents_page.Size = new System.Drawing.Size(512, 73);
+            this.GroupBoxStudents_page.TabIndex = 37;
+            this.GroupBoxStudents_page.TabStop = false;
+            // 
+            // SelectLineButton
+            // 
+            this.SelectLineButton.Location = new System.Drawing.Point(132, 22);
+            this.SelectLineButton.Name = "SelectLineButton";
+            this.SelectLineButton.Size = new System.Drawing.Size(100, 28);
+            this.SelectLineButton.TabIndex = 37;
+            this.SelectLineButton.Text = "SelectLine";
+            this.SelectLineButton.UseVisualStyleBackColor = true;
+            this.SelectLineButton.Click += new System.EventHandler(this.SelectLineButton_Click);
+            // 
             // Students_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.Clear_Button);
-            this.Controls.Add(this.Add_Button);
+            this.Controls.Add(this.GroupBoxStudents_page);
             this.Controls.Add(this.Pupil_Listview);
             this.Controls.Add(this.PhoneNumber_Textbox);
             this.Controls.Add(this.City_Textbox);
@@ -216,6 +251,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Students_page";
             this.Size = new System.Drawing.Size(867, 304);
+            this.GroupBoxStudents_page.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -241,5 +277,8 @@
         private System.Windows.Forms.Label Name_Label;
         private System.Windows.Forms.Label Firstname_Label;
         private System.Windows.Forms.Button Clear_Button;
+        private System.Windows.Forms.Button UpdateButton;
+        private System.Windows.Forms.GroupBox GroupBoxStudents_page;
+        private System.Windows.Forms.Button SelectLineButton;
     }
 }

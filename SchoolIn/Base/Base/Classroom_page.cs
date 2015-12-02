@@ -73,5 +73,15 @@ namespace Base
         {
             listView_classroom.Items.Clear();
         }
+
+        private void ClassroomPage_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UpdateButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

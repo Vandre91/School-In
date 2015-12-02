@@ -37,14 +37,17 @@
             this.ClassRoomName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.NbStudentMax = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Clear_Button = new System.Windows.Forms.Button();
+            this.GroupeBoxClassroom_page = new System.Windows.Forms.GroupBox();
+            this.UpdateButton = new System.Windows.Forms.Button();
+            this.GroupeBoxClassroom_page.SuspendLayout();
             this.SuspendLayout();
             // 
             // Add_Button
             // 
-            this.Add_Button.Location = new System.Drawing.Point(60, 241);
+            this.Add_Button.Location = new System.Drawing.Point(7, 24);
             this.Add_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Add_Button.Name = "Add_Button";
-            this.Add_Button.Size = new System.Drawing.Size(100, 28);
+            this.Add_Button.Size = new System.Drawing.Size(100, 31);
             this.Add_Button.TabIndex = 23;
             this.Add_Button.Text = "Add";
             this.Add_Button.UseVisualStyleBackColor = true;
@@ -111,28 +114,50 @@
             // 
             // Clear_Button
             // 
-            this.Clear_Button.Location = new System.Drawing.Point(196, 241);
+            this.Clear_Button.Location = new System.Drawing.Point(114, 24);
             this.Clear_Button.Name = "Clear_Button";
-            this.Clear_Button.Size = new System.Drawing.Size(100, 26);
+            this.Clear_Button.Size = new System.Drawing.Size(100, 29);
             this.Clear_Button.TabIndex = 29;
             this.Clear_Button.Text = "Clear";
             this.Clear_Button.UseVisualStyleBackColor = true;
             this.Clear_Button.Click += new System.EventHandler(this.Clear_Button_Click);
             // 
+            // GroupeBoxClassroom_page
+            // 
+            this.GroupeBoxClassroom_page.Controls.Add(this.UpdateButton);
+            this.GroupeBoxClassroom_page.Controls.Add(this.Add_Button);
+            this.GroupeBoxClassroom_page.Controls.Add(this.Clear_Button);
+            this.GroupeBoxClassroom_page.Location = new System.Drawing.Point(27, 189);
+            this.GroupeBoxClassroom_page.Name = "GroupeBoxClassroom_page";
+            this.GroupeBoxClassroom_page.Size = new System.Drawing.Size(351, 80);
+            this.GroupeBoxClassroom_page.TabIndex = 30;
+            this.GroupeBoxClassroom_page.TabStop = false;
+            // 
+            // UpdateButton
+            // 
+            this.UpdateButton.Location = new System.Drawing.Point(220, 24);
+            this.UpdateButton.Name = "UpdateButton";
+            this.UpdateButton.Size = new System.Drawing.Size(100, 29);
+            this.UpdateButton.TabIndex = 30;
+            this.UpdateButton.Text = "Update";
+            this.UpdateButton.UseVisualStyleBackColor = true;
+            this.UpdateButton.Click += new System.EventHandler(this.UpdateButton_Click);
+            // 
             // ClassroomPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.Clear_Button);
+            this.Controls.Add(this.GroupeBoxClassroom_page);
             this.Controls.Add(this.listView_classroom);
             this.Controls.Add(this.Name_Textbox);
             this.Controls.Add(this.NbStudent_Textbox);
             this.Controls.Add(this.Name_Label);
             this.Controls.Add(this.NbStudent_Label);
-            this.Controls.Add(this.Add_Button);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ClassroomPage";
             this.Size = new System.Drawing.Size(775, 324);
+            this.Load += new System.EventHandler(this.ClassroomPage_Load);
+            this.GroupeBoxClassroom_page.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -149,5 +174,7 @@
         private System.Windows.Forms.ColumnHeader ClassRoomName;
         private System.Windows.Forms.ColumnHeader NbStudentMax;
         private System.Windows.Forms.Button Clear_Button;
+        private System.Windows.Forms.GroupBox GroupeBoxClassroom_page;
+        private System.Windows.Forms.Button UpdateButton;
     }
 }
