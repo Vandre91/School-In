@@ -62,5 +62,10 @@ namespace Base
 
             textBox_name_promotion.Text = "";
         }
+
+        private void Clear_Button_Click(object sender, EventArgs e)
+        {
+            listView_promotion.Items.Clear();
+        }
     }
 }

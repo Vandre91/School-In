@@ -67,5 +67,10 @@ namespace Base
             City_Textbox.Text = "";
             PhoneNumber_Textbox.Text = "";
         }
+
+        private void Clear_Button_Click(object sender, EventArgs e)
+        {
+            Teacher_Listview.Items.Clear();
+        }
     }
 }

@@ -68,5 +68,10 @@ namespace Base
             NbStudent_Textbox.Text = "";
 
         }
+
+        private void Clear_Button_Click(object sender, EventArgs e)
+        {
+            listView_classroom.Items.Clear();
+        }
     }
 }

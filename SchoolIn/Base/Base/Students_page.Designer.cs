@@ -45,13 +45,15 @@
             this.Age_Label = new System.Windows.Forms.Label();
             this.Name_Label = new System.Windows.Forms.Label();
             this.Firstname_Label = new System.Windows.Forms.Label();
+            this.Clear_Button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Add_Button
             // 
-            this.Add_Button.Location = new System.Drawing.Point(15, 179);
+            this.Add_Button.Location = new System.Drawing.Point(20, 220);
+            this.Add_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Add_Button.Name = "Add_Button";
-            this.Add_Button.Size = new System.Drawing.Size(75, 23);
+            this.Add_Button.Size = new System.Drawing.Size(100, 28);
             this.Add_Button.TabIndex = 34;
             this.Add_Button.Text = "Add";
             this.Add_Button.UseVisualStyleBackColor = true;
@@ -65,9 +67,10 @@
             this.Age_Columnheader,
             this.City_Columnheader,
             this.Phonenumber_Columnheader});
-            this.Pupil_Listview.Location = new System.Drawing.Point(283, 12);
+            this.Pupil_Listview.Location = new System.Drawing.Point(377, 15);
+            this.Pupil_Listview.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Pupil_Listview.Name = "Pupil_Listview";
-            this.Pupil_Listview.Size = new System.Drawing.Size(332, 161);
+            this.Pupil_Listview.Size = new System.Drawing.Size(441, 197);
             this.Pupil_Listview.TabIndex = 33;
             this.Pupil_Listview.UseCompatibleStateImageBehavior = false;
             this.Pupil_Listview.View = System.Windows.Forms.View.Details;
@@ -95,88 +98,109 @@
             // 
             // PhoneNumber_Textbox
             // 
-            this.PhoneNumber_Textbox.Location = new System.Drawing.Point(125, 120);
+            this.PhoneNumber_Textbox.Location = new System.Drawing.Point(167, 148);
+            this.PhoneNumber_Textbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PhoneNumber_Textbox.Name = "PhoneNumber_Textbox";
-            this.PhoneNumber_Textbox.Size = new System.Drawing.Size(125, 20);
+            this.PhoneNumber_Textbox.Size = new System.Drawing.Size(165, 22);
             this.PhoneNumber_Textbox.TabIndex = 32;
             // 
             // City_Textbox
             // 
-            this.City_Textbox.Location = new System.Drawing.Point(125, 93);
+            this.City_Textbox.Location = new System.Drawing.Point(167, 114);
+            this.City_Textbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.City_Textbox.Name = "City_Textbox";
-            this.City_Textbox.Size = new System.Drawing.Size(125, 20);
+            this.City_Textbox.Size = new System.Drawing.Size(165, 22);
             this.City_Textbox.TabIndex = 31;
             // 
             // Age_Textbox
             // 
-            this.Age_Textbox.Location = new System.Drawing.Point(125, 66);
+            this.Age_Textbox.Location = new System.Drawing.Point(167, 81);
+            this.Age_Textbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Age_Textbox.Name = "Age_Textbox";
-            this.Age_Textbox.Size = new System.Drawing.Size(125, 20);
+            this.Age_Textbox.Size = new System.Drawing.Size(165, 22);
             this.Age_Textbox.TabIndex = 30;
             // 
             // Name_Textbox
             // 
-            this.Name_Textbox.Location = new System.Drawing.Point(125, 39);
+            this.Name_Textbox.Location = new System.Drawing.Point(167, 48);
+            this.Name_Textbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name_Textbox.Name = "Name_Textbox";
-            this.Name_Textbox.Size = new System.Drawing.Size(125, 20);
+            this.Name_Textbox.Size = new System.Drawing.Size(165, 22);
             this.Name_Textbox.TabIndex = 29;
             // 
             // Firstname_Textbox
             // 
-            this.Firstname_Textbox.Location = new System.Drawing.Point(125, 12);
+            this.Firstname_Textbox.Location = new System.Drawing.Point(167, 15);
+            this.Firstname_Textbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Firstname_Textbox.Name = "Firstname_Textbox";
-            this.Firstname_Textbox.Size = new System.Drawing.Size(125, 20);
+            this.Firstname_Textbox.Size = new System.Drawing.Size(165, 22);
             this.Firstname_Textbox.TabIndex = 28;
             // 
             // PhoneNumber_Label
             // 
             this.PhoneNumber_Label.AutoSize = true;
-            this.PhoneNumber_Label.Location = new System.Drawing.Point(10, 127);
+            this.PhoneNumber_Label.Location = new System.Drawing.Point(13, 156);
+            this.PhoneNumber_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PhoneNumber_Label.Name = "PhoneNumber_Label";
-            this.PhoneNumber_Label.Size = new System.Drawing.Size(78, 13);
+            this.PhoneNumber_Label.Size = new System.Drawing.Size(103, 17);
             this.PhoneNumber_Label.TabIndex = 27;
             this.PhoneNumber_Label.Text = "PhoneNumber:";
             // 
             // City_Label
             // 
             this.City_Label.AutoSize = true;
-            this.City_Label.Location = new System.Drawing.Point(12, 100);
+            this.City_Label.Location = new System.Drawing.Point(16, 123);
+            this.City_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.City_Label.Name = "City_Label";
-            this.City_Label.Size = new System.Drawing.Size(27, 13);
+            this.City_Label.Size = new System.Drawing.Size(35, 17);
             this.City_Label.TabIndex = 26;
             this.City_Label.Text = "City:";
             // 
             // Age_Label
             // 
             this.Age_Label.AutoSize = true;
-            this.Age_Label.Location = new System.Drawing.Point(12, 73);
+            this.Age_Label.Location = new System.Drawing.Point(16, 90);
+            this.Age_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Age_Label.Name = "Age_Label";
-            this.Age_Label.Size = new System.Drawing.Size(29, 13);
+            this.Age_Label.Size = new System.Drawing.Size(37, 17);
             this.Age_Label.TabIndex = 25;
             this.Age_Label.Text = "Age:";
             // 
             // Name_Label
             // 
             this.Name_Label.AutoSize = true;
-            this.Name_Label.Location = new System.Drawing.Point(10, 46);
+            this.Name_Label.Location = new System.Drawing.Point(13, 57);
+            this.Name_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Name_Label.Name = "Name_Label";
-            this.Name_Label.Size = new System.Drawing.Size(38, 13);
+            this.Name_Label.Size = new System.Drawing.Size(49, 17);
             this.Name_Label.TabIndex = 24;
             this.Name_Label.Text = "Name:";
             // 
             // Firstname_Label
             // 
             this.Firstname_Label.AutoSize = true;
-            this.Firstname_Label.Location = new System.Drawing.Point(10, 19);
+            this.Firstname_Label.Location = new System.Drawing.Point(13, 23);
+            this.Firstname_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Firstname_Label.Name = "Firstname_Label";
-            this.Firstname_Label.Size = new System.Drawing.Size(55, 13);
+            this.Firstname_Label.Size = new System.Drawing.Size(74, 17);
             this.Firstname_Label.TabIndex = 23;
             this.Firstname_Label.Text = "Firstname:";
             // 
+            // Clear_Button
+            // 
+            this.Clear_Button.Location = new System.Drawing.Point(147, 220);
+            this.Clear_Button.Name = "Clear_Button";
+            this.Clear_Button.Size = new System.Drawing.Size(103, 28);
+            this.Clear_Button.TabIndex = 35;
+            this.Clear_Button.Text = "Clear";
+            this.Clear_Button.UseVisualStyleBackColor = true;
+            this.Clear_Button.Click += new System.EventHandler(this.Clear_Button_Click);
+            // 
             // Students_page
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.Clear_Button);
             this.Controls.Add(this.Add_Button);
             this.Controls.Add(this.Pupil_Listview);
             this.Controls.Add(this.PhoneNumber_Textbox);
@@ -189,8 +213,9 @@
             this.Controls.Add(this.Age_Label);
             this.Controls.Add(this.Name_Label);
             this.Controls.Add(this.Firstname_Label);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Students_page";
-            this.Size = new System.Drawing.Size(650, 247);
+            this.Size = new System.Drawing.Size(867, 304);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -215,5 +240,6 @@
         private System.Windows.Forms.Label Age_Label;
         private System.Windows.Forms.Label Name_Label;
         private System.Windows.Forms.Label Firstname_Label;
+        private System.Windows.Forms.Button Clear_Button;
     }
 }
