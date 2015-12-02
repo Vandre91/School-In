@@ -5,11 +5,9 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolIn", "SchoolIn\SchoolIn.csproj", "{F841203F-3CA7-4C5E-93C9-7102D130D823}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schoolln.GUI", "Schoolln.GUI\Schoolln.GUI.csproj", "{B68C0338-2C4B-4973-A3A4-D9ED159C2E66}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScoolIn_Test", "ScoolIn_Test\ScoolIn_Test.csproj", "{496E74E3-8108-4C51-B95B-A48E99E65DAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Windows.Forms.Calendar", "..\Calendar\System.Windows.Forms.Calendar\System.Windows.Forms.Calendar.csproj", "{25649F08-3046-4891-ADB8-7EA787B57063}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeekPlanner", "..\Calendar\WeekPlanner\WeekPlanner.csproj", "{0AF500EB-6DEB-4F00-A96B-91C2B1B8A012}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolIn.GUI", "Base\Base\SchoolIn.GUI.csproj", "{6FC0D4C7-A2AC-4809-9914-9E747F7C4B6C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,18 +19,14 @@ Global
 		{F841203F-3CA7-4C5E-93C9-7102D130D823}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F841203F-3CA7-4C5E-93C9-7102D130D823}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F841203F-3CA7-4C5E-93C9-7102D130D823}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B68C0338-2C4B-4973-A3A4-D9ED159C2E66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B68C0338-2C4B-4973-A3A4-D9ED159C2E66}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B68C0338-2C4B-4973-A3A4-D9ED159C2E66}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B68C0338-2C4B-4973-A3A4-D9ED159C2E66}.Release|Any CPU.Build.0 = Release|Any CPU
-		{25649F08-3046-4891-ADB8-7EA787B57063}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{25649F08-3046-4891-ADB8-7EA787B57063}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{25649F08-3046-4891-ADB8-7EA787B57063}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{25649F08-3046-4891-ADB8-7EA787B57063}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0AF500EB-6DEB-4F00-A96B-91C2B1B8A012}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0AF500EB-6DEB-4F00-A96B-91C2B1B8A012}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0AF500EB-6DEB-4F00-A96B-91C2B1B8A012}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0AF500EB-6DEB-4F00-A96B-91C2B1B8A012}.Release|Any CPU.Build.0 = Release|Any CPU
+		{496E74E3-8108-4C51-B95B-A48E99E65DAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{496E74E3-8108-4C51-B95B-A48E99E65DAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{496E74E3-8108-4C51-B95B-A48E99E65DAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{496E74E3-8108-4C51-B95B-A48E99E65DAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FC0D4C7-A2AC-4809-9914-9E747F7C4B6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FC0D4C7-A2AC-4809-9914-9E747F7C4B6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FC0D4C7-A2AC-4809-9914-9E747F7C4B6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FC0D4C7-A2AC-4809-9914-9E747F7C4B6C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

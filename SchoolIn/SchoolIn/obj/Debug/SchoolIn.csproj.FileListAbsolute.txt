@@ -8,8 +8,8 @@ C:\Users\victor\Documents\Schoolin\SchoolIn\SchoolIn\bin\Debug\SchoolIn.pdb
 C:\Users\victor\Documents\Schoolin\SchoolIn\SchoolIn\obj\Debug\SchoolIn.csprojResolveAssemblyReference.cache
 C:\Users\victor\Documents\Schoolin\SchoolIn\SchoolIn\obj\Debug\SchoolIn.dll
 C:\Users\victor\Documents\Schoolin\SchoolIn\SchoolIn\obj\Debug\SchoolIn.pdb
-C:\dev\SchoolIn\SchoolIn\bin\Debug\SchoolIn.dll
-C:\dev\SchoolIn\SchoolIn\bin\Debug\SchoolIn.pdb
-C:\dev\SchoolIn\SchoolIn\obj\Debug\SchoolIn.csprojResolveAssemblyReference.cache
-C:\dev\SchoolIn\SchoolIn\obj\Debug\SchoolIn.dll
-C:\dev\SchoolIn\SchoolIn\obj\Debug\SchoolIn.pdb
+C:\Users\Ander\Documents\PIGit\SchoolIn\SchoolIn\bin\Debug\SchoolIn.dll
+C:\Users\Ander\Documents\PIGit\SchoolIn\SchoolIn\bin\Debug\SchoolIn.pdb
+C:\Users\Ander\Documents\PIGit\SchoolIn\SchoolIn\obj\Debug\SchoolIn.csprojResolveAssemblyReference.cache
+C:\Users\Ander\Documents\PIGit\SchoolIn\SchoolIn\obj\Debug\SchoolIn.dll
+C:\Users\Ander\Documents\PIGit\SchoolIn\SchoolIn\obj\Debug\SchoolIn.pdb

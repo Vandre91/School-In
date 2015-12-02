@@ -31,15 +31,20 @@ namespace SchoolIn
         public void Save(string path)
         {
             BinaryFormatter formatter = new BinaryFormatter();
-            using (FileStream file = new System.IO.FileStream(path, FileMode.Create, FileAccess.Write))
+            using (Stream file = new System.IO.FileStream(path, FileMode.Create, FileAccess.Write))
             {
                 formatter.Serialize(file, this);
             }
         }
-        public static School Load(string path)
+
+
+        
+
+        public static  School Load(string path)
+
         {
             BinaryFormatter formatter = new BinaryFormatter();
-            using (FileStream file = new FileStream(path, FileMode.Open, FileAccess.Read))
+            using (Stream file = new FileStream(path, FileMode.Open, FileAccess.Read))
             {
                 return (School)formatter.Deserialize(file);
             }
@@ -75,21 +80,6 @@ namespace SchoolIn
                 throw new ArgumentException();
             }
         }
-
-        public ICollection<Teacher> Teachers
-        {
-            get { return _listteacher.Values; }
-        }
-
-        public ICollection<Classroom> Classrooms
-        {
-            get { return _listclassroom.Values; }
-        }
-
-        public ICollection<Promotion> Promotions
-        {
-            get { return _listpromotion.Values; }
-        }
         public bool RemovePromotion(Promotion i)
         {
             if (i == null)
@@ -109,6 +99,11 @@ namespace SchoolIn
                 return false;
             }
         }
+        public ICollection<Promotion> Promotion
+        {
+            get { return _listpromotion.Values; }
+        }
+
         public Classroom AddClassroom(string name)
         {
             if (string.IsNullOrWhiteSpace(name))
@@ -205,6 +200,10 @@ namespace SchoolIn
             {
                 return false;
             }
+        }
+        public ICollection<Teacher> Teacher
+        {
+            get { return _listteacher.Values; }
         }
         public string Name
         {

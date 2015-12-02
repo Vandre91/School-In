@@ -11,8 +11,8 @@ namespace SchoolIn
     {
         string _name;
         string _firstname;
-        string _birthday;
         string _city;
+        string _birthday;
         string _phone;
         string _teaching;
         bool _ismissing;
@@ -35,16 +35,15 @@ namespace SchoolIn
             set { _name = value; }
         }
 
-        public string birthday
-        {
-            get { return _birthday; }
-            set { _birthday = value; }
-        }
-
         public string FirstName
         {
             get { return _firstname; }
             set { _firstname = value; }
+        }
+        public string Birthday
+        {
+            get { return _birthday; ; }
+            set { _birthday = value; }
         }
 
         public string Phone

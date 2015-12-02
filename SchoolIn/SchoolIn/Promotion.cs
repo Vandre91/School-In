@@ -76,10 +76,5 @@ namespace SchoolIn
         {
             return _listpupil.Count();
         }
-
-        public ICollection<Pupil> Pupils
-        {
-            get { return _listpupil.Values; }
-        }
     }
 }
