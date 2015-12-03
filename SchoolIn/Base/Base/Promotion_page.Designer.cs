@@ -41,29 +41,26 @@
             // 
             // textBox_name_promotion
             // 
-            this.textBox_name_promotion.Location = new System.Drawing.Point(84, 54);
-            this.textBox_name_promotion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_name_promotion.Location = new System.Drawing.Point(63, 44);
             this.textBox_name_promotion.Name = "textBox_name_promotion";
-            this.textBox_name_promotion.Size = new System.Drawing.Size(132, 22);
+            this.textBox_name_promotion.Size = new System.Drawing.Size(100, 20);
             this.textBox_name_promotion.TabIndex = 0;
             // 
             // label_promotion
             // 
             this.label_promotion.AutoSize = true;
-            this.label_promotion.Location = new System.Drawing.Point(29, 58);
-            this.label_promotion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_promotion.Location = new System.Drawing.Point(22, 47);
             this.label_promotion.Name = "label_promotion";
-            this.label_promotion.Size = new System.Drawing.Size(45, 17);
+            this.label_promotion.Size = new System.Drawing.Size(35, 13);
             this.label_promotion.TabIndex = 1;
             this.label_promotion.Text = "Name";
             this.label_promotion.UseMnemonic = false;
             // 
             // button_add_promotion
             // 
-            this.button_add_promotion.Location = new System.Drawing.Point(7, 34);
-            this.button_add_promotion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_add_promotion.Location = new System.Drawing.Point(5, 28);
             this.button_add_promotion.Name = "button_add_promotion";
-            this.button_add_promotion.Size = new System.Drawing.Size(100, 28);
+            this.button_add_promotion.Size = new System.Drawing.Size(75, 23);
             this.button_add_promotion.TabIndex = 2;
             this.button_add_promotion.Text = "Add";
             this.button_add_promotion.UseVisualStyleBackColor = true;
@@ -73,13 +70,14 @@
             // 
             this.listView_promotion.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.Name_promotion});
-            this.listView_promotion.Location = new System.Drawing.Point(430, 54);
-            this.listView_promotion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listView_promotion.Location = new System.Drawing.Point(322, 44);
             this.listView_promotion.Name = "listView_promotion";
-            this.listView_promotion.Size = new System.Drawing.Size(156, 292);
+            this.listView_promotion.Size = new System.Drawing.Size(65, 238);
             this.listView_promotion.TabIndex = 3;
             this.listView_promotion.UseCompatibleStateImageBehavior = false;
             this.listView_promotion.View = System.Windows.Forms.View.Details;
+            this.listView_promotion.MouseClick += new System.Windows.Forms.MouseEventHandler(this.listView_promotion_MouseClick);
+           
             // 
             // Name_promotion
             // 
@@ -87,9 +85,10 @@
             // 
             // Clear_Button
             // 
-            this.Clear_Button.Location = new System.Drawing.Point(126, 34);
+            this.Clear_Button.Location = new System.Drawing.Point(94, 28);
+            this.Clear_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Clear_Button.Name = "Clear_Button";
-            this.Clear_Button.Size = new System.Drawing.Size(103, 28);
+            this.Clear_Button.Size = new System.Drawing.Size(77, 23);
             this.Clear_Button.TabIndex = 4;
             this.Clear_Button.Text = "Clear";
             this.Clear_Button.UseVisualStyleBackColor = true;
@@ -100,32 +99,35 @@
             this.GroupBoxPromotion_page.Controls.Add(this.UpdateButton);
             this.GroupBoxPromotion_page.Controls.Add(this.Clear_Button);
             this.GroupBoxPromotion_page.Controls.Add(this.button_add_promotion);
-            this.GroupBoxPromotion_page.Location = new System.Drawing.Point(32, 255);
+            this.GroupBoxPromotion_page.Location = new System.Drawing.Point(24, 207);
+            this.GroupBoxPromotion_page.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.GroupBoxPromotion_page.Name = "GroupBoxPromotion_page";
-            this.GroupBoxPromotion_page.Size = new System.Drawing.Size(367, 91);
+            this.GroupBoxPromotion_page.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.GroupBoxPromotion_page.Size = new System.Drawing.Size(275, 74);
             this.GroupBoxPromotion_page.TabIndex = 5;
             this.GroupBoxPromotion_page.TabStop = false;
             // 
             // UpdateButton
             // 
-            this.UpdateButton.Location = new System.Drawing.Point(249, 34);
+            this.UpdateButton.Location = new System.Drawing.Point(187, 28);
+            this.UpdateButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.UpdateButton.Name = "UpdateButton";
-            this.UpdateButton.Size = new System.Drawing.Size(103, 28);
+            this.UpdateButton.Size = new System.Drawing.Size(77, 23);
             this.UpdateButton.TabIndex = 5;
             this.UpdateButton.Text = "Update";
             this.UpdateButton.UseVisualStyleBackColor = true;
+            this.UpdateButton.Click += new System.EventHandler(this.UpdateButton_Click);
             // 
             // Promotion_page
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.GroupBoxPromotion_page);
             this.Controls.Add(this.listView_promotion);
             this.Controls.Add(this.label_promotion);
             this.Controls.Add(this.textBox_name_promotion);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Promotion_page";
-            this.Size = new System.Drawing.Size(771, 384);
+            this.Size = new System.Drawing.Size(578, 312);
             this.GroupBoxPromotion_page.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

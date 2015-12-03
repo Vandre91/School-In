@@ -37,6 +37,7 @@ namespace Base
         }
         void UpdateFromCurrentSchool()
         {
+            Pupil_Listview.Items.Clear();
             foreach (var t in Root.CurrentSchool.Pupil)
             {
                 string[] row = { t.FirstName, t.Name,t.Age, t.City, t.Phone };
@@ -89,27 +90,18 @@ namespace Base
             Pupil_Listview.Items.Clear();
         }
 
-        private void SelectLineButton_Click(object sender, EventArgs e)
-        {
-            int i = 0;
-            ListViewItem item = Pupil_Listview.SelectedItems[i];
-            string firstname = item.SubItems[0].Text;
-            string name = item.SubItems[1].Text;
-            string age = item.SubItems[2].Text;
-            string city = item.SubItems[3].Text;
-            string phone = item.SubItems[4].Text;
-
-            Firstname_Textbox.Text = firstname.ToString();
-            Name_Textbox.Text = name.ToString();
-            Age_Textbox.Text = age.ToString();
-            City_Textbox.Text = city.ToString();
-            PhoneNumber_Textbox.Text = phone.ToString();
-
-        }
-
         private void UpdateButton_Click(object sender, EventArgs e)
         {
             Update();
+        }
+
+        private void Pupil_Listview_MouseClick(object sender, MouseEventArgs e)
+        {
+            Firstname_Textbox.Text = Pupil_Listview.SelectedItems[0].SubItems[0].Text;
+            Name_Textbox.Text = Pupil_Listview.SelectedItems[0].SubItems[1].Text;
+            Age_Textbox.Text = Pupil_Listview.SelectedItems[0].SubItems[2].Text;
+            City_Textbox.Text = Pupil_Listview.SelectedItems[0].SubItems[3].Text;
+            PhoneNumber_Textbox.Text = Pupil_Listview.SelectedItems[0].SubItems[4].Text;
         }
     }
 }

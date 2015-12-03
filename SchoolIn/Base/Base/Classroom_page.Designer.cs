@@ -44,10 +44,9 @@
             // 
             // Add_Button
             // 
-            this.Add_Button.Location = new System.Drawing.Point(7, 24);
-            this.Add_Button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Add_Button.Location = new System.Drawing.Point(5, 20);
             this.Add_Button.Name = "Add_Button";
-            this.Add_Button.Size = new System.Drawing.Size(100, 31);
+            this.Add_Button.Size = new System.Drawing.Size(75, 25);
             this.Add_Button.TabIndex = 23;
             this.Add_Button.Text = "Add";
             this.Add_Button.UseVisualStyleBackColor = true;
@@ -55,37 +54,33 @@
             // 
             // Name_Textbox
             // 
-            this.Name_Textbox.Location = new System.Drawing.Point(177, 32);
-            this.Name_Textbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name_Textbox.Location = new System.Drawing.Point(133, 26);
             this.Name_Textbox.Name = "Name_Textbox";
-            this.Name_Textbox.Size = new System.Drawing.Size(165, 22);
+            this.Name_Textbox.Size = new System.Drawing.Size(125, 20);
             this.Name_Textbox.TabIndex = 27;
             // 
             // NbStudent_Textbox
             // 
-            this.NbStudent_Textbox.Location = new System.Drawing.Point(177, 94);
-            this.NbStudent_Textbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NbStudent_Textbox.Location = new System.Drawing.Point(133, 76);
             this.NbStudent_Textbox.Name = "NbStudent_Textbox";
-            this.NbStudent_Textbox.Size = new System.Drawing.Size(165, 22);
+            this.NbStudent_Textbox.Size = new System.Drawing.Size(125, 20);
             this.NbStudent_Textbox.TabIndex = 26;
             // 
             // Name_Label
             // 
             this.Name_Label.AutoSize = true;
-            this.Name_Label.Location = new System.Drawing.Point(24, 36);
-            this.Name_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Name_Label.Location = new System.Drawing.Point(18, 29);
             this.Name_Label.Name = "Name_Label";
-            this.Name_Label.Size = new System.Drawing.Size(49, 17);
+            this.Name_Label.Size = new System.Drawing.Size(38, 13);
             this.Name_Label.TabIndex = 25;
             this.Name_Label.Text = "Name:";
             // 
             // NbStudent_Label
             // 
             this.NbStudent_Label.AutoSize = true;
-            this.NbStudent_Label.Location = new System.Drawing.Point(24, 96);
-            this.NbStudent_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.NbStudent_Label.Location = new System.Drawing.Point(18, 78);
             this.NbStudent_Label.Name = "NbStudent_Label";
-            this.NbStudent_Label.Size = new System.Drawing.Size(79, 17);
+            this.NbStudent_Label.Size = new System.Drawing.Size(61, 13);
             this.NbStudent_Label.TabIndex = 24;
             this.NbStudent_Label.Text = "NbStudent:";
             // 
@@ -94,13 +89,13 @@
             this.listView_classroom.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.ClassRoomName,
             this.NbStudentMax});
-            this.listView_classroom.Location = new System.Drawing.Point(400, 32);
-            this.listView_classroom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listView_classroom.Location = new System.Drawing.Point(300, 26);
             this.listView_classroom.Name = "listView_classroom";
-            this.listView_classroom.Size = new System.Drawing.Size(227, 237);
+            this.listView_classroom.Size = new System.Drawing.Size(171, 193);
             this.listView_classroom.TabIndex = 28;
             this.listView_classroom.UseCompatibleStateImageBehavior = false;
             this.listView_classroom.View = System.Windows.Forms.View.Details;
+            this.listView_classroom.MouseClick += new System.Windows.Forms.MouseEventHandler(this.listView_classroom_MouseClick);
             // 
             // ClassRoomName
             // 
@@ -114,9 +109,10 @@
             // 
             // Clear_Button
             // 
-            this.Clear_Button.Location = new System.Drawing.Point(114, 24);
+            this.Clear_Button.Location = new System.Drawing.Point(184, 21);
+            this.Clear_Button.Margin = new System.Windows.Forms.Padding(2);
             this.Clear_Button.Name = "Clear_Button";
-            this.Clear_Button.Size = new System.Drawing.Size(100, 29);
+            this.Clear_Button.Size = new System.Drawing.Size(75, 24);
             this.Clear_Button.TabIndex = 29;
             this.Clear_Button.Text = "Clear";
             this.Clear_Button.UseVisualStyleBackColor = true;
@@ -127,17 +123,20 @@
             this.GroupeBoxClassroom_page.Controls.Add(this.UpdateButton);
             this.GroupeBoxClassroom_page.Controls.Add(this.Add_Button);
             this.GroupeBoxClassroom_page.Controls.Add(this.Clear_Button);
-            this.GroupeBoxClassroom_page.Location = new System.Drawing.Point(27, 189);
+            this.GroupeBoxClassroom_page.Location = new System.Drawing.Point(20, 154);
+            this.GroupeBoxClassroom_page.Margin = new System.Windows.Forms.Padding(2);
             this.GroupeBoxClassroom_page.Name = "GroupeBoxClassroom_page";
-            this.GroupeBoxClassroom_page.Size = new System.Drawing.Size(351, 80);
+            this.GroupeBoxClassroom_page.Padding = new System.Windows.Forms.Padding(2);
+            this.GroupeBoxClassroom_page.Size = new System.Drawing.Size(263, 65);
             this.GroupeBoxClassroom_page.TabIndex = 30;
             this.GroupeBoxClassroom_page.TabStop = false;
             // 
             // UpdateButton
             // 
-            this.UpdateButton.Location = new System.Drawing.Point(220, 24);
+            this.UpdateButton.Location = new System.Drawing.Point(96, 21);
+            this.UpdateButton.Margin = new System.Windows.Forms.Padding(2);
             this.UpdateButton.Name = "UpdateButton";
-            this.UpdateButton.Size = new System.Drawing.Size(100, 29);
+            this.UpdateButton.Size = new System.Drawing.Size(75, 24);
             this.UpdateButton.TabIndex = 30;
             this.UpdateButton.Text = "Update";
             this.UpdateButton.UseVisualStyleBackColor = true;
@@ -145,7 +144,7 @@
             // 
             // ClassroomPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.GroupeBoxClassroom_page);
             this.Controls.Add(this.listView_classroom);
@@ -153,10 +152,8 @@
             this.Controls.Add(this.NbStudent_Textbox);
             this.Controls.Add(this.Name_Label);
             this.Controls.Add(this.NbStudent_Label);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ClassroomPage";
-            this.Size = new System.Drawing.Size(775, 324);
-            this.Load += new System.EventHandler(this.ClassroomPage_Load);
+            this.Size = new System.Drawing.Size(581, 263);
             this.GroupeBoxClassroom_page.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

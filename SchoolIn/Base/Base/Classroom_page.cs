@@ -37,13 +37,12 @@ namespace Base
         }
         void UpdateFromCurrentSchool()
         {
+            listView_classroom.Items.Clear();
             foreach (var t in Root.CurrentSchool.Classroom)
-            {
-                
+            {  
                 string[] row = { t.Name, t.Nbpupil.ToString() };
                 ListViewItem item = new ListViewItem(row);
                 listView_classroom.Items.Add(item);
-
             }
         }
         private void Add_ListView( string name, string nbpupil)
@@ -58,7 +57,14 @@ namespace Base
 
             listView_classroom.Items.Add(item);
         }
+        private void Update()
+        {
+            listView_classroom.SelectedItems[0].SubItems[0].Text = Name_Textbox.Text;
+            listView_classroom.SelectedItems[0].SubItems[1].Text = NbStudent_Textbox.Text;
 
+            Name_Textbox.Text = "";
+            NbStudent_Textbox.Text = "";
+        }
         private void Add_Button_Click(object sender, EventArgs e)
         {
             Add_ListView( Name_Textbox.Text, NbStudent_Textbox.Text);
@@ -74,14 +80,15 @@ namespace Base
             listView_classroom.Items.Clear();
         }
 
-        private void ClassroomPage_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void UpdateButton_Click(object sender, EventArgs e)
         {
+            Update();
+        }
 
+        private void listView_classroom_MouseClick(object sender, MouseEventArgs e)
+        {
+            Name_Textbox.Text = listView_classroom.SelectedItems[0].SubItems[0].Text;
+            NbStudent_Textbox.Text = listView_classroom.SelectedItems[0].SubItems[1].Text;
         }
     }
 }

@@ -37,6 +37,7 @@ namespace Base
         }
         void UpdateFromCurrentSchool()
         {
+            Teacher_Listview.Items.Clear();
             foreach (var t in Root.CurrentSchool.Teacher)
             {
                 string[] row = { t.FirstName, t.Name, t.Birthday, t.City, t.Phone };
@@ -124,6 +125,15 @@ namespace Base
 
 
 
+        }
+
+        private void Teacher_Listview_MouseClick(object sender, MouseEventArgs e)
+        {
+            Firstname_Textbox.Text = Teacher_Listview.SelectedItems[0].SubItems[0].Text;
+            Name_Textbox.Text = Teacher_Listview.SelectedItems[0].SubItems[1].Text;
+            Age_Textbox.Text = Teacher_Listview.SelectedItems[0].SubItems[2].Text;
+            City_Textbox.Text = Teacher_Listview.SelectedItems[0].SubItems[3].Text;
+            PhoneNumber_Textbox.Text = Teacher_Listview.SelectedItems[0].SubItems[4].Text;
         }
     }
 }

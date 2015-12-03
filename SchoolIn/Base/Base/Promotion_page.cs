@@ -37,6 +37,8 @@ namespace Base
         }
         void UpdateFromCurrentSchool()
         {
+            listView_promotion.Items.Clear();
+
             foreach (var t in Root.CurrentSchool.Promotion)
             {
                 string[] row = { t.Name };
@@ -54,6 +56,12 @@ namespace Base
             Promotion mypromotion = Root.CurrentSchool.AddPromotion(name);
             listView_promotion.Items.Add(item);
         }
+        private void Update()
+        {
+            listView_promotion.SelectedItems[0].SubItems[0].Text = textBox_name_promotion.Text;
+
+            textBox_name_promotion.Text = "";
+        }
 
         private void button_add_promotion_Click(object sender, EventArgs e)
         {
@@ -67,5 +75,16 @@ namespace Base
         {
             listView_promotion.Items.Clear();
         }
+
+        private void UpdateButton_Click(object sender, EventArgs e)
+        {
+            Update();
+        }
+
+        private void listView_promotion_MouseClick(object sender, MouseEventArgs e)
+        {
+            textBox_name_promotion.Text = listView_promotion.SelectedItems[0].Text;
+        }
+
     }
 }

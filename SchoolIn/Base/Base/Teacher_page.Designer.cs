@@ -48,106 +48,94 @@
             this.Clear_Button = new System.Windows.Forms.Button();
             this.UpdateButton = new System.Windows.Forms.Button();
             this.GroupBoxTeache_page = new System.Windows.Forms.GroupBox();
-            this.SelectLineButton = new System.Windows.Forms.Button();
             this.GroupBoxTeache_page.SuspendLayout();
             this.SuspendLayout();
             // 
             // PhoneNumber_Textbox
             // 
-            this.PhoneNumber_Textbox.Location = new System.Drawing.Point(179, 169);
-            this.PhoneNumber_Textbox.Margin = new System.Windows.Forms.Padding(4);
+            this.PhoneNumber_Textbox.Location = new System.Drawing.Point(134, 137);
             this.PhoneNumber_Textbox.Name = "PhoneNumber_Textbox";
-            this.PhoneNumber_Textbox.Size = new System.Drawing.Size(165, 22);
+            this.PhoneNumber_Textbox.Size = new System.Drawing.Size(125, 20);
             this.PhoneNumber_Textbox.TabIndex = 20;
             // 
             // City_Textbox
             // 
-            this.City_Textbox.Location = new System.Drawing.Point(179, 135);
-            this.City_Textbox.Margin = new System.Windows.Forms.Padding(4);
+            this.City_Textbox.Location = new System.Drawing.Point(134, 110);
             this.City_Textbox.Name = "City_Textbox";
-            this.City_Textbox.Size = new System.Drawing.Size(165, 22);
+            this.City_Textbox.Size = new System.Drawing.Size(125, 20);
             this.City_Textbox.TabIndex = 19;
             // 
             // Age_Textbox
             // 
-            this.Age_Textbox.Location = new System.Drawing.Point(179, 102);
-            this.Age_Textbox.Margin = new System.Windows.Forms.Padding(4);
+            this.Age_Textbox.Location = new System.Drawing.Point(134, 83);
             this.Age_Textbox.Name = "Age_Textbox";
-            this.Age_Textbox.Size = new System.Drawing.Size(165, 22);
+            this.Age_Textbox.Size = new System.Drawing.Size(125, 20);
             this.Age_Textbox.TabIndex = 18;
             // 
             // Name_Textbox
             // 
-            this.Name_Textbox.Location = new System.Drawing.Point(179, 69);
-            this.Name_Textbox.Margin = new System.Windows.Forms.Padding(4);
+            this.Name_Textbox.Location = new System.Drawing.Point(134, 56);
             this.Name_Textbox.Name = "Name_Textbox";
-            this.Name_Textbox.Size = new System.Drawing.Size(165, 22);
+            this.Name_Textbox.Size = new System.Drawing.Size(125, 20);
             this.Name_Textbox.TabIndex = 17;
             // 
             // Firstname_Textbox
             // 
-            this.Firstname_Textbox.Location = new System.Drawing.Point(179, 36);
-            this.Firstname_Textbox.Margin = new System.Windows.Forms.Padding(4);
+            this.Firstname_Textbox.Location = new System.Drawing.Point(134, 29);
             this.Firstname_Textbox.Name = "Firstname_Textbox";
-            this.Firstname_Textbox.Size = new System.Drawing.Size(165, 22);
+            this.Firstname_Textbox.Size = new System.Drawing.Size(125, 20);
             this.Firstname_Textbox.TabIndex = 16;
             // 
             // PhoneNumber_Label
             // 
             this.PhoneNumber_Label.AutoSize = true;
-            this.PhoneNumber_Label.Location = new System.Drawing.Point(25, 177);
-            this.PhoneNumber_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.PhoneNumber_Label.Location = new System.Drawing.Point(19, 144);
             this.PhoneNumber_Label.Name = "PhoneNumber_Label";
-            this.PhoneNumber_Label.Size = new System.Drawing.Size(103, 17);
+            this.PhoneNumber_Label.Size = new System.Drawing.Size(78, 13);
             this.PhoneNumber_Label.TabIndex = 15;
             this.PhoneNumber_Label.Text = "PhoneNumber:";
             // 
             // City_Label
             // 
             this.City_Label.AutoSize = true;
-            this.City_Label.Location = new System.Drawing.Point(28, 144);
-            this.City_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.City_Label.Location = new System.Drawing.Point(21, 117);
             this.City_Label.Name = "City_Label";
-            this.City_Label.Size = new System.Drawing.Size(35, 17);
+            this.City_Label.Size = new System.Drawing.Size(27, 13);
             this.City_Label.TabIndex = 14;
             this.City_Label.Text = "City:";
             // 
             // Age_Label
             // 
             this.Age_Label.AutoSize = true;
-            this.Age_Label.Location = new System.Drawing.Point(28, 111);
-            this.Age_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Age_Label.Location = new System.Drawing.Point(21, 90);
             this.Age_Label.Name = "Age_Label";
-            this.Age_Label.Size = new System.Drawing.Size(37, 17);
+            this.Age_Label.Size = new System.Drawing.Size(29, 13);
             this.Age_Label.TabIndex = 13;
             this.Age_Label.Text = "Age:";
             // 
             // Name_Label
             // 
             this.Name_Label.AutoSize = true;
-            this.Name_Label.Location = new System.Drawing.Point(25, 78);
-            this.Name_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Name_Label.Location = new System.Drawing.Point(19, 63);
             this.Name_Label.Name = "Name_Label";
-            this.Name_Label.Size = new System.Drawing.Size(49, 17);
+            this.Name_Label.Size = new System.Drawing.Size(38, 13);
             this.Name_Label.TabIndex = 12;
             this.Name_Label.Text = "Name:";
             // 
             // Firstname_Label
             // 
             this.Firstname_Label.AutoSize = true;
-            this.Firstname_Label.Location = new System.Drawing.Point(25, 44);
-            this.Firstname_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Firstname_Label.Location = new System.Drawing.Point(19, 36);
             this.Firstname_Label.Name = "Firstname_Label";
-            this.Firstname_Label.Size = new System.Drawing.Size(74, 17);
+            this.Firstname_Label.Size = new System.Drawing.Size(55, 13);
             this.Firstname_Label.TabIndex = 11;
             this.Firstname_Label.Text = "Firstname:";
             // 
             // Add_Button
             // 
-            this.Add_Button.Location = new System.Drawing.Point(16, 34);
-            this.Add_Button.Margin = new System.Windows.Forms.Padding(4);
+            this.Add_Button.Location = new System.Drawing.Point(12, 28);
             this.Add_Button.Name = "Add_Button";
-            this.Add_Button.Size = new System.Drawing.Size(100, 28);
+            this.Add_Button.Size = new System.Drawing.Size(75, 23);
             this.Add_Button.TabIndex = 22;
             this.Add_Button.Text = "Add";
             this.Add_Button.UseVisualStyleBackColor = true;
@@ -161,13 +149,13 @@
             this.Age_Columnheader,
             this.City_Columnheader,
             this.Phonenumber_Columnheader});
-            this.Teacher_Listview.Location = new System.Drawing.Point(387, 36);
-            this.Teacher_Listview.Margin = new System.Windows.Forms.Padding(4);
+            this.Teacher_Listview.Location = new System.Drawing.Point(291, 29);
             this.Teacher_Listview.Name = "Teacher_Listview";
-            this.Teacher_Listview.Size = new System.Drawing.Size(441, 158);
+            this.Teacher_Listview.Size = new System.Drawing.Size(332, 129);
             this.Teacher_Listview.TabIndex = 21;
             this.Teacher_Listview.UseCompatibleStateImageBehavior = false;
             this.Teacher_Listview.View = System.Windows.Forms.View.Details;
+            this.Teacher_Listview.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Teacher_Listview_MouseClick);
             // 
             // Firstname_Columnheader
             // 
@@ -196,9 +184,10 @@
             // 
             // Clear_Button
             // 
-            this.Clear_Button.Location = new System.Drawing.Point(387, 34);
+            this.Clear_Button.Location = new System.Drawing.Point(217, 28);
+            this.Clear_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Clear_Button.Name = "Clear_Button";
-            this.Clear_Button.Size = new System.Drawing.Size(102, 28);
+            this.Clear_Button.Size = new System.Drawing.Size(76, 23);
             this.Clear_Button.TabIndex = 23;
             this.Clear_Button.Text = "Clear";
             this.Clear_Button.UseVisualStyleBackColor = true;
@@ -206,9 +195,10 @@
             // 
             // UpdateButton
             // 
-            this.UpdateButton.Location = new System.Drawing.Point(260, 34);
+            this.UpdateButton.Location = new System.Drawing.Point(111, 28);
+            this.UpdateButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.UpdateButton.Name = "UpdateButton";
-            this.UpdateButton.Size = new System.Drawing.Size(107, 28);
+            this.UpdateButton.Size = new System.Drawing.Size(80, 23);
             this.UpdateButton.TabIndex = 24;
             this.UpdateButton.Text = "Update";
             this.UpdateButton.UseVisualStyleBackColor = true;
@@ -216,30 +206,21 @@
             // 
             // GroupBoxTeache_page
             // 
-            this.GroupBoxTeache_page.Controls.Add(this.SelectLineButton);
             this.GroupBoxTeache_page.Controls.Add(this.Add_Button);
             this.GroupBoxTeache_page.Controls.Add(this.UpdateButton);
             this.GroupBoxTeache_page.Controls.Add(this.Clear_Button);
-            this.GroupBoxTeache_page.Location = new System.Drawing.Point(31, 229);
+            this.GroupBoxTeache_page.Location = new System.Drawing.Point(23, 186);
+            this.GroupBoxTeache_page.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.GroupBoxTeache_page.Name = "GroupBoxTeache_page";
-            this.GroupBoxTeache_page.Size = new System.Drawing.Size(504, 88);
+            this.GroupBoxTeache_page.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.GroupBoxTeache_page.Size = new System.Drawing.Size(309, 72);
             this.GroupBoxTeache_page.TabIndex = 25;
             this.GroupBoxTeache_page.TabStop = false;
             this.GroupBoxTeache_page.Enter += new System.EventHandler(this.GroupBoxTeache_page_Enter);
             // 
-            // SelectLineButton
-            // 
-            this.SelectLineButton.Location = new System.Drawing.Point(134, 34);
-            this.SelectLineButton.Name = "SelectLineButton";
-            this.SelectLineButton.Size = new System.Drawing.Size(107, 28);
-            this.SelectLineButton.TabIndex = 25;
-            this.SelectLineButton.Text = "SelectLine";
-            this.SelectLineButton.UseVisualStyleBackColor = true;
-            this.SelectLineButton.Click += new System.EventHandler(this.RemoveButton_Click);
-            // 
             // Teacher_page
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.GroupBoxTeache_page);
             this.Controls.Add(this.Teacher_Listview);
@@ -253,9 +234,8 @@
             this.Controls.Add(this.Age_Label);
             this.Controls.Add(this.Name_Label);
             this.Controls.Add(this.Firstname_Label);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Teacher_page";
-            this.Size = new System.Drawing.Size(944, 369);
+            this.Size = new System.Drawing.Size(708, 300);
             this.Load += new System.EventHandler(this.Teacher_page_Load);
             this.GroupBoxTeache_page.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -285,6 +265,5 @@
         private System.Windows.Forms.Button Clear_Button;
         private System.Windows.Forms.Button UpdateButton;
         private System.Windows.Forms.GroupBox GroupBoxTeache_page;
-        private System.Windows.Forms.Button SelectLineButton;
     }
 }
