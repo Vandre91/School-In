@@ -58,7 +58,7 @@ namespace Base
 
             Teacher_Listview.Items.Add(item);
         }
-        private void Update()
+        private void Update_Teacher()
         {
             Teacher_Listview.SelectedItems[0].SubItems[0].Text = Firstname_Textbox.Text;
             Teacher_Listview.SelectedItems[0].SubItems[1].Text = Name_Textbox.Text;
@@ -76,8 +76,21 @@ namespace Base
         }
         private void Add_Button_Click(object sender, EventArgs e)
         {
-            Add_ListView(Firstname_Textbox.Text, Name_Textbox.Text, Age_Textbox.Text, City_Textbox.Text, PhoneNumber_Textbox.Text);
-
+            try
+            {
+                Add_ListView(Firstname_Textbox.Text, Name_Textbox.Text, Age_Textbox.Text, City_Textbox.Text, PhoneNumber_Textbox.Text);
+            }
+            catch (Exception ex)
+            {
+                if (ex is ArgumentException)
+                {
+                    MessageBox.Show("The field you want to add already exists");
+                }
+                else if (ex is NullReferenceException)
+                {
+                    MessageBox.Show("Please fill the text");
+                }
+            }
             Firstname_Textbox.Text = "";
             Name_Textbox.Text = "";
             Age_Textbox.Text = "";
@@ -102,7 +115,7 @@ namespace Base
 
         private void UpdateButton_Click(object sender, EventArgs e)
         {
-            Update();
+            Update_Teacher();
             
         }
 

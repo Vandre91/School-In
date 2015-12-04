@@ -38,16 +38,12 @@ namespace Base
         void UpdateFromCurrentSchool()
         {
             listView_promotion.Items.Clear();
-
             foreach (var t in Root.CurrentSchool.Promotion)
             {
                 string[] row = { t.Name };
                 ListViewItem item = new ListViewItem(row);
                 listView_promotion.Items.Add(item);
-
-            }
-
-            
+            }  
         }
         private void Add(string name)
         {
@@ -56,7 +52,7 @@ namespace Base
             Promotion mypromotion = Root.CurrentSchool.AddPromotion(name);
             listView_promotion.Items.Add(item);
         }
-        private void Update()
+        private void Update_promotion()
         {
             listView_promotion.SelectedItems[0].SubItems[0].Text = textBox_name_promotion.Text;
 
@@ -65,9 +61,21 @@ namespace Base
 
         private void button_add_promotion_Click(object sender, EventArgs e)
         {
-     
-            Add(textBox_name_promotion.Text);
-
+            try
+            {
+                Add(textBox_name_promotion.Text);
+            }
+            catch (Exception ex)
+            {
+                if (ex is ArgumentException)
+                {
+                    MessageBox.Show("The field you want to add already exists");
+                }
+                else if(ex is NullReferenceException)
+                {
+                    MessageBox.Show("Please fill the text");
+                }
+            }
             textBox_name_promotion.Text = "";
         }
 
@@ -78,7 +86,7 @@ namespace Base
 
         private void UpdateButton_Click(object sender, EventArgs e)
         {
-            Update();
+            Update_promotion();
         }
 
         private void listView_promotion_MouseClick(object sender, MouseEventArgs e)

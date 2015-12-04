@@ -58,7 +58,7 @@ namespace SchoolIn
         {
             if (string.IsNullOrWhiteSpace(name))
             {
-                throw new ArgumentException();
+                throw new NullReferenceException();
             }
 
             if (_listpromotion.ContainsKey(name))
@@ -115,7 +115,7 @@ namespace SchoolIn
         {
             if (string.IsNullOrWhiteSpace(name))
             {
-                throw new ArgumentException();
+                throw new NullReferenceException();
             }
 
             if (_listclassroom.ContainsKey(name))
@@ -170,7 +170,7 @@ namespace SchoolIn
         {
             if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(firstname))
             {
-                throw new ArgumentException();
+                throw new NullReferenceException();
             }
 
             if (_listteacher.ContainsKey(name))
@@ -226,7 +226,7 @@ namespace SchoolIn
         {
             if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(firstname))
             {
-                throw new ArgumentException();
+                throw new NullReferenceException();
             }
 
             if (_listpromotion.ContainsKey(name))
