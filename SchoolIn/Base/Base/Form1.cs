@@ -38,6 +38,10 @@ namespace Base
                 }
             }
         }
-       
+
+        private void calendar1_LoadItems(object sender, System.Windows.Forms.Calendar.CalendarLoadEventArgs e)
+        {
+
+        }
     }
 }

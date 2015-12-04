@@ -560,7 +560,7 @@ namespace System.Windows.Forms.Calendar
         /// <summary>
         /// Gets or sets the end date-time of the current view.
         /// </summary>
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public DateTime ViewEnd
         {
             get { return _viewEnd; }
@@ -578,7 +578,7 @@ namespace System.Windows.Forms.Calendar
         /// <summary>
         /// Gets or sets the start date-time of the current view.
         /// </summary>
-        [DesignerSerializationVisibility( DesignerSerializationVisibility.Hidden)]
+        [DesignerSerializationVisibility( DesignerSerializationVisibility.Visible)]
         public DateTime ViewStart
         {
             get { return _viewStart; }

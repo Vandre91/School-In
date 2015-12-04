@@ -18,3 +18,8 @@ C:\Users\Ander\Documents\NouveauDepotGit\SchoolIn\SchoolIn\bin\Debug\SchoolIn.pd
 C:\Users\Ander\Documents\NouveauDepotGit\SchoolIn\SchoolIn\obj\Debug\SchoolIn.csprojResolveAssemblyReference.cache
 C:\Users\Ander\Documents\NouveauDepotGit\SchoolIn\SchoolIn\obj\Debug\SchoolIn.dll
 C:\Users\Ander\Documents\NouveauDepotGit\SchoolIn\SchoolIn\obj\Debug\SchoolIn.pdb
+C:\project\SchoolIn\SchoolIn\bin\Debug\SchoolIn.dll
+C:\project\SchoolIn\SchoolIn\bin\Debug\SchoolIn.pdb
+C:\project\SchoolIn\SchoolIn\obj\Debug\SchoolIn.csprojResolveAssemblyReference.cache
+C:\project\SchoolIn\SchoolIn\obj\Debug\SchoolIn.dll
+C:\project\SchoolIn\SchoolIn\obj\Debug\SchoolIn.pdb

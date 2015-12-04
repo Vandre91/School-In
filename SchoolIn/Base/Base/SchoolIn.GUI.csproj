@@ -126,6 +126,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\calendar\System.Windows.Forms.Calendar\System.Windows.Forms.Calendar.csproj">
+      <Project>{25649f08-3046-4891-adb8-7ea787b57063}</Project>
+      <Name>System.Windows.Forms.Calendar</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\SchoolIn\SchoolIn.csproj">
       <Project>{f841203f-3ca7-4c5e-93c9-7102d130d823}</Project>
       <Name>SchoolIn</Name>

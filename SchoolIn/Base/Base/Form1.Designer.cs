@@ -28,6 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.Calendar.CalendarHighlightRange calendarHighlightRange1 = new System.Windows.Forms.Calendar.CalendarHighlightRange();
+            System.Windows.Forms.Calendar.CalendarHighlightRange calendarHighlightRange2 = new System.Windows.Forms.Calendar.CalendarHighlightRange();
+            System.Windows.Forms.Calendar.CalendarHighlightRange calendarHighlightRange3 = new System.Windows.Forms.Calendar.CalendarHighlightRange();
+            System.Windows.Forms.Calendar.CalendarHighlightRange calendarHighlightRange4 = new System.Windows.Forms.Calendar.CalendarHighlightRange();
+            System.Windows.Forms.Calendar.CalendarHighlightRange calendarHighlightRange5 = new System.Windows.Forms.Calendar.CalendarHighlightRange();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.page_promotion = new System.Windows.Forms.TabPage();
             this.promotion_page1 = new Base.Promotion_page();
@@ -36,13 +41,16 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.students_page1 = new Base.Students_page();
             this.Classroom_page = new System.Windows.Forms.TabPage();
-            this.header = new Base.Header();
             this.classroomPage1 = new Base.ClassroomPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.header = new Base.Header();
+            this.calendar1 = new System.Windows.Forms.Calendar.Calendar();
             this.tabControl1.SuspendLayout();
             this.page_promotion.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.Classroom_page.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -54,6 +62,7 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.Classroom_page);
+            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Location = new System.Drawing.Point(13, 118);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -125,6 +134,24 @@
             this.Classroom_page.Text = "Classrooms";
             this.Classroom_page.UseVisualStyleBackColor = true;
             // 
+            // classroomPage1
+            // 
+            this.classroomPage1.Location = new System.Drawing.Point(7, 7);
+            this.classroomPage1.Name = "classroomPage1";
+            this.classroomPage1.Size = new System.Drawing.Size(663, 366);
+            this.classroomPage1.TabIndex = 0;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.calendar1);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(670, 373);
+            this.tabPage3.TabIndex = 4;
+            this.tabPage3.Text = "Calendar";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
             // header
             // 
             this.header.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -134,12 +161,37 @@
             this.header.Size = new System.Drawing.Size(703, 112);
             this.header.TabIndex = 0;
             // 
-            // classroomPage1
+            // calendar1
             // 
-            this.classroomPage1.Location = new System.Drawing.Point(7, 7);
-            this.classroomPage1.Name = "classroomPage1";
-            this.classroomPage1.Size = new System.Drawing.Size(663, 366);
-            this.classroomPage1.TabIndex = 0;
+            this.calendar1.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+            calendarHighlightRange1.DayOfWeek = System.DayOfWeek.Monday;
+            calendarHighlightRange1.EndTime = System.TimeSpan.Parse("17:00:00");
+            calendarHighlightRange1.StartTime = System.TimeSpan.Parse("08:00:00");
+            calendarHighlightRange2.DayOfWeek = System.DayOfWeek.Tuesday;
+            calendarHighlightRange2.EndTime = System.TimeSpan.Parse("17:00:00");
+            calendarHighlightRange2.StartTime = System.TimeSpan.Parse("08:00:00");
+            calendarHighlightRange3.DayOfWeek = System.DayOfWeek.Wednesday;
+            calendarHighlightRange3.EndTime = System.TimeSpan.Parse("17:00:00");
+            calendarHighlightRange3.StartTime = System.TimeSpan.Parse("08:00:00");
+            calendarHighlightRange4.DayOfWeek = System.DayOfWeek.Thursday;
+            calendarHighlightRange4.EndTime = System.TimeSpan.Parse("17:00:00");
+            calendarHighlightRange4.StartTime = System.TimeSpan.Parse("08:00:00");
+            calendarHighlightRange5.DayOfWeek = System.DayOfWeek.Friday;
+            calendarHighlightRange5.EndTime = System.TimeSpan.Parse("17:00:00");
+            calendarHighlightRange5.StartTime = System.TimeSpan.Parse("08:00:00");
+            this.calendar1.HighlightRanges = new System.Windows.Forms.Calendar.CalendarHighlightRange[] {
+        calendarHighlightRange1,
+        calendarHighlightRange2,
+        calendarHighlightRange3,
+        calendarHighlightRange4,
+        calendarHighlightRange5};
+            this.calendar1.Location = new System.Drawing.Point(40, 70);
+            this.calendar1.Name = "calendar1";
+            this.calendar1.Size = new System.Drawing.Size(600, 230);
+            this.calendar1.TabIndex = 0;
+            this.calendar1.Text = "calendar1";
+            this.calendar1.ViewEnd = new System.DateTime(2015, 12, 8, 23, 59, 59, 0);
+            this.calendar1.ViewStart = new System.DateTime(2015, 12, 4, 0, 0, 0, 0);
             // 
             // Main
             // 
@@ -155,6 +207,7 @@
             this.tabPage2.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.Classroom_page.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -171,6 +224,8 @@
         private Students_page students_page1;
         private System.Windows.Forms.TabPage Classroom_page;
         private ClassroomPage classroomPage1;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Calendar.Calendar calendar1;
     }
 }
 
