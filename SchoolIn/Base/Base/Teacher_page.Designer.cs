@@ -48,6 +48,7 @@
             this.Clear_Button = new System.Windows.Forms.Button();
             this.UpdateButton = new System.Windows.Forms.Button();
             this.GroupBoxTeache_page = new System.Windows.Forms.GroupBox();
+            this.DeleteButton = new System.Windows.Forms.Button();
             this.GroupBoxTeache_page.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -185,7 +186,7 @@
             // Clear_Button
             // 
             this.Clear_Button.Location = new System.Drawing.Point(217, 28);
-            this.Clear_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Clear_Button.Margin = new System.Windows.Forms.Padding(2);
             this.Clear_Button.Name = "Clear_Button";
             this.Clear_Button.Size = new System.Drawing.Size(76, 23);
             this.Clear_Button.TabIndex = 23;
@@ -196,7 +197,7 @@
             // UpdateButton
             // 
             this.UpdateButton.Location = new System.Drawing.Point(111, 28);
-            this.UpdateButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.UpdateButton.Margin = new System.Windows.Forms.Padding(2);
             this.UpdateButton.Name = "UpdateButton";
             this.UpdateButton.Size = new System.Drawing.Size(80, 23);
             this.UpdateButton.TabIndex = 24;
@@ -206,17 +207,28 @@
             // 
             // GroupBoxTeache_page
             // 
+            this.GroupBoxTeache_page.Controls.Add(this.DeleteButton);
             this.GroupBoxTeache_page.Controls.Add(this.Add_Button);
             this.GroupBoxTeache_page.Controls.Add(this.UpdateButton);
             this.GroupBoxTeache_page.Controls.Add(this.Clear_Button);
             this.GroupBoxTeache_page.Location = new System.Drawing.Point(23, 186);
-            this.GroupBoxTeache_page.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.GroupBoxTeache_page.Margin = new System.Windows.Forms.Padding(2);
             this.GroupBoxTeache_page.Name = "GroupBoxTeache_page";
-            this.GroupBoxTeache_page.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.GroupBoxTeache_page.Size = new System.Drawing.Size(309, 72);
+            this.GroupBoxTeache_page.Padding = new System.Windows.Forms.Padding(2);
+            this.GroupBoxTeache_page.Size = new System.Drawing.Size(401, 72);
             this.GroupBoxTeache_page.TabIndex = 25;
             this.GroupBoxTeache_page.TabStop = false;
             this.GroupBoxTeache_page.Enter += new System.EventHandler(this.GroupBoxTeache_page_Enter);
+            // 
+            // DeleteButton
+            // 
+            this.DeleteButton.Location = new System.Drawing.Point(307, 28);
+            this.DeleteButton.Name = "DeleteButton";
+            this.DeleteButton.Size = new System.Drawing.Size(75, 23);
+            this.DeleteButton.TabIndex = 26;
+            this.DeleteButton.Text = "Delete";
+            this.DeleteButton.UseVisualStyleBackColor = true;
+            this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
             // 
             // Teacher_page
             // 
@@ -265,5 +277,6 @@
         private System.Windows.Forms.Button Clear_Button;
         private System.Windows.Forms.Button UpdateButton;
         private System.Windows.Forms.GroupBox GroupBoxTeache_page;
+        private System.Windows.Forms.Button DeleteButton;
     }
 }

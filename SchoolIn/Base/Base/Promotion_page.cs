@@ -94,5 +94,14 @@ namespace Base
             textBox_name_promotion.Text = listView_promotion.SelectedItems[0].Text;
         }
 
+        private void DeleteButton_Click(object sender, EventArgs e)
+        {
+            if(MessageBox.Show("Are you sure ?","Delete",MessageBoxButtons.OKCancel)==DialogResult.OK)
+            {
+                listView_promotion.Items.RemoveAt(listView_promotion.SelectedIndices[0]);
+            }
+
+            textBox_name_promotion.Text = "";
+        }
     }
 }

@@ -103,5 +103,16 @@ namespace Base
             Name_Textbox.Text = listView_classroom.SelectedItems[0].SubItems[0].Text;
             NbStudent_Textbox.Text = listView_classroom.SelectedItems[0].SubItems[1].Text;
         }
+
+        private void DeleteButton_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure ?", "Delete", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            {
+                listView_classroom.Items.RemoveAt(listView_classroom.SelectedIndices[0]);
+            }
+
+            Name_Textbox.Text = "";
+            NbStudent_Textbox.Text = "";
+        }
     }
 }

@@ -48,6 +48,7 @@
             this.Clear_Button = new System.Windows.Forms.Button();
             this.UpdateButton = new System.Windows.Forms.Button();
             this.GroupBoxStudents_page = new System.Windows.Forms.GroupBox();
+            this.DeleteButton = new System.Windows.Forms.Button();
             this.GroupBoxStudents_page.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -181,7 +182,7 @@
             // Clear_Button
             // 
             this.Clear_Button.Location = new System.Drawing.Point(169, 18);
-            this.Clear_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Clear_Button.Margin = new System.Windows.Forms.Padding(2);
             this.Clear_Button.Name = "Clear_Button";
             this.Clear_Button.Size = new System.Drawing.Size(77, 23);
             this.Clear_Button.TabIndex = 35;
@@ -192,7 +193,7 @@
             // UpdateButton
             // 
             this.UpdateButton.Location = new System.Drawing.Point(85, 18);
-            this.UpdateButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.UpdateButton.Margin = new System.Windows.Forms.Padding(2);
             this.UpdateButton.Name = "UpdateButton";
             this.UpdateButton.Size = new System.Drawing.Size(80, 23);
             this.UpdateButton.TabIndex = 36;
@@ -202,16 +203,27 @@
             // 
             // GroupBoxStudents_page
             // 
+            this.GroupBoxStudents_page.Controls.Add(this.DeleteButton);
             this.GroupBoxStudents_page.Controls.Add(this.Add_Button);
             this.GroupBoxStudents_page.Controls.Add(this.UpdateButton);
             this.GroupBoxStudents_page.Controls.Add(this.Clear_Button);
             this.GroupBoxStudents_page.Location = new System.Drawing.Point(14, 160);
-            this.GroupBoxStudents_page.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.GroupBoxStudents_page.Margin = new System.Windows.Forms.Padding(2);
             this.GroupBoxStudents_page.Name = "GroupBoxStudents_page";
-            this.GroupBoxStudents_page.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.GroupBoxStudents_page.Size = new System.Drawing.Size(270, 59);
+            this.GroupBoxStudents_page.Padding = new System.Windows.Forms.Padding(2);
+            this.GroupBoxStudents_page.Size = new System.Drawing.Size(349, 59);
             this.GroupBoxStudents_page.TabIndex = 37;
             this.GroupBoxStudents_page.TabStop = false;
+            // 
+            // DeleteButton
+            // 
+            this.DeleteButton.Location = new System.Drawing.Point(251, 18);
+            this.DeleteButton.Name = "DeleteButton";
+            this.DeleteButton.Size = new System.Drawing.Size(75, 23);
+            this.DeleteButton.TabIndex = 38;
+            this.DeleteButton.Text = "Delete";
+            this.DeleteButton.UseVisualStyleBackColor = true;
+            this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
             // 
             // Students_page
             // 
@@ -259,5 +271,6 @@
         private System.Windows.Forms.Button Clear_Button;
         private System.Windows.Forms.Button UpdateButton;
         private System.Windows.Forms.GroupBox GroupBoxStudents_page;
+        private System.Windows.Forms.Button DeleteButton;
     }
 }

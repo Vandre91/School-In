@@ -148,5 +148,19 @@ namespace Base
             City_Textbox.Text = Teacher_Listview.SelectedItems[0].SubItems[3].Text;
             PhoneNumber_Textbox.Text = Teacher_Listview.SelectedItems[0].SubItems[4].Text;
         }
+
+        private void DeleteButton_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure ?", "Delete", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            {
+                Teacher_Listview.Items.RemoveAt(Teacher_Listview.SelectedIndices[0]);
+            }
+
+            Firstname_Textbox.Text = "";
+            Name_Textbox.Text = "";
+            Age_Textbox.Text = "";
+            City_Textbox.Text = "";
+            PhoneNumber_Textbox.Text = "";
+        }
     }
 }

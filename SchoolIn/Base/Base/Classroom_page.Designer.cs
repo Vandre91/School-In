@@ -39,6 +39,7 @@
             this.Clear_Button = new System.Windows.Forms.Button();
             this.GroupeBoxClassroom_page = new System.Windows.Forms.GroupBox();
             this.UpdateButton = new System.Windows.Forms.Button();
+            this.DeleteButton = new System.Windows.Forms.Button();
             this.GroupeBoxClassroom_page.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -89,7 +90,7 @@
             this.listView_classroom.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.ClassRoomName,
             this.NbStudentMax});
-            this.listView_classroom.Location = new System.Drawing.Point(300, 26);
+            this.listView_classroom.Location = new System.Drawing.Point(392, 26);
             this.listView_classroom.Name = "listView_classroom";
             this.listView_classroom.Size = new System.Drawing.Size(171, 193);
             this.listView_classroom.TabIndex = 28;
@@ -120,6 +121,7 @@
             // 
             // GroupeBoxClassroom_page
             // 
+            this.GroupeBoxClassroom_page.Controls.Add(this.DeleteButton);
             this.GroupeBoxClassroom_page.Controls.Add(this.UpdateButton);
             this.GroupeBoxClassroom_page.Controls.Add(this.Add_Button);
             this.GroupeBoxClassroom_page.Controls.Add(this.Clear_Button);
@@ -127,7 +129,7 @@
             this.GroupeBoxClassroom_page.Margin = new System.Windows.Forms.Padding(2);
             this.GroupeBoxClassroom_page.Name = "GroupeBoxClassroom_page";
             this.GroupeBoxClassroom_page.Padding = new System.Windows.Forms.Padding(2);
-            this.GroupeBoxClassroom_page.Size = new System.Drawing.Size(263, 65);
+            this.GroupeBoxClassroom_page.Size = new System.Drawing.Size(367, 65);
             this.GroupeBoxClassroom_page.TabIndex = 30;
             this.GroupeBoxClassroom_page.TabStop = false;
             // 
@@ -141,6 +143,16 @@
             this.UpdateButton.Text = "Update";
             this.UpdateButton.UseVisualStyleBackColor = true;
             this.UpdateButton.Click += new System.EventHandler(this.UpdateButton_Click);
+            // 
+            // DeleteButton
+            // 
+            this.DeleteButton.Location = new System.Drawing.Point(277, 21);
+            this.DeleteButton.Name = "DeleteButton";
+            this.DeleteButton.Size = new System.Drawing.Size(75, 23);
+            this.DeleteButton.TabIndex = 39;
+            this.DeleteButton.Text = "Delete";
+            this.DeleteButton.UseVisualStyleBackColor = true;
+            this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
             // 
             // ClassroomPage
             // 
@@ -173,5 +185,6 @@
         private System.Windows.Forms.Button Clear_Button;
         private System.Windows.Forms.GroupBox GroupeBoxClassroom_page;
         private System.Windows.Forms.Button UpdateButton;
+        private System.Windows.Forms.Button DeleteButton;
     }
 }
