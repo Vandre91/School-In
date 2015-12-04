@@ -87,6 +87,7 @@
             // 
             // listView_classroom
             // 
+            this.listView_classroom.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.listView_classroom.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.ClassRoomName,
             this.NbStudentMax});
@@ -121,6 +122,7 @@
             // 
             // GroupeBoxClassroom_page
             // 
+            this.GroupeBoxClassroom_page.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.GroupeBoxClassroom_page.Controls.Add(this.DeleteButton);
             this.GroupeBoxClassroom_page.Controls.Add(this.UpdateButton);
             this.GroupeBoxClassroom_page.Controls.Add(this.Add_Button);

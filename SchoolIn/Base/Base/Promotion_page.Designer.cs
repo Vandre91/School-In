@@ -69,6 +69,7 @@
             // 
             // listView_promotion
             // 
+            this.listView_promotion.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.listView_promotion.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.Name_promotion});
             this.listView_promotion.Location = new System.Drawing.Point(420, 43);
@@ -96,6 +97,7 @@
             // 
             // GroupBoxPromotion_page
             // 
+            this.GroupBoxPromotion_page.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.GroupBoxPromotion_page.Controls.Add(this.DeleteButton);
             this.GroupBoxPromotion_page.Controls.Add(this.UpdateButton);
             this.GroupBoxPromotion_page.Controls.Add(this.Clear_Button);

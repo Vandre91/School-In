@@ -64,6 +64,7 @@
             // 
             // Pupil_Listview
             // 
+            this.Pupil_Listview.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Pupil_Listview.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.Firstname_Columnheader,
             this.Name_Columnheader,
@@ -203,6 +204,7 @@
             // 
             // GroupBoxStudents_page
             // 
+            this.GroupBoxStudents_page.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.GroupBoxStudents_page.Controls.Add(this.DeleteButton);
             this.GroupBoxStudents_page.Controls.Add(this.Add_Button);
             this.GroupBoxStudents_page.Controls.Add(this.UpdateButton);

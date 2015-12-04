@@ -144,6 +144,7 @@
             // 
             // Teacher_Listview
             // 
+            this.Teacher_Listview.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Teacher_Listview.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.Firstname_Columnheader,
             this.Name_Columnheader,
@@ -152,7 +153,7 @@
             this.Phonenumber_Columnheader});
             this.Teacher_Listview.Location = new System.Drawing.Point(291, 29);
             this.Teacher_Listview.Name = "Teacher_Listview";
-            this.Teacher_Listview.Size = new System.Drawing.Size(332, 129);
+            this.Teacher_Listview.Size = new System.Drawing.Size(362, 129);
             this.Teacher_Listview.TabIndex = 21;
             this.Teacher_Listview.UseCompatibleStateImageBehavior = false;
             this.Teacher_Listview.View = System.Windows.Forms.View.Details;
@@ -207,6 +208,7 @@
             // 
             // GroupBoxTeache_page
             // 
+            this.GroupBoxTeache_page.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.GroupBoxTeache_page.Controls.Add(this.DeleteButton);
             this.GroupBoxTeache_page.Controls.Add(this.Add_Button);
             this.GroupBoxTeache_page.Controls.Add(this.UpdateButton);

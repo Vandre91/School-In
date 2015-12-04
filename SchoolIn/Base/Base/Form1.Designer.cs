@@ -43,8 +43,8 @@
             this.Classroom_page = new System.Windows.Forms.TabPage();
             this.classroomPage1 = new Base.ClassroomPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.header = new Base.Header();
             this.calendar1 = new System.Windows.Forms.Calendar.Calendar();
+            this.header = new Base.Header();
             this.tabControl1.SuspendLayout();
             this.page_promotion.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -82,9 +82,10 @@
             // 
             // promotion_page1
             // 
-            this.promotion_page1.Location = new System.Drawing.Point(27, 23);
+            this.promotion_page1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.promotion_page1.Location = new System.Drawing.Point(3, 3);
             this.promotion_page1.Name = "promotion_page1";
-            this.promotion_page1.Size = new System.Drawing.Size(530, 314);
+            this.promotion_page1.Size = new System.Drawing.Size(664, 367);
             this.promotion_page1.TabIndex = 0;
             // 
             // tabPage2
@@ -100,9 +101,10 @@
             // 
             // teacher_page1
             // 
-            this.teacher_page1.Location = new System.Drawing.Point(21, 22);
+            this.teacher_page1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.teacher_page1.Location = new System.Drawing.Point(3, 3);
             this.teacher_page1.Name = "teacher_page1";
-            this.teacher_page1.Size = new System.Drawing.Size(597, 252);
+            this.teacher_page1.Size = new System.Drawing.Size(664, 367);
             this.teacher_page1.TabIndex = 0;
             // 
             // tabPage1
@@ -118,9 +120,10 @@
             // 
             // students_page1
             // 
-            this.students_page1.Location = new System.Drawing.Point(7, 7);
+            this.students_page1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.students_page1.Location = new System.Drawing.Point(3, 3);
             this.students_page1.Name = "students_page1";
-            this.students_page1.Size = new System.Drawing.Size(646, 325);
+            this.students_page1.Size = new System.Drawing.Size(664, 367);
             this.students_page1.TabIndex = 0;
             // 
             // Classroom_page
@@ -136,9 +139,10 @@
             // 
             // classroomPage1
             // 
-            this.classroomPage1.Location = new System.Drawing.Point(7, 7);
+            this.classroomPage1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.classroomPage1.Location = new System.Drawing.Point(3, 3);
             this.classroomPage1.Name = "classroomPage1";
-            this.classroomPage1.Size = new System.Drawing.Size(663, 366);
+            this.classroomPage1.Size = new System.Drawing.Size(664, 367);
             this.classroomPage1.TabIndex = 0;
             // 
             // tabPage3
@@ -152,18 +156,9 @@
             this.tabPage3.Text = "Calendar";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // header
-            // 
-            this.header.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.header.Location = new System.Drawing.Point(0, 0);
-            this.header.Name = "header";
-            this.header.Size = new System.Drawing.Size(703, 112);
-            this.header.TabIndex = 0;
-            // 
             // calendar1
             // 
-            this.calendar1.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+            this.calendar1.Font = new System.Drawing.Font("Segoe UI", 9F);
             calendarHighlightRange1.DayOfWeek = System.DayOfWeek.Monday;
             calendarHighlightRange1.EndTime = System.TimeSpan.Parse("17:00:00");
             calendarHighlightRange1.StartTime = System.TimeSpan.Parse("08:00:00");
@@ -192,6 +187,15 @@
             this.calendar1.Text = "calendar1";
             this.calendar1.ViewEnd = new System.DateTime(2015, 12, 8, 23, 59, 59, 0);
             this.calendar1.ViewStart = new System.DateTime(2015, 12, 4, 0, 0, 0, 0);
+            // 
+            // header
+            // 
+            this.header.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.header.Location = new System.Drawing.Point(0, 0);
+            this.header.Name = "header";
+            this.header.Size = new System.Drawing.Size(703, 112);
+            this.header.TabIndex = 0;
             // 
             // Main
             // 
