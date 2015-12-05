@@ -116,11 +116,21 @@ namespace Base
             City_Textbox.Text = Pupil_Listview.SelectedItems[0].SubItems[3].Text;
             PhoneNumber_Textbox.Text = Pupil_Listview.SelectedItems[0].SubItems[4].Text;
         }
+        private void Delete(string name)
+        {
+            Pupil mypupil = Root.CurrentSchool.FindPupil(name);
+            if (mypupil != null)
+            {
+                Root.CurrentSchool.RemovePupil(mypupil);
+            }
+
+        }
 
         private void DeleteButton_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Are you sure ?", "Delete", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
+                Delete(Name_Textbox.Text);
                 Pupil_Listview.Items.RemoveAt(Pupil_Listview.SelectedIndices[0]);
             }
 

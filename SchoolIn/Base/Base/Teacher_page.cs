@@ -148,11 +148,21 @@ namespace Base
             City_Textbox.Text = Teacher_Listview.SelectedItems[0].SubItems[3].Text;
             PhoneNumber_Textbox.Text = Teacher_Listview.SelectedItems[0].SubItems[4].Text;
         }
+        private void Delete(string name)
+        {
+            Teacher myteacher = Root.CurrentSchool.FindTeacher(name);
+            if (myteacher != null)
+            {
+                Root.CurrentSchool.RemoveTeacher(myteacher);
+            }
+
+        }
 
         private void DeleteButton_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Are you sure ?", "Delete", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
+                Delete(Name_Textbox.Text);
                 Teacher_Listview.Items.RemoveAt(Teacher_Listview.SelectedIndices[0]);
             }
 

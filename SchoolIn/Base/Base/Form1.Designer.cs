@@ -185,7 +185,7 @@
             this.calendar1.Size = new System.Drawing.Size(600, 230);
             this.calendar1.TabIndex = 0;
             this.calendar1.Text = "calendar1";
-            this.calendar1.ViewEnd = new System.DateTime(2015, 12, 8, 23, 59, 59, 0);
+            this.calendar1.ViewEnd = new System.DateTime(2015, 12, 11, 23, 59, 59, 0);
             this.calendar1.ViewStart = new System.DateTime(2015, 12, 4, 0, 0, 0, 0);
             // 
             // header

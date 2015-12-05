@@ -93,12 +93,23 @@ namespace Base
         {
             textBox_name_promotion.Text = listView_promotion.SelectedItems[0].Text;
         }
+        private void Delete(string name)
+        {
+            Promotion mypromotion = Root.CurrentSchool.FindPromotion(name);
+            if(mypromotion != null)
+            {
+                Root.CurrentSchool.RemovePromotion(mypromotion);
+            }
+           
+        }
 
         private void DeleteButton_Click(object sender, EventArgs e)
         {
             if(MessageBox.Show("Are you sure ?","Delete",MessageBoxButtons.OKCancel)==DialogResult.OK)
             {
+                Delete(textBox_name_promotion.Text);
                 listView_promotion.Items.RemoveAt(listView_promotion.SelectedIndices[0]);
+                
             }
 
             textBox_name_promotion.Text = "";

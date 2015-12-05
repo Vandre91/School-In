@@ -73,7 +73,7 @@ namespace SchoolIn
         public Promotion FindPromotion(string name)
         {
             if (string.IsNullOrWhiteSpace(name))
-                throw new ArgumentException();
+                throw new NullReferenceException();
 
             if (_listpromotion.ContainsKey(name))
             {
@@ -88,7 +88,7 @@ namespace SchoolIn
         public bool RemovePromotion(Promotion i)
         {
             if (i == null)
-                throw new ArgumentException();
+                throw new NullReferenceException();
 
             string name = i.Name;
 
@@ -186,7 +186,7 @@ namespace SchoolIn
         public Teacher FindTeacher(string name)
         {
             if (string.IsNullOrWhiteSpace(name))
-                throw new ArgumentException();
+                throw new NullReferenceException();
 
             if (_listteacher.ContainsKey(name))
             {
@@ -238,7 +238,7 @@ namespace SchoolIn
             _listpupil.Add(name, pupil);
             return pupil;
         }
-        public Pupil Findpupil(string name)
+        public Pupil FindPupil(string name)
         {
             if (string.IsNullOrWhiteSpace(name))
                 throw new ArgumentException();
@@ -253,7 +253,7 @@ namespace SchoolIn
                 throw new ArgumentException();
             }
         }
-        public bool Removepupil(Pupil p)
+        public bool RemovePupil(Pupil p)
         {
             if (p == null)
                 throw new ArgumentException();
