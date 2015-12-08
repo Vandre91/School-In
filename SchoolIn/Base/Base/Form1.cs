@@ -97,5 +97,111 @@ namespace Base
         {
             e.Effect = DragDropEffects.Copy;
         }
+
+        private void Refresh_Listbox_Promotion_Click(object sender, EventArgs e)
+        {
+            Listbox_Promotion.Items.Clear();
+            foreach (var p in CurrentSchool.Promotion)
+            {
+                Listbox_Promotion.Items.Add(p.Name);
+                foreach (var y  in CurrentSchool.Pupil)
+                {
+                    Listbox_Student.Items.Add(y.FirstName + " " + y.Name);
+                    foreach (var t in CurrentSchool.Teacher)
+                    {
+                        Listbox_Teacher.Items.Add(t.FirstName + " " + t.Name);
+                        foreach (var z in CurrentSchool.Classroom)
+                        {
+                            Listbox_Classrooms.Items.Add(z.Name + " " + z.Nbpupil);
+                        }
+                    }
+                }
+            }
+        }
+
+        private void Listbox_Student_MouseDown(object sender, MouseEventArgs e)
+        {
+            Listbox_Student.DoDragDrop(Listbox_Student.Text, DragDropEffects.Copy | DragDropEffects.Move);
+        }
+
+        private void Listbox_Student_DragEnter(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.Text))
+                e.Effect = DragDropEffects.Copy;
+            else
+                e.Effect = DragDropEffects.None;
+        }
+
+        private void Listbox_Student_DragDrop(object sender, DragEventArgs e)
+        {
+            calendar1.Text = e.Data.GetData(DataFormats.Text).ToString();
+
+            // CalendarItem test1 = calendar1.ItemAt(calendar1.Bounds.Location);
+            // CalendarItem test3 = calendar1.ItemAt(calendar1.PointToClient(Cursor.Position));
+
+            Point Point = calendar1.PointToClient(new Point(e.X, e.Y));
+
+
+            ICalendarSelectableElement element = calendar1.HitTest(Point);
+            CalendarItem cal = new CalendarItem(calendar1, element.Date, element.Date.AddHours(2), calendar1.Text);
+            calendar1.Items.Add(cal);
+        }
+
+        private void Listbox_Promotion_MouseDown(object sender, MouseEventArgs e)
+        {
+            Listbox_Promotion.DoDragDrop(Listbox_Promotion.Text, DragDropEffects.Copy | DragDropEffects.Move);
+
+        }
+
+        private void Listbox_Promotion_DragEnter(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.Text))
+                e.Effect = DragDropEffects.Copy;
+            else
+                e.Effect = DragDropEffects.None;
+        }
+
+        private void Listbox_Promotion_DragDrop(object sender, DragEventArgs e)
+        {
+            calendar1.Text = e.Data.GetData(DataFormats.Text).ToString();
+
+            // CalendarItem test1 = calendar1.ItemAt(calendar1.Bounds.Location);
+            // CalendarItem test3 = calendar1.ItemAt(calendar1.PointToClient(Cursor.Position));
+
+            Point Point = calendar1.PointToClient(new Point(e.X, e.Y));
+
+
+            ICalendarSelectableElement element = calendar1.HitTest(Point);
+            CalendarItem cal = new CalendarItem(calendar1, element.Date, element.Date.AddHours(2), calendar1.Text);
+            calendar1.Items.Add(cal);
+        }
+
+        private void Listbox_Classrooms_MouseDown(object sender, MouseEventArgs e)
+        {
+            Listbox_Classrooms.DoDragDrop(Listbox_Classrooms.Text, DragDropEffects.Copy | DragDropEffects.Move);
+        }
+
+        private void Listbox_Classrooms_DragEnter(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.Text))
+                e.Effect = DragDropEffects.Copy;
+            else
+                e.Effect = DragDropEffects.None;
+        }
+
+        private void Listbox_Classrooms_DragDrop(object sender, DragEventArgs e)
+        {
+            calendar1.Text = e.Data.GetData(DataFormats.Text).ToString();
+
+            // CalendarItem test1 = calendar1.ItemAt(calendar1.Bounds.Location);
+            // CalendarItem test3 = calendar1.ItemAt(calendar1.PointToClient(Cursor.Position));
+
+            Point Point = calendar1.PointToClient(new Point(e.X, e.Y));
+
+
+            ICalendarSelectableElement element = calendar1.HitTest(Point);
+            CalendarItem cal = new CalendarItem(calendar1, element.Date, element.Date.AddHours(2), calendar1.Text);
+            calendar1.Items.Add(cal);
+        }
     }
 }
