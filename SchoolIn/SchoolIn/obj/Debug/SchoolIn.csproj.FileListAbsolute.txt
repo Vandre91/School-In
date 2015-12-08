@@ -33,3 +33,8 @@ C:\Users\Ander\Documents\DepotGit\School-In-Dev\SchoolIn\SchoolIn\bin\Debug\Scho
 C:\Users\Ander\Documents\DepotGit\School-In-Dev\SchoolIn\SchoolIn\obj\Debug\SchoolIn.csprojResolveAssemblyReference.cache
 C:\Users\Ander\Documents\DepotGit\School-In-Dev\SchoolIn\SchoolIn\obj\Debug\SchoolIn.dll
 C:\Users\Ander\Documents\DepotGit\School-In-Dev\SchoolIn\SchoolIn\obj\Debug\SchoolIn.pdb
+C:\Users\Ander\Documents\DepotGit\SchoolIn\SchoolIn\bin\Debug\SchoolIn.dll
+C:\Users\Ander\Documents\DepotGit\SchoolIn\SchoolIn\bin\Debug\SchoolIn.pdb
+C:\Users\Ander\Documents\DepotGit\SchoolIn\SchoolIn\obj\Debug\SchoolIn.csprojResolveAssemblyReference.cache
+C:\Users\Ander\Documents\DepotGit\SchoolIn\SchoolIn\obj\Debug\SchoolIn.dll
+C:\Users\Ander\Documents\DepotGit\SchoolIn\SchoolIn\obj\Debug\SchoolIn.pdb
