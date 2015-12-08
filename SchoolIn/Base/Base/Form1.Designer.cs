@@ -180,9 +180,9 @@
         calendarHighlightRange3,
         calendarHighlightRange4,
         calendarHighlightRange5};
-            this.calendar1.Location = new System.Drawing.Point(40, 70);
+            this.calendar1.Location = new System.Drawing.Point(40, 31);
             this.calendar1.Name = "calendar1";
-            this.calendar1.Size = new System.Drawing.Size(600, 230);
+            this.calendar1.Size = new System.Drawing.Size(600, 325);
             this.calendar1.TabIndex = 0;
             this.calendar1.Text = "calendar1";
             this.calendar1.ViewEnd = new System.DateTime(2015, 12, 11, 23, 59, 59, 0);
