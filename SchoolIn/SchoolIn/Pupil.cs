@@ -17,6 +17,7 @@ namespace SchoolIn
         Dictionary<string, int> _listnote;
         bool _ismissing;
         School _school;
+        Promotion _promotion;
 
 
         public Pupil(string name, string firstname, School school)
@@ -44,6 +45,16 @@ namespace SchoolIn
             if (_listnote.ContainsKey(teaching))
             {
                 _listnote.Remove(teaching);
+            }
+        }
+        public void AssignTo(Promotion p)
+        {
+            if (_promotion != p)
+            {
+                if (p != null && p.School != _school) throw new ArgumentException();
+                if (_promotion != null) _promotion.Pupil = null;
+                _promotion = p;
+                if (_promotion != null) _promotion.Pupil = this;
             }
         }
         public string Name

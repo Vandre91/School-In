@@ -17,6 +17,7 @@ namespace SchoolIn
         string _teaching;
         bool _ismissing;
         School _school;
+        Promotion _promotion;
 
         public Teacher(string name, string firstname, School school)
         {
@@ -68,6 +69,16 @@ namespace SchoolIn
         {
             get { return _ismissing; }
             set { _ismissing = value; }
+        }
+        public void AssignTo(Promotion p)
+        {
+            if (_promotion != p)
+            {
+                if (p != null && p.School != _school) throw new ArgumentException();
+                if (_promotion != null) _promotion.Teacher = null;
+                _promotion = p;
+                if (_promotion != null) _promotion.Teacher = this;
+            }
         }
     }
 }

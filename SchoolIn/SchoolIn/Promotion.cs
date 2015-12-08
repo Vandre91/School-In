@@ -12,6 +12,8 @@ namespace SchoolIn
         string _name;
         Dictionary<string, Pupil> _listpupil;
         School _school;
+        Teacher _currentTeacher;
+        Pupil _currentPupil;
 
         public Promotion(string name, School school)
         {
@@ -23,6 +25,7 @@ namespace SchoolIn
             _school = school;
             _listpupil = new Dictionary<string, Pupil>();
         }
+        public School School { get { return _school; } }
 
         public string Name
         {
@@ -33,6 +36,16 @@ namespace SchoolIn
         public int NbPupil()
         {
             return _listpupil.Count();
+        }
+        public Teacher Teacher
+        {
+            get { return _currentTeacher; }
+            internal set { _currentTeacher = value; }
+        }
+        public Pupil Pupil
+        {
+            get { return _currentPupil; }
+            internal set { _currentPupil = value; }
         }
     }
 }
