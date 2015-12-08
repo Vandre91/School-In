@@ -85,11 +85,11 @@ namespace Base
             // CalendarItem test1 = calendar1.ItemAt(calendar1.Bounds.Location);
             // CalendarItem test3 = calendar1.ItemAt(calendar1.PointToClient(Cursor.Position));
 
-            // Point Point = calendar1.PointToClient(new Point(e.X, e.Y));
+            Point Point = calendar1.PointToClient(new Point(e.X, e.Y));
 
 
-
-           CalendarItem cal = new CalendarItem(calendar1, DateTime.Now, DateTime.Now, calendar1.Text);
+           ICalendarSelectableElement element = calendar1.HitTest(Point);
+           CalendarItem cal = new CalendarItem(calendar1, element.Date, element.Date.AddHours(2), calendar1.Text);
            calendar1.Items.Add(cal);
         }
 
