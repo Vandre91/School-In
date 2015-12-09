@@ -29,8 +29,18 @@ namespace SchoolIn
         }
         public int Nbpupil
         {
-            get { return _maxpupil; }
-            set { _maxpupil = value; }
+            get{ return _maxpupil;}
+            set
+            {
+                if (_maxpupil.ToString() == null)
+                {
+                    throw new NullReferenceException();
+                }
+                else
+                {
+                    _maxpupil = value;
+                }
+            }
         }
     }
 }

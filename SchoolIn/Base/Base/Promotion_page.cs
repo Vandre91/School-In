@@ -73,7 +73,7 @@ namespace Base
                 }
                 else if(ex is NullReferenceException)
                 {
-                    MessageBox.Show("Please fill the text");
+                    MessageBox.Show("Please fill all the text");
                 }
             }
             textBox_name_promotion.Text = "";

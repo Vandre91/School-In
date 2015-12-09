@@ -82,11 +82,7 @@ namespace Base
         {
            calendar1.Text = e.Data.GetData(DataFormats.Text).ToString();
 
-            // CalendarItem test1 = calendar1.ItemAt(calendar1.Bounds.Location);
-            // CalendarItem test3 = calendar1.ItemAt(calendar1.PointToClient(Cursor.Position));
-
             Point Point = calendar1.PointToClient(new Point(e.X, e.Y));
-
 
            ICalendarSelectableElement element = calendar1.HitTest(Point);
            CalendarItem cal = new CalendarItem(calendar1, element.Date, element.Date.AddHours(2), calendar1.Text);
@@ -136,11 +132,7 @@ namespace Base
         {
             calendar1.Text = e.Data.GetData(DataFormats.Text).ToString();
 
-            // CalendarItem test1 = calendar1.ItemAt(calendar1.Bounds.Location);
-            // CalendarItem test3 = calendar1.ItemAt(calendar1.PointToClient(Cursor.Position));
-
             Point Point = calendar1.PointToClient(new Point(e.X, e.Y));
-
 
             ICalendarSelectableElement element = calendar1.HitTest(Point);
             CalendarItem cal = new CalendarItem(calendar1, element.Date, element.Date.AddHours(2), calendar1.Text);
@@ -150,7 +142,6 @@ namespace Base
         private void Listbox_Promotion_MouseDown(object sender, MouseEventArgs e)
         {
             Listbox_Promotion.DoDragDrop(Listbox_Promotion.Text, DragDropEffects.Copy | DragDropEffects.Move);
-
         }
 
         private void Listbox_Promotion_DragEnter(object sender, DragEventArgs e)
@@ -165,11 +156,7 @@ namespace Base
         {
             calendar1.Text = e.Data.GetData(DataFormats.Text).ToString();
 
-            // CalendarItem test1 = calendar1.ItemAt(calendar1.Bounds.Location);
-            // CalendarItem test3 = calendar1.ItemAt(calendar1.PointToClient(Cursor.Position));
-
             Point Point = calendar1.PointToClient(new Point(e.X, e.Y));
-
 
             ICalendarSelectableElement element = calendar1.HitTest(Point);
             CalendarItem cal = new CalendarItem(calendar1, element.Date, element.Date.AddHours(2), calendar1.Text);
@@ -192,12 +179,8 @@ namespace Base
         private void Listbox_Classrooms_DragDrop(object sender, DragEventArgs e)
         {
             calendar1.Text = e.Data.GetData(DataFormats.Text).ToString();
-
-            // CalendarItem test1 = calendar1.ItemAt(calendar1.Bounds.Location);
-            // CalendarItem test3 = calendar1.ItemAt(calendar1.PointToClient(Cursor.Position));
-
+            
             Point Point = calendar1.PointToClient(new Point(e.X, e.Y));
-
 
             ICalendarSelectableElement element = calendar1.HitTest(Point);
             CalendarItem cal = new CalendarItem(calendar1, element.Date, element.Date.AddHours(2), calendar1.Text);

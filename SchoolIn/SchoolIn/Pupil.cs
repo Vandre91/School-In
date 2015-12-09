@@ -47,6 +47,10 @@ namespace SchoolIn
                 _listnote.Remove(teaching);
             }
         }
+        public Promotion Assignment
+        {
+            get { return _promotion; }
+        }
         public void AssignTo(Promotion p)
         {
             if (_promotion != p)

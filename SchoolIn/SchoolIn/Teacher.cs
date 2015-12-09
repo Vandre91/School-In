@@ -44,19 +44,46 @@ namespace SchoolIn
         public string Birthday
         {
             get { return _birthday; ; }
-            set { _birthday = value; }
+            set {
+                if (string.IsNullOrWhiteSpace(_birthday))
+                {
+                    throw new NullReferenceException();
+                }
+                else
+                {
+                    _birthday = value;
+                }
+                }
         }
 
         public string Phone
         {
             get { return _phone; }
-            set { _phone = value; }
+            set {
+                if (string.IsNullOrWhiteSpace(_phone))
+                {
+                    throw new NullReferenceException();
+                }
+                else
+                {
+                    _phone = value;
+                }
+                }
         }
 
         public string City
         {
             get { return _city; }
-            set { _city = value; }
+            set {
+                if (string.IsNullOrWhiteSpace(_city))
+                {
+                    throw new NullReferenceException();
+                }
+                else
+                {
+                    _city = value;
+                }
+                }
         }
 
         public string Teaching
@@ -69,6 +96,10 @@ namespace SchoolIn
         {
             get { return _ismissing; }
             set { _ismissing = value; }
+        }
+        public Promotion Assignment
+        {
+            get { return _promotion; }
         }
         public void AssignTo(Promotion p)
         {
