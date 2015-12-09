@@ -17,6 +17,7 @@ namespace SchoolIn
         Dictionary<string, Classroom> _listclassroom;
         Dictionary<string, Teacher> _listteacher;
         Dictionary<string, Pupil> _listpupil;
+        Dictionary<string, Course> _listcourse;
         public School(string name)
         {
             if (string.IsNullOrWhiteSpace(name))
@@ -29,6 +30,7 @@ namespace SchoolIn
             _listclassroom = new Dictionary<string, Classroom>();
             _listteacher = new Dictionary<string, Teacher>();
             _listpupil = new Dictionary<string, Pupil>();
+            _listcourse = new Dictionary<string, Course>();
         }
         public void Save(string path)
         {
@@ -38,10 +40,6 @@ namespace SchoolIn
                 formatter.Serialize(file, this);
             }
         }
-
-
-        
-
         public static  School Load(string path)
 
         {
@@ -50,6 +48,62 @@ namespace SchoolIn
             {
                 return (School)formatter.Deserialize(file);
             }
+        }
+
+        // COURSE
+        public Course AddCourse(string name)
+        {
+            if (string.IsNullOrWhiteSpace(name))
+            {
+                throw new NullReferenceException();
+            }
+
+            if (_listcourse.ContainsKey(name))
+            {
+                throw new ArgumentException();
+            }
+
+            Course c = new Course(name, this);
+            _listcourse.Add(name, c);
+            return c;
+        }
+
+        public Course FindCourse(string name)
+        {
+            if (string.IsNullOrWhiteSpace(name))
+                throw new NullReferenceException();
+
+            if (_listcourse.ContainsKey(name))
+            {
+                Course c = _listcourse[name];
+                return c;
+            }
+            else
+            {
+                throw new ArgumentException();
+            }
+        }
+
+        public bool RemoveCourse(Course c)
+        {
+            if (c == null)
+                throw new NullReferenceException();
+
+            string name = c.Name;
+
+            if (_listcourse.ContainsKey(name))
+            {
+                _listcourse.Remove(name);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public ICollection<Course> Course
+        {
+            get { return _listcourse.Values; }
         }
 
         //PROMOTION
@@ -108,6 +162,7 @@ namespace SchoolIn
         {
             get { return _listpromotion.Values; }
         }
+
 
         //Classroom
 
