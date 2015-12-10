@@ -13,12 +13,12 @@ using System.Windows.Forms.Calendar;
 namespace Base
 {
 
-    public partial class Main : Form
+    public partial class SchoolIn : Form
     {
         School _currentSchool;
         
 
-        public Main()
+        public SchoolIn()
         {
             InitializeComponent();
             CurrentSchool = null;
@@ -100,9 +100,6 @@ namespace Base
             foreach (var p in CurrentSchool.Promotion)
             {
                 Listbox_Promotion.Items.Add(p.Name);
-                foreach (var y  in CurrentSchool.Pupil)
-                {
-                    Listbox_Student.Items.Add(y.FirstName + " " + y.Name);
                     foreach (var t in CurrentSchool.Teacher)
                     {
                         Listbox_Teacher.Items.Add(t.FirstName + " " + t.Name);
@@ -111,32 +108,7 @@ namespace Base
                             Listbox_Classrooms.Items.Add(z.Name + " " + z.Nbpupil);
                         }
                     }
-                }
             }
-        }
-
-        private void Listbox_Student_MouseDown(object sender, MouseEventArgs e)
-        {
-            Listbox_Student.DoDragDrop(Listbox_Student.Text, DragDropEffects.Copy | DragDropEffects.Move);
-        }
-
-        private void Listbox_Student_DragEnter(object sender, DragEventArgs e)
-        {
-            if (e.Data.GetDataPresent(DataFormats.Text))
-                e.Effect = DragDropEffects.Copy;
-            else
-                e.Effect = DragDropEffects.None;
-        }
-
-        private void Listbox_Student_DragDrop(object sender, DragEventArgs e)
-        {
-            calendar1.Text = e.Data.GetData(DataFormats.Text).ToString();
-
-            Point Point = calendar1.PointToClient(new Point(e.X, e.Y));
-
-            ICalendarSelectableElement element = calendar1.HitTest(Point);
-            CalendarItem cal = new CalendarItem(calendar1, element.Date, element.Date.AddHours(2), calendar1.Text);
-            calendar1.Items.Add(cal);
         }
 
         private void Listbox_Promotion_MouseDown(object sender, MouseEventArgs e)

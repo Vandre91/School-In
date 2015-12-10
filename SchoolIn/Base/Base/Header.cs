@@ -33,9 +33,9 @@ namespace Base
             UpdateFromCurrentSchool();
         }
 
-        public Main Root
+        public SchoolIn Root
         {
-            get { return (Main)Parent; }
+            get { return (SchoolIn)Parent; }
         }
         private void button_save_Click(object sender, EventArgs e)
         {

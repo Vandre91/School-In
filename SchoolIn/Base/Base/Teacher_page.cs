@@ -17,9 +17,9 @@ namespace Base
         {
             InitializeComponent();
         }
-        public Main Root
+        public SchoolIn Root
         {
-            get { return (Main)FindForm(); }
+            get { return (SchoolIn)FindForm(); }
         }
         protected override void OnLoad(EventArgs e)
         {
