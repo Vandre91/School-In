@@ -23,7 +23,7 @@ namespace SchoolIn
         {
             if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(firstname))
             {
-                throw new ArgumentException();
+                throw new NullReferenceException();
             }
 
             _name = name;
@@ -44,46 +44,20 @@ namespace SchoolIn
         public string Birthday
         {
             get { return _birthday; ; }
-            set {
-                if (string.IsNullOrWhiteSpace(_birthday))
-                {
-                    throw new NullReferenceException();
-                }
-                else
-                {
-                    _birthday = value;
-                }
-                }
+            set { _birthday = value; }
         }
 
         public string Phone
         {
             get { return _phone; }
-            set {
-                if (string.IsNullOrWhiteSpace(_phone))
-                {
-                    throw new NullReferenceException();
-                }
-                else
-                {
-                    _phone = value;
-                }
-                }
+            set { _phone = value; }
         }
 
         public string City
         {
             get { return _city; }
-            set {
-                if (string.IsNullOrWhiteSpace(_city))
-                {
-                    throw new NullReferenceException();
-                }
-                else
-                {
-                    _city = value;
-                }
-                }
+            set { _city = value; }
+                
         }
 
         public string Teaching

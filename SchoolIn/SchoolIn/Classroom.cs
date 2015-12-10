@@ -16,7 +16,7 @@ namespace SchoolIn
         {
             if (string.IsNullOrWhiteSpace(name))
             {
-                throw new ArgumentException();
+                throw new NullReferenceException();
             }
 
             _name = name;
@@ -30,17 +30,7 @@ namespace SchoolIn
         public int Nbpupil
         {
             get{ return _maxpupil;}
-            set
-            {
-                if (_maxpupil.ToString() == null)
-                {
-                    throw new NullReferenceException();
-                }
-                else
-                {
-                    _maxpupil = value;
-                }
-            }
+            set{ _maxpupil = value; }
         }
     }
 }

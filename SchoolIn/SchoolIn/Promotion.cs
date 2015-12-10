@@ -19,7 +19,7 @@ namespace SchoolIn
         {
             if (string.IsNullOrWhiteSpace(name))
             {
-                throw new ArgumentException();
+                throw new NullReferenceException();
             }
             _name = name;
             _school = school;

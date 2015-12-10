@@ -49,13 +49,21 @@ namespace Base
         {
             string[] row = { name, nbpupil};
             ListViewItem item = new ListViewItem(row);
-
-            Classroom myclassroom = Root.CurrentSchool.AddClassroom(name);
-            int nb = Int32.Parse(nbpupil);
-            myclassroom.Nbpupil = nb;
-
-
-            listView_classroom.Items.Add(item);
+            if (name == null || name == ""|| nbpupil == null|| nbpupil == "")
+            {
+                MessageBox.Show("You must complete the entire form");
+            }
+            int nb;
+            if (!int.TryParse(nbpupil, out nb) || nb == 0)
+            {
+                MessageBox.Show("You must enter a number");
+            }
+            else
+            {
+                Classroom myclassroom = Root.CurrentSchool.AddClassroom(name);
+                myclassroom.Nbpupil = nb;
+                listView_classroom.Items.Add(item);
+            }
         }
         private void Update_Classroom()
         {
@@ -79,7 +87,7 @@ namespace Base
                 }
                 else if (ex is NullReferenceException)
                 {
-                    MessageBox.Show("Please fill all the text");
+                    MessageBox.Show("You must complete the entire form");
                 }
             }
 

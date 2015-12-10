@@ -49,8 +49,15 @@ namespace Base
         {
             string[] list = { name };
             ListViewItem item = new ListViewItem(list);
-            Promotion mypromotion = Root.CurrentSchool.AddPromotion(name);
-            listView_promotion.Items.Add(item);
+            if (name == null || name == "")
+            {
+                MessageBox.Show("You must complete the entire form");
+            }
+            else
+            {
+                Promotion mypromotion = Root.CurrentSchool.AddPromotion(name);
+                listView_promotion.Items.Add(item);
+            }
         }
         private void Update_promotion()
         {
@@ -73,7 +80,7 @@ namespace Base
                 }
                 else if(ex is NullReferenceException)
                 {
-                    MessageBox.Show("Please fill all the text");
+                    MessageBox.Show("You must complete the entire form");
                 }
             }
             textBox_name_promotion.Text = "";

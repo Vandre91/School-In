@@ -50,13 +50,18 @@ namespace Base
         {
             string[] row = { firstname, name, age, city, phone };
             ListViewItem item = new ListViewItem(row);
-
-            Pupil mypupil = Root.CurrentSchool.AddPupil(name, firstname);
-            mypupil.Phone = phone;
-            mypupil.City = city;
-            mypupil.Age = age;
-
-            Pupil_Listview.Items.Add(item);
+            if (firstname == null || firstname == "" || name == null || name == "" || age == null || age == "" || city == null || city == "" || phone == null || phone == "")
+            {
+                MessageBox.Show("You must complete the entire form");
+            }
+            else
+            {
+                Pupil mypupil = Root.CurrentSchool.AddPupil(name, firstname);
+                mypupil.Phone = phone;
+                mypupil.City = city;
+                mypupil.Age = age;
+                Pupil_Listview.Items.Add(item);
+            }
         }
         private void Update_Student()
         {
@@ -88,7 +93,7 @@ namespace Base
                 }
                 else if (ex is NullReferenceException)
                 {
-                    MessageBox.Show("Please fill all the text");
+                    MessageBox.Show("You must complete the entire form");
                 }
             }
             Firstname_Textbox.Text = "";
