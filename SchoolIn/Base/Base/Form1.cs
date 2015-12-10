@@ -50,15 +50,7 @@ namespace Base
             
         }
 
-        private void Refresh_Listbox_Teacher_Click(object sender, EventArgs e)
-        {
-
-            Listbox_Teacher.Items.Clear();
-            foreach (var t in CurrentSchool.Teacher)
-            {
-                Listbox_Teacher.Items.Add(t.FirstName + " " + t.Name);
-            }
-        }
+        
 
         private void calendar1_LoadItems_1(object sender, System.Windows.Forms.Calendar.CalendarLoadEventArgs e)
         {
@@ -97,17 +89,27 @@ namespace Base
         private void Refresh_Listbox_Promotion_Click(object sender, EventArgs e)
         {
             Listbox_Promotion.Items.Clear();
+            Listbox_Teacher.Items.Clear();
+            Listbox_Classrooms.Items.Clear();
             foreach (var p in CurrentSchool.Promotion)
             {
                 Listbox_Promotion.Items.Add(p.Name);
-                    foreach (var t in CurrentSchool.Teacher)
-                    {
-                        Listbox_Teacher.Items.Add(t.FirstName + " " + t.Name);
-                        foreach (var z in CurrentSchool.Classroom)
-                        {
-                            Listbox_Classrooms.Items.Add(z.Name + " " + z.Nbpupil);
-                        }
-                    }
+                //foreach (var t in CurrentSchool.Teacher)
+                //{
+                //    Listbox_Teacher.Items.Add(t.FirstName + " " + t.Name);
+                //    foreach (var z in CurrentSchool.Classroom)
+                //    {
+                //        Listbox_Classrooms.Items.Add(z.Name + " " + z.Nbpupil);
+                //    }
+                //}
+            }
+            foreach (var t in CurrentSchool.Teacher)
+            {
+                Listbox_Teacher.Items.Add(t.FirstName + " " + t.Name);
+            }
+            foreach (var z in CurrentSchool.Classroom)
+            {
+                Listbox_Classrooms.Items.Add(z.Name + " " + z.Nbpupil);
             }
         }
 
