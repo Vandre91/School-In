@@ -35,8 +35,8 @@
             this.Name_promotion = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Clear_Button = new System.Windows.Forms.Button();
             this.GroupBoxPromotion_page = new System.Windows.Forms.GroupBox();
-            this.UpdateButton = new System.Windows.Forms.Button();
             this.DeleteButton = new System.Windows.Forms.Button();
+            this.UpdateButton = new System.Windows.Forms.Button();
             this.GroupBoxPromotion_page.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -110,6 +110,16 @@
             this.GroupBoxPromotion_page.TabIndex = 5;
             this.GroupBoxPromotion_page.TabStop = false;
             // 
+            // DeleteButton
+            // 
+            this.DeleteButton.Location = new System.Drawing.Point(280, 28);
+            this.DeleteButton.Name = "DeleteButton";
+            this.DeleteButton.Size = new System.Drawing.Size(75, 23);
+            this.DeleteButton.TabIndex = 6;
+            this.DeleteButton.Text = "Delete";
+            this.DeleteButton.UseVisualStyleBackColor = true;
+            this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
+            // 
             // UpdateButton
             // 
             this.UpdateButton.Location = new System.Drawing.Point(187, 28);
@@ -121,16 +131,6 @@
             this.UpdateButton.UseVisualStyleBackColor = true;
             this.UpdateButton.Click += new System.EventHandler(this.UpdateButton_Click);
             // 
-            // DeleteButton
-            // 
-            this.DeleteButton.Location = new System.Drawing.Point(280, 28);
-            this.DeleteButton.Name = "DeleteButton";
-            this.DeleteButton.Size = new System.Drawing.Size(75, 23);
-            this.DeleteButton.TabIndex = 6;
-            this.DeleteButton.Text = "Delete";
-            this.DeleteButton.UseVisualStyleBackColor = true;
-            this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
-            // 
             // Promotion_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -141,6 +141,7 @@
             this.Controls.Add(this.textBox_name_promotion);
             this.Name = "Promotion_page";
             this.Size = new System.Drawing.Size(578, 312);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Promotion_page_KeyDown);
             this.GroupBoxPromotion_page.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

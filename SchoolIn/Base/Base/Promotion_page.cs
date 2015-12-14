@@ -121,5 +121,14 @@ namespace Base
 
             textBox_name_promotion.Text = "";
         }
+
+        private void Promotion_page_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                textBox_name_promotion.Focus();
+                button_add_promotion_Click(sender, e);
+            }
+         }
     }
 }

@@ -247,7 +247,7 @@
             this.calendar1.Size = new System.Drawing.Size(711, 228);
             this.calendar1.TabIndex = 0;
             this.calendar1.Text = "calendar1";
-            this.calendar1.ViewEnd = new System.DateTime(2015, 12, 11, 23, 59, 59, 0);
+            this.calendar1.ViewEnd = new System.DateTime(2015, 16, 11, 23, 59, 59, 0);
             this.calendar1.ViewStart = new System.DateTime(2015, 12, 4, 0, 0, 0, 0);
             this.calendar1.LoadItems += new System.Windows.Forms.Calendar.Calendar.CalendarLoadEventHandler(this.calendar1_LoadItems_1);
             this.calendar1.DragDrop += new System.Windows.Forms.DragEventHandler(this.calendar1_DragDrop);
