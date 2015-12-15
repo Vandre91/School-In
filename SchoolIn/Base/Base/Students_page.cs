@@ -145,5 +145,13 @@ namespace Base
             City_Textbox.Text = "";
             PhoneNumber_Textbox.Text = "";
         }
+
+        private void PhoneNumber_Textbox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                Add_Button.PerformClick();
+            }
+        }
     }
 }

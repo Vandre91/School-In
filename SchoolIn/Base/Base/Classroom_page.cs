@@ -132,5 +132,13 @@ namespace Base
             Name_Textbox.Text = "";
             NbStudent_Textbox.Text = "";
         }
+
+        private void NbStudent_Textbox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                Add_Button.PerformClick();
+            }
+        }
     }
 }

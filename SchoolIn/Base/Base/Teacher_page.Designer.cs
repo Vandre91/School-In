@@ -58,6 +58,7 @@
             this.PhoneNumber_Textbox.Name = "PhoneNumber_Textbox";
             this.PhoneNumber_Textbox.Size = new System.Drawing.Size(125, 20);
             this.PhoneNumber_Textbox.TabIndex = 20;
+            this.PhoneNumber_Textbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.PhoneNumber_Textbox_KeyDown);
             // 
             // City_Textbox
             // 

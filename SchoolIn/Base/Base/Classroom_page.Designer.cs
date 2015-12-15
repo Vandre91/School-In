@@ -66,6 +66,7 @@
             this.NbStudent_Textbox.Name = "NbStudent_Textbox";
             this.NbStudent_Textbox.Size = new System.Drawing.Size(125, 20);
             this.NbStudent_Textbox.TabIndex = 26;
+            this.NbStudent_Textbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.NbStudent_Textbox_KeyDown);
             // 
             // Name_Label
             // 
@@ -168,7 +169,6 @@
             this.Controls.Add(this.NbStudent_Label);
             this.Name = "ClassroomPage";
             this.Size = new System.Drawing.Size(581, 263);
-           
             this.GroupeBoxClassroom_page.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
