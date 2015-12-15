@@ -49,8 +49,6 @@
             this.UpdateButton = new System.Windows.Forms.Button();
             this.GroupBoxStudents_page = new System.Windows.Forms.GroupBox();
             this.DeleteButton = new System.Windows.Forms.Button();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.GroupBoxStudents_page.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,8 +70,7 @@
             this.Name_Columnheader,
             this.Age_Columnheader,
             this.City_Columnheader,
-            this.Phonenumber_Columnheader,
-            this.columnHeader1});
+            this.Phonenumber_Columnheader});
             this.Pupil_Listview.Location = new System.Drawing.Point(283, 12);
             this.Pupil_Listview.Name = "Pupil_Listview";
             this.Pupil_Listview.Size = new System.Drawing.Size(334, 129);
@@ -231,23 +228,10 @@
             this.DeleteButton.UseVisualStyleBackColor = true;
             this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
             // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Promotion";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(477, 160);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 38;
-            // 
             // Students_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.GroupBoxStudents_page);
             this.Controls.Add(this.Pupil_Listview);
             this.Controls.Add(this.PhoneNumber_Textbox);
@@ -291,7 +275,5 @@
         private System.Windows.Forms.Button UpdateButton;
         private System.Windows.Forms.GroupBox GroupBoxStudents_page;
         private System.Windows.Forms.Button DeleteButton;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

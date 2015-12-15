@@ -278,6 +278,7 @@
             this.Controls.Add(this.header1);
             this.Controls.Add(this.tabControl1);
             this.Name = "SchoolIn";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main";
             this.tabControl1.ResumeLayout(false);
             this.page_promotion.ResumeLayout(false);
