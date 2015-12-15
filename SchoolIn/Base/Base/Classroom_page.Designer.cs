@@ -36,7 +36,6 @@
             this.listView_classroom = new System.Windows.Forms.ListView();
             this.ClassRoomName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.NbStudentMax = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Clear_Button = new System.Windows.Forms.Button();
             this.GroupeBoxClassroom_page = new System.Windows.Forms.GroupBox();
             this.DeleteButton = new System.Windows.Forms.Button();
             this.UpdateButton = new System.Windows.Forms.Button();
@@ -110,35 +109,23 @@
             this.NbStudentMax.Text = "NbStudentMax";
             this.NbStudentMax.Width = 90;
             // 
-            // Clear_Button
-            // 
-            this.Clear_Button.Location = new System.Drawing.Point(184, 21);
-            this.Clear_Button.Margin = new System.Windows.Forms.Padding(2);
-            this.Clear_Button.Name = "Clear_Button";
-            this.Clear_Button.Size = new System.Drawing.Size(75, 24);
-            this.Clear_Button.TabIndex = 29;
-            this.Clear_Button.Text = "Clear";
-            this.Clear_Button.UseVisualStyleBackColor = true;
-            this.Clear_Button.Click += new System.EventHandler(this.Clear_Button_Click);
-            // 
             // GroupeBoxClassroom_page
             // 
             this.GroupeBoxClassroom_page.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.GroupeBoxClassroom_page.Controls.Add(this.DeleteButton);
             this.GroupeBoxClassroom_page.Controls.Add(this.UpdateButton);
             this.GroupeBoxClassroom_page.Controls.Add(this.Add_Button);
-            this.GroupeBoxClassroom_page.Controls.Add(this.Clear_Button);
             this.GroupeBoxClassroom_page.Location = new System.Drawing.Point(20, 154);
             this.GroupeBoxClassroom_page.Margin = new System.Windows.Forms.Padding(2);
             this.GroupeBoxClassroom_page.Name = "GroupeBoxClassroom_page";
             this.GroupeBoxClassroom_page.Padding = new System.Windows.Forms.Padding(2);
-            this.GroupeBoxClassroom_page.Size = new System.Drawing.Size(367, 65);
+            this.GroupeBoxClassroom_page.Size = new System.Drawing.Size(282, 65);
             this.GroupeBoxClassroom_page.TabIndex = 30;
             this.GroupeBoxClassroom_page.TabStop = false;
             // 
             // DeleteButton
             // 
-            this.DeleteButton.Location = new System.Drawing.Point(277, 21);
+            this.DeleteButton.Location = new System.Drawing.Point(189, 22);
             this.DeleteButton.Name = "DeleteButton";
             this.DeleteButton.Size = new System.Drawing.Size(75, 23);
             this.DeleteButton.TabIndex = 39;
@@ -185,7 +172,6 @@
         private System.Windows.Forms.ListView listView_classroom;
         private System.Windows.Forms.ColumnHeader ClassRoomName;
         private System.Windows.Forms.ColumnHeader NbStudentMax;
-        private System.Windows.Forms.Button Clear_Button;
         private System.Windows.Forms.GroupBox GroupeBoxClassroom_page;
         private System.Windows.Forms.Button UpdateButton;
         private System.Windows.Forms.Button DeleteButton;

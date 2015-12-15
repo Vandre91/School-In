@@ -45,7 +45,6 @@
             this.Age_Columnheader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.City_Columnheader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Phonenumber_Columnheader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Clear_Button = new System.Windows.Forms.Button();
             this.UpdateButton = new System.Windows.Forms.Button();
             this.GroupBoxTeache_page = new System.Windows.Forms.GroupBox();
             this.DeleteButton = new System.Windows.Forms.Button();
@@ -185,20 +184,9 @@
             this.Phonenumber_Columnheader.Text = "PhoneNumber";
             this.Phonenumber_Columnheader.Width = 88;
             // 
-            // Clear_Button
-            // 
-            this.Clear_Button.Location = new System.Drawing.Point(217, 28);
-            this.Clear_Button.Margin = new System.Windows.Forms.Padding(2);
-            this.Clear_Button.Name = "Clear_Button";
-            this.Clear_Button.Size = new System.Drawing.Size(76, 23);
-            this.Clear_Button.TabIndex = 23;
-            this.Clear_Button.Text = "Clear";
-            this.Clear_Button.UseVisualStyleBackColor = true;
-            this.Clear_Button.Click += new System.EventHandler(this.Clear_Button_Click);
-            // 
             // UpdateButton
             // 
-            this.UpdateButton.Location = new System.Drawing.Point(111, 28);
+            this.UpdateButton.Location = new System.Drawing.Point(92, 28);
             this.UpdateButton.Margin = new System.Windows.Forms.Padding(2);
             this.UpdateButton.Name = "UpdateButton";
             this.UpdateButton.Size = new System.Drawing.Size(80, 23);
@@ -213,19 +201,18 @@
             this.GroupBoxTeache_page.Controls.Add(this.DeleteButton);
             this.GroupBoxTeache_page.Controls.Add(this.Add_Button);
             this.GroupBoxTeache_page.Controls.Add(this.UpdateButton);
-            this.GroupBoxTeache_page.Controls.Add(this.Clear_Button);
             this.GroupBoxTeache_page.Location = new System.Drawing.Point(23, 186);
             this.GroupBoxTeache_page.Margin = new System.Windows.Forms.Padding(2);
             this.GroupBoxTeache_page.Name = "GroupBoxTeache_page";
             this.GroupBoxTeache_page.Padding = new System.Windows.Forms.Padding(2);
-            this.GroupBoxTeache_page.Size = new System.Drawing.Size(401, 72);
+            this.GroupBoxTeache_page.Size = new System.Drawing.Size(267, 72);
             this.GroupBoxTeache_page.TabIndex = 25;
             this.GroupBoxTeache_page.TabStop = false;
             this.GroupBoxTeache_page.Enter += new System.EventHandler(this.GroupBoxTeache_page_Enter);
             // 
             // DeleteButton
             // 
-            this.DeleteButton.Location = new System.Drawing.Point(307, 28);
+            this.DeleteButton.Location = new System.Drawing.Point(177, 28);
             this.DeleteButton.Name = "DeleteButton";
             this.DeleteButton.Size = new System.Drawing.Size(75, 23);
             this.DeleteButton.TabIndex = 26;
@@ -277,7 +264,6 @@
         private System.Windows.Forms.ColumnHeader Age_Columnheader;
         private System.Windows.Forms.ColumnHeader City_Columnheader;
         private System.Windows.Forms.ColumnHeader Phonenumber_Columnheader;
-        private System.Windows.Forms.Button Clear_Button;
         private System.Windows.Forms.Button UpdateButton;
         private System.Windows.Forms.GroupBox GroupBoxTeache_page;
         private System.Windows.Forms.Button DeleteButton;

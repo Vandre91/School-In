@@ -32,6 +32,19 @@ namespace SchoolIn
             _school = school;
             _listnote = _listnote = new Dictionary<string, int>();
         }
+
+        public Pupil(string name, string firstname, Promotion promo)
+        {
+            if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(firstname))
+            {
+                throw new ArgumentException();
+            }
+
+            _name = name;
+            _firstname = firstname;
+            _listnote = _listnote = new Dictionary<string, int>();
+            _promotion = promo;
+        }
         public void AddNote(string teaching, int note)
         {
             if (string.IsNullOrWhiteSpace(teaching))
@@ -86,6 +99,11 @@ namespace SchoolIn
         {
             get { return _city; }
             set { _city = value; }
+        }
+        public Promotion Promotion
+        {
+            get { return _promotion; }
+            set { _promotion = value; }
         }
         public bool IsMissing
         {

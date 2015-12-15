@@ -26,7 +26,20 @@ namespace SchoolIn
             _listpupil = new Dictionary<string, Pupil>();
         }
         public School School { get { return _school; } }
+        public void AddPupil(Pupil p)
+        {
 
+            string name = p.Name;
+            if (_listpupil.ContainsKey(name))
+            {
+                throw new ArgumentException();
+            }
+            _listpupil.Add(name, p);
+
+
+            p.Promotion = this;
+
+        }
         public string Name
         {
             get { return _name; }
@@ -46,6 +59,16 @@ namespace SchoolIn
         {
             get { return _currentPupil; }
             internal set { _currentPupil = value; }
+        }
+
+        public override string ToString()
+        {
+            return Name;
+        }
+
+        public ICollection<Pupil> ListPupil
+        {
+            get { return _listpupil.Values; }
         }
     }
 }

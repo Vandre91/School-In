@@ -103,11 +103,6 @@ namespace Base
             PhoneNumber_Textbox.Text = "";
         }
 
-        private void Clear_Button_Click(object sender, EventArgs e)
-        {
-            Teacher_Listview.Items.Clear();
-        }
-
         private void GroupBoxTeache_page_Enter(object sender, EventArgs e)
         {
 

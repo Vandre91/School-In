@@ -131,5 +131,33 @@ namespace Base
                 button_add_promotion.PerformClick();
             }
         }
+
+        private void comboBox1_MouseClick(object sender, MouseEventArgs e)
+        {
+            comboBox1.Items.Clear();
+
+            foreach (var p in Root.CurrentSchool.Promotion)
+            {
+                comboBox1.Items.Add(p.Name);
+            }
+        }
+        private void Add_promotion()
+        {
+            string name_promo = comboBox1.SelectedItem.ToString();
+            Promotion promo = Root.CurrentSchool.FindPromotion(name_promo);
+
+            foreach (var p in promo.ListPupil)
+            {
+                string[] list = { p.Name,p.FirstName};
+                ListViewItem item = new ListViewItem(list);
+                listView_Student.Items.Add(item);
+            }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            listView_Student.Items.Clear();
+            Add_promotion();
+        }
     }
 }

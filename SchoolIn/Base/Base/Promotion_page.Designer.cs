@@ -33,10 +33,14 @@
             this.listView_promotion = new System.Windows.Forms.ListView();
             this.Name_promotion = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.button_add_promotion = new System.Windows.Forms.Button();
-            this.Clear_Button = new System.Windows.Forms.Button();
             this.UpdateButton = new System.Windows.Forms.Button();
             this.DeleteButton = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.listView_Student = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,12 +64,11 @@
             // 
             // listView_promotion
             // 
-            this.listView_promotion.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.listView_promotion.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.Name_promotion});
-            this.listView_promotion.Location = new System.Drawing.Point(420, 43);
+            this.listView_promotion.Location = new System.Drawing.Point(25, 88);
             this.listView_promotion.Name = "listView_promotion";
-            this.listView_promotion.Size = new System.Drawing.Size(65, 238);
+            this.listView_promotion.Size = new System.Drawing.Size(138, 119);
             this.listView_promotion.TabIndex = 3;
             this.listView_promotion.UseCompatibleStateImageBehavior = false;
             this.listView_promotion.View = System.Windows.Forms.View.Details;
@@ -86,22 +89,10 @@
             this.button_add_promotion.UseVisualStyleBackColor = true;
             this.button_add_promotion.Click += new System.EventHandler(this.button_add_promotion_Click);
             // 
-            // Clear_Button
-            // 
-            this.Clear_Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.Clear_Button.Location = new System.Drawing.Point(101, 18);
-            this.Clear_Button.Margin = new System.Windows.Forms.Padding(2);
-            this.Clear_Button.Name = "Clear_Button";
-            this.Clear_Button.Size = new System.Drawing.Size(77, 23);
-            this.Clear_Button.TabIndex = 4;
-            this.Clear_Button.Text = "Clear";
-            this.Clear_Button.UseVisualStyleBackColor = true;
-            this.Clear_Button.Click += new System.EventHandler(this.Clear_Button_Click);
-            // 
             // UpdateButton
             // 
             this.UpdateButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.UpdateButton.Location = new System.Drawing.Point(194, 18);
+            this.UpdateButton.Location = new System.Drawing.Point(108, 18);
             this.UpdateButton.Margin = new System.Windows.Forms.Padding(2);
             this.UpdateButton.Name = "UpdateButton";
             this.UpdateButton.Size = new System.Drawing.Size(77, 23);
@@ -113,7 +104,7 @@
             // DeleteButton
             // 
             this.DeleteButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.DeleteButton.Location = new System.Drawing.Point(287, 18);
+            this.DeleteButton.Location = new System.Drawing.Point(206, 19);
             this.DeleteButton.Name = "DeleteButton";
             this.DeleteButton.Size = new System.Drawing.Size(75, 23);
             this.DeleteButton.TabIndex = 6;
@@ -123,20 +114,67 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.Clear_Button);
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.groupBox1.Controls.Add(this.DeleteButton);
             this.groupBox1.Controls.Add(this.button_add_promotion);
             this.groupBox1.Controls.Add(this.UpdateButton);
             this.groupBox1.Location = new System.Drawing.Point(25, 224);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(375, 57);
+            this.groupBox1.Size = new System.Drawing.Size(304, 57);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
+            // 
+            // listView_Student
+            // 
+            this.listView_Student.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.listView_Student.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2});
+            this.listView_Student.Location = new System.Drawing.Point(384, 44);
+            this.listView_Student.Name = "listView_Student";
+            this.listView_Student.Size = new System.Drawing.Size(152, 237);
+            this.listView_Student.TabIndex = 8;
+            this.listView_Student.UseCompatibleStateImageBehavior = false;
+            this.listView_Student.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Firstname";
+            this.columnHeader1.Width = 72;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Name";
+            this.columnHeader2.Width = 76;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(241, 44);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 9;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.comboBox1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.comboBox1_MouseClick);
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(181, 47);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(54, 13);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Promotion";
             // 
             // Promotion_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.listView_Student);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.listView_promotion);
             this.Controls.Add(this.label_promotion);
@@ -156,9 +194,13 @@
         private System.Windows.Forms.ListView listView_promotion;
         private System.Windows.Forms.ColumnHeader Name_promotion;
         private System.Windows.Forms.Button button_add_promotion;
-        private System.Windows.Forms.Button Clear_Button;
         private System.Windows.Forms.Button UpdateButton;
         private System.Windows.Forms.Button DeleteButton;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ListView listView_Student;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -40,17 +40,17 @@ namespace Base
             Pupil_Listview.Items.Clear();
             foreach (var t in Root.CurrentSchool.Pupil)
             {
-                string[] row = { t.FirstName, t.Name,t.Age, t.City, t.Phone };
+                string[] row = { t.FirstName, t.Name, t.Age, t.City, t.Phone,t.Promotion.ToString() };
                 ListViewItem item = new ListViewItem(row);
                 Pupil_Listview.Items.Add(item);
 
             }
         }
-        private void Add_ListView(string firstname, string name, string age, string city, string phone)
+        private void Add_ListView(string firstname, string name, string age, string city, string phone,string promotion)
         {
-            string[] row = { firstname, name, age, city, phone };
+            string[] row = { firstname, name, age, city, phone,promotion };
             ListViewItem item = new ListViewItem(row);
-            if (firstname == null || firstname == "" || name == null || name == "" || age == null || age == "" || city == null || city == "" || phone == null || phone == "")
+            if (firstname == null || firstname == "" || name == null || name == "" || age == null || age == "" || city == null || city == "" || phone == null || phone == "" || promotion == null || promotion == "")
             {
                 MessageBox.Show("You must complete the entire form");
             }
@@ -60,6 +60,8 @@ namespace Base
                 mypupil.Phone = phone;
                 mypupil.City = city;
                 mypupil.Age = age;
+                Promotion promo = Root.CurrentSchool.FindPromotion(promotion);
+                promo.AddPupil(mypupil);
                 Pupil_Listview.Items.Add(item);
             }
         }
@@ -83,7 +85,7 @@ namespace Base
         {
             try
             {
-                Add_ListView(Firstname_Textbox.Text, Name_Textbox.Text, Age_Textbox.Text, City_Textbox.Text, PhoneNumber_Textbox.Text);
+                Add_ListView(Firstname_Textbox.Text, Name_Textbox.Text, Age_Textbox.Text, City_Textbox.Text, PhoneNumber_Textbox.Text,comboBox_Promotion.Text);
             }
             catch (Exception ex)
             {
@@ -101,6 +103,7 @@ namespace Base
             Age_Textbox.Text = "";
             City_Textbox.Text = "";
             PhoneNumber_Textbox.Text = "";
+            comboBox_Promotion.Text = "";
         }
 
         private void Clear_Button_Click(object sender, EventArgs e)
@@ -120,6 +123,7 @@ namespace Base
             Age_Textbox.Text = Pupil_Listview.SelectedItems[0].SubItems[2].Text;
             City_Textbox.Text = Pupil_Listview.SelectedItems[0].SubItems[3].Text;
             PhoneNumber_Textbox.Text = Pupil_Listview.SelectedItems[0].SubItems[4].Text;
+            comboBox_Promotion.Text = Pupil_Listview.SelectedItems[0].SubItems[5].Text;
         }
         private void Delete(string name)
         {
@@ -144,9 +148,20 @@ namespace Base
             Age_Textbox.Text = "";
             City_Textbox.Text = "";
             PhoneNumber_Textbox.Text = "";
+            comboBox_Promotion.Text = "";
         }
 
-        private void PhoneNumber_Textbox_KeyDown(object sender, KeyEventArgs e)
+        private void comboBox_Promotion_MouseClick(object sender, MouseEventArgs e)
+        {
+            comboBox_Promotion.Items.Clear();
+
+            foreach (var p in Root.CurrentSchool.Promotion)
+            {
+                comboBox_Promotion.Items.Add(p.Name);
+            }
+        }
+
+        private void comboBox_Promotion_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
@@ -155,3 +170,4 @@ namespace Base
         }
     }
 }
+

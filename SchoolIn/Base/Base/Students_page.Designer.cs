@@ -35,6 +35,7 @@
             this.Age_Columnheader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.City_Columnheader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Phonenumber_Columnheader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Promtion_ColumnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.PhoneNumber_Textbox = new System.Windows.Forms.TextBox();
             this.City_Textbox = new System.Windows.Forms.TextBox();
             this.Age_Textbox = new System.Windows.Forms.TextBox();
@@ -45,10 +46,11 @@
             this.Age_Label = new System.Windows.Forms.Label();
             this.Name_Label = new System.Windows.Forms.Label();
             this.Firstname_Label = new System.Windows.Forms.Label();
-            this.Clear_Button = new System.Windows.Forms.Button();
             this.UpdateButton = new System.Windows.Forms.Button();
             this.GroupBoxStudents_page = new System.Windows.Forms.GroupBox();
             this.DeleteButton = new System.Windows.Forms.Button();
+            this.comboBox_Promotion = new System.Windows.Forms.ComboBox();
+            this.label_promotion = new System.Windows.Forms.Label();
             this.GroupBoxStudents_page.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,7 +72,8 @@
             this.Name_Columnheader,
             this.Age_Columnheader,
             this.City_Columnheader,
-            this.Phonenumber_Columnheader});
+            this.Phonenumber_Columnheader,
+            this.Promtion_ColumnHeader1});
             this.Pupil_Listview.Location = new System.Drawing.Point(283, 12);
             this.Pupil_Listview.Name = "Pupil_Listview";
             this.Pupil_Listview.Size = new System.Drawing.Size(334, 129);
@@ -100,13 +103,16 @@
             this.Phonenumber_Columnheader.Text = "PhoneNumber";
             this.Phonenumber_Columnheader.Width = 88;
             // 
+            // Promtion_ColumnHeader1
+            // 
+            this.Promtion_ColumnHeader1.Text = "Promotion";
+            // 
             // PhoneNumber_Textbox
             // 
             this.PhoneNumber_Textbox.Location = new System.Drawing.Point(125, 120);
             this.PhoneNumber_Textbox.Name = "PhoneNumber_Textbox";
             this.PhoneNumber_Textbox.Size = new System.Drawing.Size(125, 20);
             this.PhoneNumber_Textbox.TabIndex = 32;
-            this.PhoneNumber_Textbox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.PhoneNumber_Textbox_KeyDown);
             // 
             // City_Textbox
             // 
@@ -141,56 +147,45 @@
             this.PhoneNumber_Label.AutoSize = true;
             this.PhoneNumber_Label.Location = new System.Drawing.Point(10, 127);
             this.PhoneNumber_Label.Name = "PhoneNumber_Label";
-            this.PhoneNumber_Label.Size = new System.Drawing.Size(78, 13);
+            this.PhoneNumber_Label.Size = new System.Drawing.Size(81, 13);
             this.PhoneNumber_Label.TabIndex = 27;
-            this.PhoneNumber_Label.Text = "PhoneNumber:";
+            this.PhoneNumber_Label.Text = "PhoneNumber :";
             // 
             // City_Label
             // 
             this.City_Label.AutoSize = true;
             this.City_Label.Location = new System.Drawing.Point(12, 100);
             this.City_Label.Name = "City_Label";
-            this.City_Label.Size = new System.Drawing.Size(27, 13);
+            this.City_Label.Size = new System.Drawing.Size(30, 13);
             this.City_Label.TabIndex = 26;
-            this.City_Label.Text = "City:";
+            this.City_Label.Text = "City :";
             // 
             // Age_Label
             // 
             this.Age_Label.AutoSize = true;
             this.Age_Label.Location = new System.Drawing.Point(12, 73);
             this.Age_Label.Name = "Age_Label";
-            this.Age_Label.Size = new System.Drawing.Size(29, 13);
+            this.Age_Label.Size = new System.Drawing.Size(32, 13);
             this.Age_Label.TabIndex = 25;
-            this.Age_Label.Text = "Age:";
+            this.Age_Label.Text = "Age :";
             // 
             // Name_Label
             // 
             this.Name_Label.AutoSize = true;
             this.Name_Label.Location = new System.Drawing.Point(10, 46);
             this.Name_Label.Name = "Name_Label";
-            this.Name_Label.Size = new System.Drawing.Size(38, 13);
+            this.Name_Label.Size = new System.Drawing.Size(41, 13);
             this.Name_Label.TabIndex = 24;
-            this.Name_Label.Text = "Name:";
+            this.Name_Label.Text = "Name :";
             // 
             // Firstname_Label
             // 
             this.Firstname_Label.AutoSize = true;
             this.Firstname_Label.Location = new System.Drawing.Point(10, 19);
             this.Firstname_Label.Name = "Firstname_Label";
-            this.Firstname_Label.Size = new System.Drawing.Size(55, 13);
+            this.Firstname_Label.Size = new System.Drawing.Size(58, 13);
             this.Firstname_Label.TabIndex = 23;
-            this.Firstname_Label.Text = "Firstname:";
-            // 
-            // Clear_Button
-            // 
-            this.Clear_Button.Location = new System.Drawing.Point(169, 18);
-            this.Clear_Button.Margin = new System.Windows.Forms.Padding(2);
-            this.Clear_Button.Name = "Clear_Button";
-            this.Clear_Button.Size = new System.Drawing.Size(77, 23);
-            this.Clear_Button.TabIndex = 35;
-            this.Clear_Button.Text = "Clear";
-            this.Clear_Button.UseVisualStyleBackColor = true;
-            this.Clear_Button.Click += new System.EventHandler(this.Clear_Button_Click);
+            this.Firstname_Label.Text = "Firstname :";
             // 
             // UpdateButton
             // 
@@ -209,18 +204,17 @@
             this.GroupBoxStudents_page.Controls.Add(this.DeleteButton);
             this.GroupBoxStudents_page.Controls.Add(this.Add_Button);
             this.GroupBoxStudents_page.Controls.Add(this.UpdateButton);
-            this.GroupBoxStudents_page.Controls.Add(this.Clear_Button);
-            this.GroupBoxStudents_page.Location = new System.Drawing.Point(14, 160);
+            this.GroupBoxStudents_page.Location = new System.Drawing.Point(13, 173);
             this.GroupBoxStudents_page.Margin = new System.Windows.Forms.Padding(2);
             this.GroupBoxStudents_page.Name = "GroupBoxStudents_page";
             this.GroupBoxStudents_page.Padding = new System.Windows.Forms.Padding(2);
-            this.GroupBoxStudents_page.Size = new System.Drawing.Size(349, 59);
+            this.GroupBoxStudents_page.Size = new System.Drawing.Size(259, 59);
             this.GroupBoxStudents_page.TabIndex = 37;
             this.GroupBoxStudents_page.TabStop = false;
             // 
             // DeleteButton
             // 
-            this.DeleteButton.Location = new System.Drawing.Point(251, 18);
+            this.DeleteButton.Location = new System.Drawing.Point(170, 18);
             this.DeleteButton.Name = "DeleteButton";
             this.DeleteButton.Size = new System.Drawing.Size(75, 23);
             this.DeleteButton.TabIndex = 38;
@@ -228,10 +222,31 @@
             this.DeleteButton.UseVisualStyleBackColor = true;
             this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
             // 
+            // comboBox_Promotion
+            // 
+            this.comboBox_Promotion.FormattingEnabled = true;
+            this.comboBox_Promotion.Location = new System.Drawing.Point(125, 147);
+            this.comboBox_Promotion.Name = "comboBox_Promotion";
+            this.comboBox_Promotion.Size = new System.Drawing.Size(121, 21);
+            this.comboBox_Promotion.TabIndex = 38;
+            this.comboBox_Promotion.KeyDown += new System.Windows.Forms.KeyEventHandler(this.comboBox_Promotion_KeyDown);
+            this.comboBox_Promotion.MouseClick += new System.Windows.Forms.MouseEventHandler(this.comboBox_Promotion_MouseClick);
+            // 
+            // label_promotion
+            // 
+            this.label_promotion.AutoSize = true;
+            this.label_promotion.Location = new System.Drawing.Point(10, 150);
+            this.label_promotion.Name = "label_promotion";
+            this.label_promotion.Size = new System.Drawing.Size(60, 13);
+            this.label_promotion.TabIndex = 39;
+            this.label_promotion.Text = "Promotion :";
+            // 
             // Students_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label_promotion);
+            this.Controls.Add(this.comboBox_Promotion);
             this.Controls.Add(this.GroupBoxStudents_page);
             this.Controls.Add(this.Pupil_Listview);
             this.Controls.Add(this.PhoneNumber_Textbox);
@@ -271,9 +286,11 @@
         private System.Windows.Forms.Label Age_Label;
         private System.Windows.Forms.Label Name_Label;
         private System.Windows.Forms.Label Firstname_Label;
-        private System.Windows.Forms.Button Clear_Button;
         private System.Windows.Forms.Button UpdateButton;
         private System.Windows.Forms.GroupBox GroupBoxStudents_page;
         private System.Windows.Forms.Button DeleteButton;
+        private System.Windows.Forms.ColumnHeader Promtion_ColumnHeader1;
+        private System.Windows.Forms.ComboBox comboBox_Promotion;
+        private System.Windows.Forms.Label label_promotion;
     }
 }
