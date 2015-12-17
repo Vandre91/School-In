@@ -36,13 +36,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SchoolIn));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.page_promotion = new System.Windows.Forms.TabPage();
-            this.promotion_page1 = new Base.Promotion_page();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.teacher_page1 = new Base.Teacher_page();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.students_page1 = new Base.Students_page();
             this.Classroom_page = new System.Windows.Forms.TabPage();
-            this.classroomPage1 = new Base.ClassroomPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.Promotionlist_lbl = new System.Windows.Forms.Label();
             this.Listbox_Promotion = new System.Windows.Forms.ListBox();
@@ -50,6 +46,10 @@
             this.Listbox_Teacher = new System.Windows.Forms.ListBox();
             this.calendar1 = new System.Windows.Forms.Calendar.Calendar();
             this.header1 = new Base.Header();
+            this.promotion_page1 = new Base.Promotion_page();
+            this.teacher_page1 = new Base.Teacher_page();
+            this.students_page1 = new Base.Students_page();
+            this.classroomPage1 = new Base.ClassroomPage();
             this.tabControl1.SuspendLayout();
             this.page_promotion.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -68,10 +68,10 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.Classroom_page);
             this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Location = new System.Drawing.Point(12, 89);
+            this.tabControl1.Location = new System.Drawing.Point(0, 105);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(731, 418);
+            this.tabControl1.Size = new System.Drawing.Size(755, 402);
             this.tabControl1.TabIndex = 1;
             this.tabControl1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.tabControl1_MouseClick);
             // 
@@ -81,19 +81,10 @@
             this.page_promotion.Location = new System.Drawing.Point(4, 22);
             this.page_promotion.Name = "page_promotion";
             this.page_promotion.Padding = new System.Windows.Forms.Padding(3);
-            this.page_promotion.Size = new System.Drawing.Size(723, 392);
+            this.page_promotion.Size = new System.Drawing.Size(747, 376);
             this.page_promotion.TabIndex = 0;
             this.page_promotion.Text = "Promotion";
             this.page_promotion.UseVisualStyleBackColor = true;
-            // 
-            // promotion_page1
-            // 
-            this.promotion_page1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.promotion_page1.Location = new System.Drawing.Point(3, 3);
-            this.promotion_page1.Margin = new System.Windows.Forms.Padding(4);
-            this.promotion_page1.Name = "promotion_page1";
-            this.promotion_page1.Size = new System.Drawing.Size(717, 386);
-            this.promotion_page1.TabIndex = 0;
             // 
             // tabPage2
             // 
@@ -101,19 +92,10 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(723, 392);
+            this.tabPage2.Size = new System.Drawing.Size(747, 376);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Teachers";
             this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // teacher_page1
-            // 
-            this.teacher_page1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.teacher_page1.Location = new System.Drawing.Point(3, 3);
-            this.teacher_page1.Margin = new System.Windows.Forms.Padding(4);
-            this.teacher_page1.Name = "teacher_page1";
-            this.teacher_page1.Size = new System.Drawing.Size(717, 386);
-            this.teacher_page1.TabIndex = 0;
             // 
             // tabPage1
             // 
@@ -121,19 +103,10 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(723, 392);
+            this.tabPage1.Size = new System.Drawing.Size(747, 376);
             this.tabPage1.TabIndex = 2;
             this.tabPage1.Text = "Students";
             this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // students_page1
-            // 
-            this.students_page1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.students_page1.Location = new System.Drawing.Point(3, 3);
-            this.students_page1.Margin = new System.Windows.Forms.Padding(4);
-            this.students_page1.Name = "students_page1";
-            this.students_page1.Size = new System.Drawing.Size(717, 386);
-            this.students_page1.TabIndex = 0;
             // 
             // Classroom_page
             // 
@@ -141,19 +114,10 @@
             this.Classroom_page.Location = new System.Drawing.Point(4, 22);
             this.Classroom_page.Name = "Classroom_page";
             this.Classroom_page.Padding = new System.Windows.Forms.Padding(3);
-            this.Classroom_page.Size = new System.Drawing.Size(723, 392);
+            this.Classroom_page.Size = new System.Drawing.Size(747, 376);
             this.Classroom_page.TabIndex = 3;
             this.Classroom_page.Text = "Classrooms";
             this.Classroom_page.UseVisualStyleBackColor = true;
-            // 
-            // classroomPage1
-            // 
-            this.classroomPage1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.classroomPage1.Location = new System.Drawing.Point(3, 3);
-            this.classroomPage1.Margin = new System.Windows.Forms.Padding(4);
-            this.classroomPage1.Name = "classroomPage1";
-            this.classroomPage1.Size = new System.Drawing.Size(717, 386);
-            this.classroomPage1.TabIndex = 0;
             // 
             // tabPage3
             // 
@@ -165,7 +129,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(723, 392);
+            this.tabPage3.Size = new System.Drawing.Size(747, 376);
             this.tabPage3.TabIndex = 4;
             this.tabPage3.Text = "Classroom Calendar";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -242,7 +206,7 @@
         calendarHighlightRange5};
             this.calendar1.Location = new System.Drawing.Point(6, 158);
             this.calendar1.Name = "calendar1";
-            this.calendar1.Size = new System.Drawing.Size(711, 228);
+            this.calendar1.Size = new System.Drawing.Size(735, 212);
             this.calendar1.TabIndex = 0;
             this.calendar1.Text = "calendar1";
             this.calendar1.ViewEnd = new System.DateTime(2015, 12, 18, 23, 59, 59, 0);
@@ -257,8 +221,52 @@
             this.header1.Dock = System.Windows.Forms.DockStyle.Top;
             this.header1.Location = new System.Drawing.Point(0, 0);
             this.header1.Name = "header1";
-            this.header1.Size = new System.Drawing.Size(755, 83);
+            this.header1.Size = new System.Drawing.Size(755, 99);
             this.header1.TabIndex = 2;
+            // 
+            // promotion_page1
+            // 
+            this.promotion_page1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("promotion_page1.BackgroundImage")));
+            this.promotion_page1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.promotion_page1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.promotion_page1.Location = new System.Drawing.Point(3, 3);
+            this.promotion_page1.Margin = new System.Windows.Forms.Padding(4);
+            this.promotion_page1.Name = "promotion_page1";
+            this.promotion_page1.Size = new System.Drawing.Size(741, 370);
+            this.promotion_page1.TabIndex = 0;
+            // 
+            // teacher_page1
+            // 
+            this.teacher_page1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("teacher_page1.BackgroundImage")));
+            this.teacher_page1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.teacher_page1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.teacher_page1.Location = new System.Drawing.Point(3, 3);
+            this.teacher_page1.Margin = new System.Windows.Forms.Padding(4);
+            this.teacher_page1.Name = "teacher_page1";
+            this.teacher_page1.Size = new System.Drawing.Size(741, 370);
+            this.teacher_page1.TabIndex = 0;
+            // 
+            // students_page1
+            // 
+            this.students_page1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("students_page1.BackgroundImage")));
+            this.students_page1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.students_page1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.students_page1.Location = new System.Drawing.Point(3, 3);
+            this.students_page1.Margin = new System.Windows.Forms.Padding(4);
+            this.students_page1.Name = "students_page1";
+            this.students_page1.Size = new System.Drawing.Size(741, 370);
+            this.students_page1.TabIndex = 0;
+            // 
+            // classroomPage1
+            // 
+            this.classroomPage1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("classroomPage1.BackgroundImage")));
+            this.classroomPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.classroomPage1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.classroomPage1.Location = new System.Drawing.Point(3, 3);
+            this.classroomPage1.Margin = new System.Windows.Forms.Padding(4);
+            this.classroomPage1.Name = "classroomPage1";
+            this.classroomPage1.Size = new System.Drawing.Size(741, 370);
+            this.classroomPage1.TabIndex = 0;
             // 
             // SchoolIn
             // 

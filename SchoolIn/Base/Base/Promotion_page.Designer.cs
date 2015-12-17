@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Promotion_page));
             this.textBox_name_promotion = new System.Windows.Forms.TextBox();
             this.label_promotion = new System.Windows.Forms.Label();
             this.listView_promotion = new System.Windows.Forms.ListView();
@@ -81,7 +82,7 @@
             // button_add_promotion
             // 
             this.button_add_promotion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button_add_promotion.Location = new System.Drawing.Point(12, 18);
+            this.button_add_promotion.Location = new System.Drawing.Point(6, 5);
             this.button_add_promotion.Name = "button_add_promotion";
             this.button_add_promotion.Size = new System.Drawing.Size(75, 23);
             this.button_add_promotion.TabIndex = 2;
@@ -92,7 +93,7 @@
             // UpdateButton
             // 
             this.UpdateButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.UpdateButton.Location = new System.Drawing.Point(108, 18);
+            this.UpdateButton.Location = new System.Drawing.Point(86, 5);
             this.UpdateButton.Margin = new System.Windows.Forms.Padding(2);
             this.UpdateButton.Name = "UpdateButton";
             this.UpdateButton.Size = new System.Drawing.Size(77, 23);
@@ -104,7 +105,7 @@
             // DeleteButton
             // 
             this.DeleteButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.DeleteButton.Location = new System.Drawing.Point(206, 19);
+            this.DeleteButton.Location = new System.Drawing.Point(168, 5);
             this.DeleteButton.Name = "DeleteButton";
             this.DeleteButton.Size = new System.Drawing.Size(75, 23);
             this.DeleteButton.TabIndex = 6;
@@ -115,12 +116,13 @@
             // groupBox1
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.DeleteButton);
             this.groupBox1.Controls.Add(this.button_add_promotion);
             this.groupBox1.Controls.Add(this.UpdateButton);
-            this.groupBox1.Location = new System.Drawing.Point(25, 224);
+            this.groupBox1.Location = new System.Drawing.Point(25, 242);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(304, 57);
+            this.groupBox1.Size = new System.Drawing.Size(252, 28);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             // 
@@ -172,6 +174,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);

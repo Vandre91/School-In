@@ -39,7 +39,6 @@
             // 
             // name_school
             // 
-            this.name_school.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.name_school.AutoSize = true;
             this.name_school.BackColor = System.Drawing.Color.Transparent;
             this.name_school.Font = new System.Drawing.Font("Brush Script Std", 71.99999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -52,6 +51,7 @@
             // 
             // button_load
             // 
+            this.button_load.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button_load.Font = new System.Drawing.Font("Mistral", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_load.ForeColor = System.Drawing.SystemColors.InfoText;
             this.button_load.Location = new System.Drawing.Point(31, 31);
@@ -59,19 +59,20 @@
             this.button_load.Size = new System.Drawing.Size(75, 36);
             this.button_load.TabIndex = 1;
             this.button_load.Text = "Load...";
-            this.button_load.UseVisualStyleBackColor = true;
+            this.button_load.UseVisualStyleBackColor = false;
             this.button_load.Click += new System.EventHandler(this.button_load_Click);
             // 
             // button_save
             // 
             this.button_save.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button_save.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button_save.Font = new System.Drawing.Font("Mistral", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_save.Location = new System.Drawing.Point(419, 34);
             this.button_save.Name = "button_save";
             this.button_save.Size = new System.Drawing.Size(75, 32);
             this.button_save.TabIndex = 2;
             this.button_save.Text = "Save";
-            this.button_save.UseVisualStyleBackColor = true;
+            this.button_save.UseVisualStyleBackColor = false;
             this.button_save.Click += new System.EventHandler(this.button_save_Click);
             // 
             // textBox_name
@@ -86,26 +87,28 @@
             // button_change_name
             // 
             this.button_change_name.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button_change_name.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button_change_name.Font = new System.Drawing.Font("Mistral", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_change_name.Location = new System.Drawing.Point(251, 34);
             this.button_change_name.Name = "button_change_name";
             this.button_change_name.Size = new System.Drawing.Size(47, 27);
             this.button_change_name.TabIndex = 4;
             this.button_change_name.Text = "Ok";
-            this.button_change_name.UseVisualStyleBackColor = true;
+            this.button_change_name.UseVisualStyleBackColor = false;
             this.button_change_name.Visible = false;
             this.button_change_name.Click += new System.EventHandler(this.button_change_name_Click);
             // 
             // cancel
             // 
             this.cancel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cancel.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.cancel.Font = new System.Drawing.Font("Mistral", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cancel.Location = new System.Drawing.Point(307, 33);
             this.cancel.Name = "cancel";
             this.cancel.Size = new System.Drawing.Size(76, 28);
             this.cancel.TabIndex = 5;
             this.cancel.Text = "Cancel";
-            this.cancel.UseVisualStyleBackColor = true;
+            this.cancel.UseVisualStyleBackColor = false;
             this.cancel.Visible = false;
             this.cancel.Click += new System.EventHandler(this.cancel_Click);
             // 

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Teacher_page));
             this.PhoneNumber_Textbox = new System.Windows.Forms.TextBox();
             this.City_Textbox = new System.Windows.Forms.TextBox();
             this.Age_Textbox = new System.Windows.Forms.TextBox();
@@ -134,7 +135,7 @@
             // 
             // Add_Button
             // 
-            this.Add_Button.Location = new System.Drawing.Point(12, 28);
+            this.Add_Button.Location = new System.Drawing.Point(5, 9);
             this.Add_Button.Name = "Add_Button";
             this.Add_Button.Size = new System.Drawing.Size(75, 23);
             this.Add_Button.TabIndex = 22;
@@ -186,7 +187,7 @@
             // 
             // UpdateButton
             // 
-            this.UpdateButton.Location = new System.Drawing.Point(92, 28);
+            this.UpdateButton.Location = new System.Drawing.Point(85, 9);
             this.UpdateButton.Margin = new System.Windows.Forms.Padding(2);
             this.UpdateButton.Name = "UpdateButton";
             this.UpdateButton.Size = new System.Drawing.Size(80, 23);
@@ -198,21 +199,22 @@
             // GroupBoxTeache_page
             // 
             this.GroupBoxTeache_page.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.GroupBoxTeache_page.BackColor = System.Drawing.Color.Transparent;
             this.GroupBoxTeache_page.Controls.Add(this.DeleteButton);
             this.GroupBoxTeache_page.Controls.Add(this.Add_Button);
             this.GroupBoxTeache_page.Controls.Add(this.UpdateButton);
-            this.GroupBoxTeache_page.Location = new System.Drawing.Point(23, 186);
+            this.GroupBoxTeache_page.Location = new System.Drawing.Point(23, 191);
             this.GroupBoxTeache_page.Margin = new System.Windows.Forms.Padding(2);
             this.GroupBoxTeache_page.Name = "GroupBoxTeache_page";
             this.GroupBoxTeache_page.Padding = new System.Windows.Forms.Padding(2);
-            this.GroupBoxTeache_page.Size = new System.Drawing.Size(267, 72);
+            this.GroupBoxTeache_page.Size = new System.Drawing.Size(252, 40);
             this.GroupBoxTeache_page.TabIndex = 25;
             this.GroupBoxTeache_page.TabStop = false;
             this.GroupBoxTeache_page.Enter += new System.EventHandler(this.GroupBoxTeache_page_Enter);
             // 
             // DeleteButton
             // 
-            this.DeleteButton.Location = new System.Drawing.Point(177, 28);
+            this.DeleteButton.Location = new System.Drawing.Point(170, 9);
             this.DeleteButton.Name = "DeleteButton";
             this.DeleteButton.Size = new System.Drawing.Size(75, 23);
             this.DeleteButton.TabIndex = 26;
@@ -224,6 +226,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.GroupBoxTeache_page);
             this.Controls.Add(this.Teacher_Listview);
             this.Controls.Add(this.PhoneNumber_Textbox);

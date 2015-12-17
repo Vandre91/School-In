@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ClassroomPage));
             this.Add_Button = new System.Windows.Forms.Button();
             this.Name_Textbox = new System.Windows.Forms.TextBox();
             this.NbStudent_Textbox = new System.Windows.Forms.TextBox();
@@ -44,7 +45,7 @@
             // 
             // Add_Button
             // 
-            this.Add_Button.Location = new System.Drawing.Point(5, 20);
+            this.Add_Button.Location = new System.Drawing.Point(5, 9);
             this.Add_Button.Name = "Add_Button";
             this.Add_Button.Size = new System.Drawing.Size(75, 25);
             this.Add_Button.TabIndex = 23;
@@ -112,20 +113,21 @@
             // GroupeBoxClassroom_page
             // 
             this.GroupeBoxClassroom_page.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.GroupeBoxClassroom_page.BackColor = System.Drawing.Color.Transparent;
             this.GroupeBoxClassroom_page.Controls.Add(this.DeleteButton);
             this.GroupeBoxClassroom_page.Controls.Add(this.UpdateButton);
             this.GroupeBoxClassroom_page.Controls.Add(this.Add_Button);
-            this.GroupeBoxClassroom_page.Location = new System.Drawing.Point(20, 154);
+            this.GroupeBoxClassroom_page.Location = new System.Drawing.Point(21, 179);
             this.GroupeBoxClassroom_page.Margin = new System.Windows.Forms.Padding(2);
             this.GroupeBoxClassroom_page.Name = "GroupeBoxClassroom_page";
             this.GroupeBoxClassroom_page.Padding = new System.Windows.Forms.Padding(2);
-            this.GroupeBoxClassroom_page.Size = new System.Drawing.Size(282, 65);
+            this.GroupeBoxClassroom_page.Size = new System.Drawing.Size(248, 40);
             this.GroupeBoxClassroom_page.TabIndex = 30;
             this.GroupeBoxClassroom_page.TabStop = false;
             // 
             // DeleteButton
             // 
-            this.DeleteButton.Location = new System.Drawing.Point(189, 22);
+            this.DeleteButton.Location = new System.Drawing.Point(165, 10);
             this.DeleteButton.Name = "DeleteButton";
             this.DeleteButton.Size = new System.Drawing.Size(75, 23);
             this.DeleteButton.TabIndex = 39;
@@ -135,7 +137,7 @@
             // 
             // UpdateButton
             // 
-            this.UpdateButton.Location = new System.Drawing.Point(96, 21);
+            this.UpdateButton.Location = new System.Drawing.Point(85, 10);
             this.UpdateButton.Margin = new System.Windows.Forms.Padding(2);
             this.UpdateButton.Name = "UpdateButton";
             this.UpdateButton.Size = new System.Drawing.Size(75, 24);
@@ -148,6 +150,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.GroupeBoxClassroom_page);
             this.Controls.Add(this.listView_classroom);
             this.Controls.Add(this.Name_Textbox);

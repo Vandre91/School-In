@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Students_page));
             this.Add_Button = new System.Windows.Forms.Button();
             this.Pupil_Listview = new System.Windows.Forms.ListView();
             this.Firstname_Columnheader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -56,7 +57,7 @@
             // 
             // Add_Button
             // 
-            this.Add_Button.Location = new System.Drawing.Point(5, 18);
+            this.Add_Button.Location = new System.Drawing.Point(3, 9);
             this.Add_Button.Name = "Add_Button";
             this.Add_Button.Size = new System.Drawing.Size(75, 23);
             this.Add_Button.TabIndex = 34;
@@ -189,7 +190,7 @@
             // 
             // UpdateButton
             // 
-            this.UpdateButton.Location = new System.Drawing.Point(85, 18);
+            this.UpdateButton.Location = new System.Drawing.Point(83, 9);
             this.UpdateButton.Margin = new System.Windows.Forms.Padding(2);
             this.UpdateButton.Name = "UpdateButton";
             this.UpdateButton.Size = new System.Drawing.Size(80, 23);
@@ -201,20 +202,21 @@
             // GroupBoxStudents_page
             // 
             this.GroupBoxStudents_page.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.GroupBoxStudents_page.BackColor = System.Drawing.Color.Transparent;
             this.GroupBoxStudents_page.Controls.Add(this.DeleteButton);
             this.GroupBoxStudents_page.Controls.Add(this.Add_Button);
             this.GroupBoxStudents_page.Controls.Add(this.UpdateButton);
-            this.GroupBoxStudents_page.Location = new System.Drawing.Point(13, 173);
+            this.GroupBoxStudents_page.Location = new System.Drawing.Point(13, 186);
             this.GroupBoxStudents_page.Margin = new System.Windows.Forms.Padding(2);
             this.GroupBoxStudents_page.Name = "GroupBoxStudents_page";
             this.GroupBoxStudents_page.Padding = new System.Windows.Forms.Padding(2);
-            this.GroupBoxStudents_page.Size = new System.Drawing.Size(259, 59);
+            this.GroupBoxStudents_page.Size = new System.Drawing.Size(248, 39);
             this.GroupBoxStudents_page.TabIndex = 37;
             this.GroupBoxStudents_page.TabStop = false;
             // 
             // DeleteButton
             // 
-            this.DeleteButton.Location = new System.Drawing.Point(170, 18);
+            this.DeleteButton.Location = new System.Drawing.Point(168, 9);
             this.DeleteButton.Name = "DeleteButton";
             this.DeleteButton.Size = new System.Drawing.Size(75, 23);
             this.DeleteButton.TabIndex = 38;
@@ -227,7 +229,7 @@
             this.comboBox_Promotion.FormattingEnabled = true;
             this.comboBox_Promotion.Location = new System.Drawing.Point(125, 147);
             this.comboBox_Promotion.Name = "comboBox_Promotion";
-            this.comboBox_Promotion.Size = new System.Drawing.Size(121, 21);
+            this.comboBox_Promotion.Size = new System.Drawing.Size(125, 21);
             this.comboBox_Promotion.TabIndex = 38;
             this.comboBox_Promotion.KeyDown += new System.Windows.Forms.KeyEventHandler(this.comboBox_Promotion_KeyDown);
             this.comboBox_Promotion.MouseClick += new System.Windows.Forms.MouseEventHandler(this.comboBox_Promotion_MouseClick);
@@ -245,6 +247,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.label_promotion);
             this.Controls.Add(this.comboBox_Promotion);
             this.Controls.Add(this.GroupBoxStudents_page);
