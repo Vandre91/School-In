@@ -98,22 +98,6 @@ namespace Base
             e.Effect = DragDropEffects.Copy;
         }
 
-        private void Refresh_Listbox_Promotion_Click(object sender, EventArgs e)
-        {
-            Listbox_Promotion.Items.Clear();
-            Listbox_Teacher.Items.Clear();
-
-            foreach (var p in CurrentSchool.Promotion)
-            {
-                Listbox_Promotion.Items.Add(p.Name);
-            }
-            foreach (var t in CurrentSchool.Teacher)
-            {
-                Listbox_Teacher.Items.Add(t.FirstName + " " + t.Name);
-            }
-            
-        }
-
         private void Listbox_Promotion_MouseDown(object sender, MouseEventArgs e)
         {
             Listbox_Promotion.DoDragDrop(Listbox_Promotion.Text, DragDropEffects.Copy | DragDropEffects.Move);
@@ -126,5 +110,22 @@ namespace Base
             else
                 e.Effect = DragDropEffects.None;
         }
+
+        private void tabControl1_MouseClick(object sender, MouseEventArgs e)
+        {
+            Listbox_Promotion.Items.Clear();
+            Listbox_Teacher.Items.Clear();
+
+            foreach (var p in CurrentSchool.Promotion)
+            {
+                Listbox_Promotion.Items.Add(p.Name);
+            }
+            foreach (var t in CurrentSchool.Teacher)
+            {
+                Listbox_Teacher.Items.Add(t.FirstName + " " + t.Name);
+            }
+        }
+
+        
     }
 }

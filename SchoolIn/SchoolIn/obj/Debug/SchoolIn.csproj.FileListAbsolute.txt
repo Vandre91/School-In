@@ -5,7 +5,6 @@ C:\Users\victor\Documents\School' In\SchoolIn\SchoolIn\obj\Debug\SchoolIn.dll
 C:\Users\victor\Documents\School' In\SchoolIn\SchoolIn\obj\Debug\SchoolIn.pdb
 C:\Users\victor\Documents\Schoolin\SchoolIn\SchoolIn\bin\Debug\SchoolIn.dll
 C:\Users\victor\Documents\Schoolin\SchoolIn\SchoolIn\bin\Debug\SchoolIn.pdb
-C:\Users\victor\Documents\Schoolin\SchoolIn\SchoolIn\obj\Debug\SchoolIn.csprojResolveAssemblyReference.cache
 C:\Users\victor\Documents\Schoolin\SchoolIn\SchoolIn\obj\Debug\SchoolIn.dll
 C:\Users\victor\Documents\Schoolin\SchoolIn\SchoolIn\obj\Debug\SchoolIn.pdb
 C:\Users\Ander\Documents\PIGit\SchoolIn\SchoolIn\bin\Debug\SchoolIn.dll

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Header));
             this.name_school = new System.Windows.Forms.Label();
             this.button_load = new System.Windows.Forms.Button();
             this.button_save = new System.Windows.Forms.Button();
@@ -40,16 +41,19 @@
             // 
             this.name_school.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.name_school.AutoSize = true;
-            this.name_school.Font = new System.Drawing.Font("Impact", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name_school.Location = new System.Drawing.Point(193, 27);
+            this.name_school.BackColor = System.Drawing.Color.Transparent;
+            this.name_school.Font = new System.Drawing.Font("Brush Script Std", 71.99999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.name_school.Location = new System.Drawing.Point(112, -9);
             this.name_school.Name = "name_school";
-            this.name_school.Size = new System.Drawing.Size(117, 43);
+            this.name_school.Size = new System.Drawing.Size(313, 112);
             this.name_school.TabIndex = 0;
             this.name_school.Text = "School";
             this.name_school.Click += new System.EventHandler(this.name_school_Click);
             // 
             // button_load
             // 
+            this.button_load.Font = new System.Drawing.Font("Mistral", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_load.ForeColor = System.Drawing.SystemColors.InfoText;
             this.button_load.Location = new System.Drawing.Point(31, 31);
             this.button_load.Name = "button_load";
             this.button_load.Size = new System.Drawing.Size(75, 36);
@@ -61,7 +65,8 @@
             // button_save
             // 
             this.button_save.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_save.Location = new System.Drawing.Point(419, 31);
+            this.button_save.Font = new System.Drawing.Font("Mistral", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_save.Location = new System.Drawing.Point(419, 34);
             this.button_save.Name = "button_save";
             this.button_save.Size = new System.Drawing.Size(75, 32);
             this.button_save.TabIndex = 2;
@@ -72,7 +77,7 @@
             // textBox_name
             // 
             this.textBox_name.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.textBox_name.Location = new System.Drawing.Point(202, 40);
+            this.textBox_name.Location = new System.Drawing.Point(145, 39);
             this.textBox_name.Name = "textBox_name";
             this.textBox_name.Size = new System.Drawing.Size(100, 20);
             this.textBox_name.TabIndex = 3;
@@ -81,9 +86,10 @@
             // button_change_name
             // 
             this.button_change_name.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button_change_name.Location = new System.Drawing.Point(308, 40);
+            this.button_change_name.Font = new System.Drawing.Font("Mistral", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_change_name.Location = new System.Drawing.Point(251, 34);
             this.button_change_name.Name = "button_change_name";
-            this.button_change_name.Size = new System.Drawing.Size(29, 23);
+            this.button_change_name.Size = new System.Drawing.Size(47, 27);
             this.button_change_name.TabIndex = 4;
             this.button_change_name.Text = "Ok";
             this.button_change_name.UseVisualStyleBackColor = true;
@@ -93,9 +99,10 @@
             // cancel
             // 
             this.cancel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.cancel.Location = new System.Drawing.Point(344, 39);
+            this.cancel.Font = new System.Drawing.Font("Mistral", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cancel.Location = new System.Drawing.Point(307, 33);
             this.cancel.Name = "cancel";
-            this.cancel.Size = new System.Drawing.Size(48, 28);
+            this.cancel.Size = new System.Drawing.Size(76, 28);
             this.cancel.TabIndex = 5;
             this.cancel.Text = "Cancel";
             this.cancel.UseVisualStyleBackColor = true;
@@ -106,6 +113,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.Controls.Add(this.cancel);
             this.Controls.Add(this.button_change_name);
             this.Controls.Add(this.textBox_name);
