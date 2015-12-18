@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -17,6 +18,7 @@ namespace SchoolIn
         Dictionary<string, Classroom> _listclassroom;
         Dictionary<string, Teacher> _listteacher;
         Dictionary<string, Pupil> _listpupil;
+        Dictionary<string, Course> _listcourse;
         public School(string name)
         {
             if (string.IsNullOrWhiteSpace(name))
@@ -29,6 +31,7 @@ namespace SchoolIn
             _listclassroom = new Dictionary<string, Classroom>();
             _listteacher = new Dictionary<string, Teacher>();
             _listpupil = new Dictionary<string, Pupil>();
+            _listcourse = new Dictionary<string, Course>();
         }
         public void Save(string path)
         {
@@ -38,11 +41,7 @@ namespace SchoolIn
                 formatter.Serialize(file, this);
             }
         }
-
-
-        
-
-        public static  School Load(string path)
+        public static School Load(string path)
 
         {
             BinaryFormatter formatter = new BinaryFormatter();
@@ -50,6 +49,24 @@ namespace SchoolIn
             {
                 return (School)formatter.Deserialize(file);
             }
+        }
+
+        // COURSE
+        public Course AddCourse(string name)
+        {
+            if (string.IsNullOrWhiteSpace(name))
+            {
+                throw new NullReferenceException();
+            }
+
+            if (_listcourse.ContainsKey(name))
+            {
+                throw new ArgumentException();
+            }
+
+            Course c = new Course(name, this);
+            _listcourse.Add(name, c);
+            return c;
         }
 
         //PROMOTION
@@ -234,7 +251,7 @@ namespace SchoolIn
                 throw new ArgumentException();
             }
 
-            Pupil pupil = new Pupil(name,firstname, this);
+            Pupil pupil = new Pupil(name, firstname, this);
             _listpupil.Add(name, pupil);
             return pupil;
         }
@@ -293,3 +310,4 @@ namespace SchoolIn
         }
     }
 }
+

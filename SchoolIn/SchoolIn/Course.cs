@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace SchoolIn
 {
     [Serializable]
-    class Course
+    public class Course
     {
         string _name;
         List<Promotion> _listpromotion;

@@ -38,7 +38,6 @@ C:\project\SchoolIn\Base\Base\bin\Debug\SchoolIn.dll
 C:\project\SchoolIn\Base\Base\bin\Debug\SchoolIn.pdb
 C:\project\SchoolIn\Base\Base\obj\Debug\SchoolIn.GUI.csprojResolveAssemblyReference.cache
 C:\project\SchoolIn\Base\Base\obj\Debug\Base.ClassroomPage.resources
-C:\project\SchoolIn\Base\Base\obj\Debug\Base.Main.resources
 C:\project\SchoolIn\Base\Base\obj\Debug\Base.Header.resources
 C:\project\SchoolIn\Base\Base\obj\Debug\Base.Promotion_page.resources
 C:\project\SchoolIn\Base\Base\obj\Debug\Base.Properties.Resources.resources
@@ -122,3 +121,4 @@ C:\pi\SchoolIn\Base\Base\obj\Debug\Base.Properties.Resources.resources
 C:\pi\SchoolIn\Base\Base\obj\Debug\Base.Students_page.resources
 C:\pi\SchoolIn\Base\Base\obj\Debug\Base.Teacher_page.resources
 C:\pi\SchoolIn\Base\Base\obj\Debug\SchoolIn.GUI.csproj.GenerateResource.Cache
+C:\project\SchoolIn\Base\Base\obj\Debug\Base.SchoolIn.resources
