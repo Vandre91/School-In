@@ -46,11 +46,11 @@ namespace Base
 
             }
         }
-        private void Add_ListView(string firstname, string name, string birthday, string city, string phone)
+        private void Add_ListView(string firstname, string name, string birthday, string city, string phone,string courses)
         {
-            string[] row = { firstname, name, birthday, city, phone };
+            string[] row = { firstname, name, birthday, city, phone,courses };
             ListViewItem item = new ListViewItem(row);
-            if (firstname == null || firstname == "" || name == null || name == "" || birthday == null || birthday == "" || city == null || city == "" || phone == null || phone == "")
+            if (firstname == null || firstname == "" || name == null || name == "" || birthday == null || birthday == "" || city == null || city == "" || phone == null || phone == "" || courses == null || courses == "")
             {
                 MessageBox.Show("You must complete the entire form");
             }
@@ -60,6 +60,7 @@ namespace Base
                 myteacher.Phone = phone;
                 myteacher.City = city;
                 myteacher.Birthday = birthday;
+                myteacher.CourseName = courses;
                 Teacher_Listview.Items.Add(item);
             }
         }
@@ -70,20 +71,21 @@ namespace Base
             Teacher_Listview.SelectedItems[0].SubItems[2].Text = Age_Textbox.Text;
             Teacher_Listview.SelectedItems[0].SubItems[3].Text = City_Textbox.Text;
             Teacher_Listview.SelectedItems[0].SubItems[4].Text = PhoneNumber_Textbox.Text;
+            Teacher_Listview.SelectedItems[0].SubItems[5].Text = textBox_courses.Text;
 
             Firstname_Textbox.Text = " ";
             Name_Textbox.Text = " ";
             Age_Textbox.Text = " ";
             City_Textbox.Text = " ";
             PhoneNumber_Textbox.Text = " ";
-
+            textBox_courses.Text = "";
 
         }
         private void Add_Button_Click(object sender, EventArgs e)
         {
             try
             {
-                Add_ListView(Firstname_Textbox.Text, Name_Textbox.Text, Age_Textbox.Text, City_Textbox.Text, PhoneNumber_Textbox.Text);
+                Add_ListView(Firstname_Textbox.Text, Name_Textbox.Text, Age_Textbox.Text, City_Textbox.Text, PhoneNumber_Textbox.Text, textBox_courses.Text);
             }
             catch (Exception ex)
             {
@@ -101,6 +103,7 @@ namespace Base
             Age_Textbox.Text = "";
             City_Textbox.Text = "";
             PhoneNumber_Textbox.Text = "";
+            textBox_courses.Text = "";
         }
 
         private void GroupBoxTeache_page_Enter(object sender, EventArgs e)
@@ -128,12 +131,14 @@ namespace Base
             string age = item.SubItems[2].Text;
             string city = item.SubItems[3].Text;
             string phone = item.SubItems[4].Text;
+            string courses = item.SubItems[5].Text;
 
             Firstname_Textbox.Text = firstname.ToString();
             Name_Textbox.Text = name.ToString();
             Age_Textbox.Text = age.ToString();
             City_Textbox.Text = city.ToString();
             PhoneNumber_Textbox.Text = phone.ToString();
+            textBox_courses.Text = courses.ToString();
 
 
 
@@ -147,6 +152,7 @@ namespace Base
             Age_Textbox.Text = Teacher_Listview.SelectedItems[0].SubItems[2].Text;
             City_Textbox.Text = Teacher_Listview.SelectedItems[0].SubItems[3].Text;
             PhoneNumber_Textbox.Text = Teacher_Listview.SelectedItems[0].SubItems[4].Text;
+            textBox_courses.Text = Teacher_Listview.SelectedItems[0].SubItems[5].Text;
         }
         private void Delete(string name)
         {
@@ -171,9 +177,10 @@ namespace Base
             Age_Textbox.Text = "";
             City_Textbox.Text = "";
             PhoneNumber_Textbox.Text = "";
+            textBox_courses.Text = "";
         }
 
-        private void PhoneNumber_Textbox_KeyDown(object sender, KeyEventArgs e)
+        private void textBox_courses_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {

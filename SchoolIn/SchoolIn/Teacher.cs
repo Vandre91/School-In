@@ -13,11 +13,13 @@ namespace SchoolIn
         string _firstname;
         string _city;
         string _birthday;
+        string _courses;
         string _phone;
         string _teaching;
         bool _ismissing;
         School _school;
         Promotion _promotion;
+
 
         public Teacher(string name, string firstname, School school)
         {
@@ -29,6 +31,7 @@ namespace SchoolIn
             _name = name;
             _firstname = firstname;
             _school = school;
+
         }
         public string Name
         {
@@ -40,6 +43,11 @@ namespace SchoolIn
         {
             get { return _firstname; }
             set { _firstname = value; }
+        }
+        public string CourseName
+        {
+            get { return _courses; }
+            set { _courses = value; }
         }
         public string Birthday
         {
@@ -65,6 +73,7 @@ namespace SchoolIn
             get { return _teaching; }
             set { _teaching = value; }
         }
+        
 
         public bool IsMissing
         {
