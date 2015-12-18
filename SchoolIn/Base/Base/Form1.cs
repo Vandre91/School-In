@@ -57,6 +57,8 @@ namespace Base
 
         }
 
+        //Calendar Classroom
+
         private void Listbox_Teacher_MouseDown(object sender, MouseEventArgs e)
         {
             StringBuilder builder = new StringBuilder("t");
@@ -140,30 +142,210 @@ namespace Base
                 e.Effect = DragDropEffects.None;
         }
 
+        //Refresh
+
         private void tabControl1_MouseClick(object sender, MouseEventArgs e)
         {
             Listbox_Promotion.Items.Clear();
+            comboBox_promotion.Items.Clear();
+            listBox_Promotion2.Items.Clear();
+
             Listbox_Teacher.Items.Clear();
+            listBox_Teacher2.Items.Clear();
+            comboBox_teacher.Items.Clear();
+
+            listBox_Classroom.Items.Clear();
+            comboBox_Classroom.Items.Clear();
+            listBox_Classroom2.Items.Clear();
 
             foreach (var p in CurrentSchool.Promotion)
             {
                 Listbox_Promotion.Items.Add(p.Name);
+                comboBox_promotion.Items.Add(p.Name);
+                listBox_Promotion2.Items.Add(p.Name);
             }
             foreach (var t in CurrentSchool.Teacher)
             {
                 Listbox_Teacher.Items.Add(t.FirstName + " " + t.Name);
+                listBox_Teacher2.Items.Add(t.FirstName + " " + t.Name);
+                comboBox_teacher.Items.Add(t.FirstName + " " + t.Name);
             }
-            comboBox1.Items.Clear();
-
-            foreach (var p in CurrentSchool.Classroom)
+            foreach (var c in CurrentSchool.Classroom)
             {
-                comboBox1.Items.Add(p.Name);
+                comboBox_Classroom.Items.Add(c.Name);
+                listBox_Classroom.Items.Add(c.Name);
+                listBox_Classroom2.Items.Add(c.Name);
             }
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        // Canlendar Promotion
+
+        private void listBox_Teacher2_MouseDown(object sender, MouseEventArgs e)
+        {
+            StringBuilder builder = new StringBuilder("t");
+            builder.Append(listBox_Teacher2.Text);
+
+            listBox_Teacher2.DoDragDrop(builder.ToString(), DragDropEffects.Copy | DragDropEffects.Move);
+        }
+
+        private void listBox_Classroom_MouseDown(object sender, MouseEventArgs e)
+        {
+            StringBuilder builder = new StringBuilder("c");
+            builder.Append(listBox_Classroom.Text);
+
+            listBox_Classroom.DoDragDrop(builder.ToString(), DragDropEffects.Copy | DragDropEffects.Move);
+        }
+
+        private void listBox_Teacher2_DragEnter(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.Text))
+                e.Effect = DragDropEffects.Copy;
+            else
+                e.Effect = DragDropEffects.None;
+        }
+
+        private void listBox_Classroom_DragEnter(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.Text))
+                e.Effect = DragDropEffects.Copy;
+            else
+                e.Effect = DragDropEffects.None;
+        }
+
+        private void calendar2_DragDrop(object sender, DragEventArgs e)
+        {
+            string data = e.Data.GetData(DataFormats.Text).ToString();
+            char type = data[0];
+
+            StringBuilder builder = new StringBuilder(data);
+            builder.Remove(0, 1);
+
+            calendar2.Text = builder.ToString();
+
+            Point Point = calendar2.PointToClient(new Point(e.X, e.Y));
+            Course c = _currentSchool.AddCourse(Guid.NewGuid().ToString());
+
+            if (type == 't')
+            {
+                Teacher t = _currentSchool.FindTeacher(calendar2.Text);
+                c.AddTeacher(t);
+            }
+            else
+            {
+                Classroom cl = _currentSchool.FindClassroom(calendar3.Text);
+                c.AddClassroom(cl);
+            }
+
+            CalendarItem calItem = calendar2.ItemAt(Point);
+
+            if (calItem == null)
+            {
+                ICalendarSelectableElement element = calendar2.HitTest(Point);
+
+                c.Start = element.Date;
+                c.End = element.Date.AddHours(1);
+
+                CalendarItem cal = new CalendarItem(calendar2, element.Date, element.Date.AddHours(1), calendar2.Text);
+                calendar2.Items.Add(cal);
+            }
+            else
+            {
+                string initial_content = calItem.Text;
+                string additionnal_content = calendar2.Text;
+
+                calItem.Text = initial_content + '\n' + additionnal_content;
+                calendar2.Items.Add(calItem);
+            }
+        }
+
+        private void calendar2_DragOver(object sender, DragEventArgs e)
+        {
+            e.Effect = DragDropEffects.Copy;
+        }
+
+        //Calendar Teacher
+
+        private void listBox_Classroom2_MouseDown(object sender, MouseEventArgs e)
+        {
+            StringBuilder builder = new StringBuilder("c");
+            builder.Append(listBox_Classroom2.Text);
+
+            listBox_Classroom2.DoDragDrop(builder.ToString(), DragDropEffects.Copy | DragDropEffects.Move);
+        }
+
+        private void listBox_Promotion2_MouseDown(object sender, MouseEventArgs e)
+        {
+            StringBuilder builder = new StringBuilder("p");
+            builder.Append(listBox_Promotion2.Text);
+
+            listBox_Promotion2.DoDragDrop(builder.ToString(), DragDropEffects.Copy | DragDropEffects.Move);
+        }
+
+        private void listBox_Classroom2_DragEnter(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.Text))
+                e.Effect = DragDropEffects.Copy;
+            else
+                e.Effect = DragDropEffects.None;
+        }
+
+        private void listBox_Promotion2_DragEnter(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.Text))
+                e.Effect = DragDropEffects.Copy;
+            else
+                e.Effect = DragDropEffects.None;
+        }
+
+        private void calendar3_DragDrop(object sender, DragEventArgs e)
+        {
+            string data = e.Data.GetData(DataFormats.Text).ToString();
+            char type = data[0];
+
+            StringBuilder builder = new StringBuilder(data);
+            builder.Remove(0, 1);
+
+            calendar3.Text = builder.ToString();
+
+            Point Point = calendar3.PointToClient(new Point(e.X, e.Y));
+            Course c = _currentSchool.AddCourse(Guid.NewGuid().ToString());
+
+            if (type == 'c')
+            {
+                Classroom cl = _currentSchool.FindClassroom(calendar3.Text);
+                c.AddClassroom(cl);
+            }
+            else
+            {
+                Promotion p = _currentSchool.FindPromotion(calendar3.Text);
+                c.AddPromotion(p);
+            }
+
+            CalendarItem calItem = calendar3.ItemAt(Point);
+
+            if (calItem == null)
+            {
+                ICalendarSelectableElement element = calendar3.HitTest(Point);
+
+                c.Start = element.Date;
+                c.End = element.Date.AddHours(1);
+
+                CalendarItem cal = new CalendarItem(calendar3, element.Date, element.Date.AddHours(1), calendar2.Text);
+                calendar3.Items.Add(cal);
+            }
+            else
+            {
+                string initial_content = calItem.Text;
+                string additionnal_content = calendar3.Text;
+
+                calItem.Text = initial_content + '\n' + additionnal_content;
+                calendar3.Items.Add(calItem);
+            }
         }
     }
 }
