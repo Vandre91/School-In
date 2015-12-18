@@ -124,8 +124,17 @@ namespace Base
             {
                 Listbox_Teacher.Items.Add(t.FirstName + " " + t.Name);
             }
+            comboBox1.Items.Clear();
+
+            foreach (var p in CurrentSchool.Classroom)
+            {
+                comboBox1.Items.Add(p.Name);
+            }
         }
 
-        
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

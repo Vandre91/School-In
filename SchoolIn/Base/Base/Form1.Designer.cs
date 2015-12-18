@@ -45,11 +45,15 @@
             this.Teacherlist_lbl = new System.Windows.Forms.Label();
             this.Listbox_Teacher = new System.Windows.Forms.ListBox();
             this.calendar1 = new System.Windows.Forms.Calendar.Calendar();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.header1 = new Base.Header();
             this.promotion_page1 = new Base.Promotion_page();
             this.teacher_page1 = new Base.Teacher_page();
             this.students_page1 = new Base.Students_page();
             this.classroomPage1 = new Base.ClassroomPage();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             this.page_promotion.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -68,6 +72,8 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.Classroom_page);
             this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Location = new System.Drawing.Point(0, 105);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -121,6 +127,8 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.label1);
+            this.tabPage3.Controls.Add(this.comboBox1);
             this.tabPage3.Controls.Add(this.Promotionlist_lbl);
             this.tabPage3.Controls.Add(this.Listbox_Promotion);
             this.tabPage3.Controls.Add(this.Teacherlist_lbl);
@@ -215,6 +223,24 @@
             this.calendar1.DragDrop += new System.Windows.Forms.DragEventHandler(this.calendar1_DragDrop);
             this.calendar1.DragOver += new System.Windows.Forms.DragEventHandler(this.calendar1_DragOver);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(446, 31);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 9;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(385, 34);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(55, 13);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Classroom";
+            // 
             // header1
             // 
             this.header1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("header1.BackgroundImage")));
@@ -268,6 +294,26 @@
             this.classroomPage1.Size = new System.Drawing.Size(741, 370);
             this.classroomPage1.TabIndex = 0;
             // 
+            // tabPage4
+            // 
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(747, 376);
+            this.tabPage4.TabIndex = 5;
+            this.tabPage4.Text = "Promotion Calendar";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(747, 376);
+            this.tabPage5.TabIndex = 6;
+            this.tabPage5.Text = "Teacher Calendar";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
             // SchoolIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -306,6 +352,10 @@
         private System.Windows.Forms.ListBox Listbox_Promotion;
         private System.Windows.Forms.Label Teacherlist_lbl;
         private Header header1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TabPage tabPage5;
     }
 }
 
