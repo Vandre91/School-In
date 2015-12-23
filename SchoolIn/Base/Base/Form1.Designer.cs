@@ -261,8 +261,6 @@
             this.calendar1.Size = new System.Drawing.Size(735, 212);
             this.calendar1.TabIndex = 0;
             this.calendar1.Text = "calendar1";
-            this.calendar1.ViewEnd = new System.DateTime(2015, 12, 18, 23, 59, 59, 0);
-            this.calendar1.ViewStart = new System.DateTime(2015, 12, 14, 0, 0, 0, 0);
             this.calendar1.LoadItems += new System.Windows.Forms.Calendar.Calendar.CalendarLoadEventHandler(this.calendar1_LoadItems_1);
             this.calendar1.DragDrop += new System.Windows.Forms.DragEventHandler(this.calendar1_DragDrop);
             this.calendar1.DragOver += new System.Windows.Forms.DragEventHandler(this.calendar1_DragOver);
@@ -392,8 +390,6 @@
             this.calendar2.Size = new System.Drawing.Size(735, 212);
             this.calendar2.TabIndex = 11;
             this.calendar2.Text = "calendar2";
-            this.calendar2.ViewEnd = new System.DateTime(2015, 12, 18, 23, 59, 59, 0);
-            this.calendar2.ViewStart = new System.DateTime(2015, 12, 14, 0, 0, 0, 0);
             this.calendar2.DragDrop += new System.Windows.Forms.DragEventHandler(this.calendar2_DragDrop);
             this.calendar2.DragOver += new System.Windows.Forms.DragEventHandler(this.calendar2_DragOver);
             // 
@@ -488,8 +484,6 @@
             this.calendar3.Size = new System.Drawing.Size(735, 212);
             this.calendar3.TabIndex = 11;
             this.calendar3.Text = "calendar3";
-            this.calendar3.ViewEnd = new System.DateTime(2015, 12, 18, 23, 59, 59, 0);
-            this.calendar3.ViewStart = new System.DateTime(2015, 12, 14, 0, 0, 0, 0);
             this.calendar3.DragDrop += new System.Windows.Forms.DragEventHandler(this.calendar3_DragDrop);
             // 
             // header1
