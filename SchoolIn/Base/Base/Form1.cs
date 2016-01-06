@@ -143,7 +143,7 @@ namespace Base
                     allclassroom += classroom.Name;
                 }
 
-                CalendarItem cal = new CalendarItem(calendar1, element.Date, element.Date.AddHours(1), allpromo + allteacher + allclassroom);
+                CalendarItem cal = new CalendarItem(calendar1, element.Date, element.Date.AddHours(1), allpromo + allteacher);
                 calendar1.Items.Add(cal);
             }
             //if (calItem == null)

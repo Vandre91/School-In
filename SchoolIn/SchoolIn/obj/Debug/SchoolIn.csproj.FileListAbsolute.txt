@@ -43,3 +43,8 @@ C:\pi\SchoolIn\SchoolIn\obj\Debug\SchoolIn.csprojResolveAssemblyReference.cache
 C:\pi\SchoolIn\SchoolIn\obj\Debug\SchoolIn.dll
 C:\pi\SchoolIn\SchoolIn\obj\Debug\SchoolIn.pdb
 C:\Users\victor\Documents\SchoolIn\SchoolIn\SchoolIn\obj\Debug\SchoolIn.csprojResolveAssemblyReference.cache
+C:\it3\SchoolIn\SchoolIn\bin\Debug\SchoolIn.dll
+C:\it3\SchoolIn\SchoolIn\bin\Debug\SchoolIn.pdb
+C:\it3\SchoolIn\SchoolIn\obj\Debug\SchoolIn.csprojResolveAssemblyReference.cache
+C:\it3\SchoolIn\SchoolIn\obj\Debug\SchoolIn.dll
+C:\it3\SchoolIn\SchoolIn\obj\Debug\SchoolIn.pdb
