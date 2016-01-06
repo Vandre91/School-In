@@ -16,6 +16,8 @@ namespace SchoolIn
         School _school;
         DateTime _start;
         DateTime _end;
+        int _x;
+        int _y;
 
         public Course(string name, School school)
         {
@@ -170,6 +172,33 @@ namespace SchoolIn
         {
             get { return _end; }
             set { _end = value; }
+        }
+
+        public int X
+        {
+            get { return _x; }
+            set { _x = value; }
+        }
+
+        public int Y
+        {
+            get { return _y; }
+            set { _y = value; }
+        }
+
+        public ICollection<Promotion> AllPromotion
+        {
+            get { return _listpromotion; }
+        }
+
+        public ICollection<Teacher> AllTeacher
+        {
+            get { return _listteacher; }
+        }
+
+        public ICollection<Classroom> AllClassroom
+        {
+            get { return _listclassroom; }
         }
     }
 }

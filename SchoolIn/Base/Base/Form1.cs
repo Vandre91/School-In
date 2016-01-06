@@ -85,6 +85,8 @@ namespace Base
 
         private void calendar1_DragDrop(object sender, DragEventArgs e)
         {
+            calendar1.ClearItems();
+
             string data = e.Data.GetData(DataFormats.Text).ToString();
             char type = data[0];
 
@@ -94,39 +96,74 @@ namespace Base
             calendar1.Text = builder.ToString();
 
             Point Point = calendar1.PointToClient(new Point(e.X, e.Y));
+
             Course c = _currentSchool.AddCourse(Guid.NewGuid().ToString());
+            c.X = e.X;
+            c.Y = e.Y;
+
+            Classroom myclass = CurrentSchool.FindClassroom(comboBox_Classroom.Text);
+            c.AddClassroom(myclass);
+
 
             if (type == 't')
             {
                 Teacher t = _currentSchool.FindTeacher(calendar1.Text);
                 c.AddTeacher(t);
             }
-            else
+
+            if (type == 'p')
             {
                 Promotion p = _currentSchool.FindPromotion(calendar1.Text);
                 c.AddPromotion(p);
             }
 
-            CalendarItem calItem = calendar1.ItemAt(Point);
 
-            if (calItem == null)
+
+            foreach (var mycourse in _currentSchool.Course)
             {
-                ICalendarSelectableElement element = calendar1.HitTest(Point);
+                Point position = calendar1.PointToClient(new Point(mycourse.X, mycourse.Y));
+                ICalendarSelectableElement element = calendar1.HitTest(position);
 
-                c.Start = element.Date;
-                c.End = element.Date.AddHours(1);
+                string allpromo = "";
+                string allteacher = "";
+                string allclassroom = "";
 
-                CalendarItem cal = new CalendarItem(calendar1, element.Date, element.Date.AddHours(1), calendar1.Text);
+                foreach (var promo in mycourse.AllPromotion)
+                {
+                    allpromo += promo.Name;
+                }
+
+                foreach (var teacher in mycourse.AllTeacher)
+                {
+                    allteacher += teacher.Name;
+                }
+
+                foreach (var classroom in mycourse.AllClassroom)
+                {
+                    allclassroom += classroom.Name;
+                }
+
+                CalendarItem cal = new CalendarItem(calendar1, element.Date, element.Date.AddHours(1), allpromo + allteacher + allclassroom);
                 calendar1.Items.Add(cal);
             }
-            else
-            {
-                string initial_content = calItem.Text;
-                string additionnal_content = calendar1.Text;
+            //if (calItem == null)
+            //{
+            //    ICalendarSelectableElement element = calendar1.HitTest(Point);
 
-                calItem.Text = initial_content + '\n' + additionnal_content;
-                calendar1.Items.Add(calItem);
-            }
+            //    c.Start = element.Date;
+            //    c.End = element.Date.AddHours(1);
+
+            //    CalendarItem cal = new CalendarItem(calendar1, element.Date, element.Date.AddHours(1), calendar1.Text);
+            //    calendar1.Items.Add(cal);
+            //}
+            //else
+            //{
+            //    string initial_content = calItem.Text;
+            //    string additionnal_content = calendar1.Text;
+
+            //    calItem.Text = initial_content + '\n' + additionnal_content;
+            //    calendar1.Items.Add(calItem);
+            //}
         }
 
         private void calendar1_DragOver(object sender, DragEventArgs e)
@@ -166,15 +203,46 @@ namespace Base
             }
             foreach (var t in CurrentSchool.Teacher)
             {
-                Listbox_Teacher.Items.Add(t.FirstName + " " + t.Name);
-                listBox_Teacher2.Items.Add(t.FirstName + " " + t.Name);
-                comboBox_teacher.Items.Add(t.FirstName + " " + t.Name);
+                Listbox_Teacher.Items.Add( t.Name);
+                listBox_Teacher2.Items.Add(t.Name);
+                comboBox_teacher.Items.Add(t.Name);
             }
             foreach (var c in CurrentSchool.Classroom)
             {
                 comboBox_Classroom.Items.Add(c.Name);
                 listBox_Classroom.Items.Add(c.Name);
                 listBox_Classroom2.Items.Add(c.Name);
+            }
+
+            calendar1.ClearItems();
+
+            foreach (var mycourse in _currentSchool.Course.Where((Course datCourse) =>
+            { return datCourse.AllClassroom.Any((Classroom datClassroom) => { return datClassroom.Name == comboBox_Classroom.Text; }); }))
+            {
+                Point position = calendar1.PointToClient(new Point(mycourse.X, mycourse.Y));
+                ICalendarSelectableElement element = calendar1.HitTest(position);
+
+                string allpromo = "";
+                string allteacher = "";
+                string allclassroom = "";
+
+                foreach (var promo in mycourse.AllPromotion)
+                {
+                    allpromo += promo.Name;
+                }
+
+                foreach (var teacher in mycourse.AllTeacher)
+                {
+                    allteacher += teacher.Name;
+                }
+
+                foreach (var classroom in mycourse.AllClassroom)
+                {
+                    allclassroom += classroom.Name;
+                }
+
+                CalendarItem cal = new CalendarItem(calendar1, element.Date, element.Date.AddHours(1), allpromo + allteacher);
+                calendar1.Items.Add(cal);
             }
         }
 

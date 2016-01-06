@@ -308,6 +308,10 @@ namespace SchoolIn
         {
             return _listpromotion.Count();
         }
+        public ICollection<Course> Course
+        {
+            get { return _listcourse.Values; }
+        }
     }
 }
 
