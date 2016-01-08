@@ -58,7 +58,6 @@
             this.Listbox_Teacher = new System.Windows.Forms.ListBox();
             this.calendar1 = new System.Windows.Forms.Calendar.Calendar();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
             this.label2 = new System.Windows.Forms.Label();
             this.comboBox_promotion = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -66,6 +65,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.listBox_Teacher2 = new System.Windows.Forms.ListBox();
             this.calendar2 = new System.Windows.Forms.Calendar.Calendar();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
             this.label5 = new System.Windows.Forms.Label();
             this.comboBox_teacher = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -184,7 +184,7 @@
             this.comboBox_Classroom.Name = "comboBox_Classroom";
             this.comboBox_Classroom.Size = new System.Drawing.Size(121, 21);
             this.comboBox_Classroom.TabIndex = 9;
-            this.comboBox_Classroom.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.comboBox_Classroom.SelectedValueChanged += new System.EventHandler(this.comboBox_Classroom_SelectedValueChanged);
             // 
             // Promotionlist_lbl
             // 
@@ -224,7 +224,6 @@
             this.Listbox_Teacher.Name = "Listbox_Teacher";
             this.Listbox_Teacher.Size = new System.Drawing.Size(127, 95);
             this.Listbox_Teacher.TabIndex = 1;
-            this.Listbox_Teacher.SelectedIndexChanged += new System.EventHandler(this.Listbox_Teacher_SelectedIndexChanged);
             this.Listbox_Teacher.DragEnter += new System.Windows.Forms.DragEventHandler(this.Listbox_Teacher_DragEnter);
             this.Listbox_Teacher.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Listbox_Teacher_MouseDown);
             // 
@@ -234,7 +233,7 @@
             this.calendar1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.calendar1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.calendar1.Font = new System.Drawing.Font("Segoe UI", 11.25F);
             calendarHighlightRange1.DayOfWeek = System.DayOfWeek.Monday;
             calendarHighlightRange1.EndTime = System.TimeSpan.Parse("17:00:00");
             calendarHighlightRange1.StartTime = System.TimeSpan.Parse("08:00:00");
@@ -261,7 +260,8 @@
             this.calendar1.Size = new System.Drawing.Size(735, 212);
             this.calendar1.TabIndex = 0;
             this.calendar1.Text = "calendar1";
-            this.calendar1.LoadItems += new System.Windows.Forms.Calendar.Calendar.CalendarLoadEventHandler(this.calendar1_LoadItems_1);
+            this.calendar1.ViewEnd = new System.DateTime(2016, 1, 10, 23, 59, 59, 0);
+            this.calendar1.ViewStart = new System.DateTime(2016, 1, 8, 0, 0, 0, 0);
             this.calendar1.DragDrop += new System.Windows.Forms.DragEventHandler(this.calendar1_DragDrop);
             this.calendar1.DragOver += new System.Windows.Forms.DragEventHandler(this.calendar1_DragOver);
             // 
@@ -282,23 +282,6 @@
             this.tabPage4.Text = "Promotion Calendar";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // tabPage5
-            // 
-            this.tabPage5.Controls.Add(this.label5);
-            this.tabPage5.Controls.Add(this.comboBox_teacher);
-            this.tabPage5.Controls.Add(this.label6);
-            this.tabPage5.Controls.Add(this.listBox_Promotion2);
-            this.tabPage5.Controls.Add(this.label7);
-            this.tabPage5.Controls.Add(this.listBox_Classroom2);
-            this.tabPage5.Controls.Add(this.calendar3);
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(747, 376);
-            this.tabPage5.TabIndex = 6;
-            this.tabPage5.Text = "Teacher Calendar";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -315,6 +298,8 @@
             this.comboBox_promotion.Name = "comboBox_promotion";
             this.comboBox_promotion.Size = new System.Drawing.Size(121, 21);
             this.comboBox_promotion.TabIndex = 16;
+            this.comboBox_promotion.SelectedValueChanged += new System.EventHandler(this.comboBox_promotion_SelectedValueChanged);
+            this.comboBox_promotion.MouseClick += new System.Windows.Forms.MouseEventHandler(this.comboBox_promotion_MouseClick);
             // 
             // label3
             // 
@@ -363,7 +348,7 @@
             this.calendar2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.calendar2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.calendar2.Font = new System.Drawing.Font("Segoe UI", 11.25F);
             calendarHighlightRange6.DayOfWeek = System.DayOfWeek.Monday;
             calendarHighlightRange6.EndTime = System.TimeSpan.Parse("17:00:00");
             calendarHighlightRange6.StartTime = System.TimeSpan.Parse("08:00:00");
@@ -390,8 +375,27 @@
             this.calendar2.Size = new System.Drawing.Size(735, 212);
             this.calendar2.TabIndex = 11;
             this.calendar2.Text = "calendar2";
+            this.calendar2.ViewEnd = new System.DateTime(2016, 1, 10, 23, 59, 59, 0);
+            this.calendar2.ViewStart = new System.DateTime(2016, 1, 8, 0, 0, 0, 0);
             this.calendar2.DragDrop += new System.Windows.Forms.DragEventHandler(this.calendar2_DragDrop);
             this.calendar2.DragOver += new System.Windows.Forms.DragEventHandler(this.calendar2_DragOver);
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.label5);
+            this.tabPage5.Controls.Add(this.comboBox_teacher);
+            this.tabPage5.Controls.Add(this.label6);
+            this.tabPage5.Controls.Add(this.listBox_Promotion2);
+            this.tabPage5.Controls.Add(this.label7);
+            this.tabPage5.Controls.Add(this.listBox_Classroom2);
+            this.tabPage5.Controls.Add(this.calendar3);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(747, 376);
+            this.tabPage5.TabIndex = 6;
+            this.tabPage5.Text = "Teacher Calendar";
+            this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // label5
             // 
@@ -457,7 +461,7 @@
             this.calendar3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.calendar3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.calendar3.Font = new System.Drawing.Font("Segoe UI", 11.25F);
             calendarHighlightRange11.DayOfWeek = System.DayOfWeek.Monday;
             calendarHighlightRange11.EndTime = System.TimeSpan.Parse("17:00:00");
             calendarHighlightRange11.StartTime = System.TimeSpan.Parse("08:00:00");
@@ -484,6 +488,8 @@
             this.calendar3.Size = new System.Drawing.Size(735, 212);
             this.calendar3.TabIndex = 11;
             this.calendar3.Text = "calendar3";
+            this.calendar3.ViewEnd = new System.DateTime(2016, 1, 10, 23, 59, 59, 0);
+            this.calendar3.ViewStart = new System.DateTime(2016, 1, 8, 0, 0, 0, 0);
             this.calendar3.DragDrop += new System.Windows.Forms.DragEventHandler(this.calendar3_DragDrop);
             // 
             // header1
