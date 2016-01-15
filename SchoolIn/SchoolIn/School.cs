@@ -20,6 +20,7 @@ namespace SchoolIn
         Dictionary<string, Pupil> _listpupil;
         Dictionary<string, Course> _listcourse;
         Dictionary<string, CoursePromotion> _listcoursepromotion;
+        Dictionary<string, CourseTeacher> _listcourseteacher;
         public School(string name)
         {
             if (string.IsNullOrWhiteSpace(name))
@@ -34,6 +35,7 @@ namespace SchoolIn
             _listpupil = new Dictionary<string, Pupil>();
             _listcourse = new Dictionary<string, Course>();
             _listcoursepromotion = new Dictionary<string, CoursePromotion>();
+            _listcourseteacher = new Dictionary<string, CourseTeacher>();
         }
         public void Save(string path)
         {
@@ -86,6 +88,23 @@ namespace SchoolIn
             CoursePromotion cpromo = new CoursePromotion(name, this);
             _listcoursepromotion.Add(name, cpromo);
             return cpromo;
+        }
+
+        public CourseTeacher AddCourseTeacher(string name)
+        {
+            if (string.IsNullOrWhiteSpace(name))
+            {
+                throw new NullReferenceException();
+            }
+
+            if (_listcourseteacher.ContainsKey(name))
+            {
+                throw new ArgumentException();
+            }
+
+            CourseTeacher cteacher = new CourseTeacher(name, this);
+            _listcourseteacher.Add(name, cteacher);
+            return cteacher;
         }
         //PROMOTION
 
@@ -334,6 +353,11 @@ namespace SchoolIn
         public ICollection<CoursePromotion> CoursePromotion
         {
             get { return _listcoursepromotion.Values; }
+        }
+
+        public ICollection<CourseTeacher> CourseTeacher
+        {
+            get { return _listcourseteacher.Values; }
         }
     }
 }
