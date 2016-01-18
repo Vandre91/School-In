@@ -519,10 +519,19 @@ namespace Base
 
         private void buttonMore_Click(object sender, EventArgs e)
         {
-            //this.calendar1.ViewEnd = new System.DateTime(2016, 1,21, 23, 59, 59, 0);
-            ////int day = this.calendar1.Days.Date.Day;
+            
             int t = this.calendar1.ViewEnd.Day;
             t++;
+            if (t <= 1)
+            {
+                MessageBox.Show("You can not make this");
+                t = 1;
+            }
+            else if (t >= 31)
+            {
+                MessageBox.Show("You can not make this");
+                t = 31;
+            }
             this.calendar1.ViewEnd = new System.DateTime(2016, 1, t, 23, 59, 59, 0);
 
 
@@ -532,6 +541,16 @@ namespace Base
         {
             int t = this.calendar1.ViewStart.Day;
             t--;
+            if (t <= 1)
+            {
+                MessageBox.Show("You can not make this");
+                t = 1;
+            }
+            else if(t >= 31)
+            {
+                MessageBox.Show("You can not make this");
+                t = 31;
+            }
             this.calendar1.ViewStart = new System.DateTime(2016, 1, t, 0, 0, 0, 0);
         }
 
@@ -539,6 +558,16 @@ namespace Base
         {
             int t = this.calendar2.ViewStart.Day;
             t--;
+            if (t <= 1)
+            {
+                MessageBox.Show("You can not make this");
+                t = 1;
+            }
+            else if (t >= 31)
+            {
+                MessageBox.Show("You can not make this");
+                t = 31;
+            }
             this.calendar2.ViewStart = new System.DateTime(2016, 1, t, 0, 0, 0, 0);
         }
 
@@ -546,6 +575,17 @@ namespace Base
         {
             int t = this.calendar2.ViewEnd.Day;
             t++;
+            if (t <= 1)
+            {
+                MessageBox.Show("You can not make this");
+                t = 1;
+            }
+            else if (t >= 31)
+            {
+                MessageBox.Show("You can not make this");
+                t = 31;
+            }
+            
             this.calendar2.ViewEnd = new System.DateTime(2016, 1, t, 23, 59, 59, 0);
         }
 
@@ -553,6 +593,17 @@ namespace Base
         {
             int t = this.calendar3.ViewStart.Day;
             t--;
+            if (t <= 1)
+            {
+                MessageBox.Show("You can not make this");
+                t = 1;
+            }
+            else if (t >= 31)
+            {
+                MessageBox.Show("You can not make this");
+                t = 31;
+            }
+            
             this.calendar3.ViewStart = new System.DateTime(2016, 1, t, 0, 0, 0, 0);
         }
 
@@ -560,7 +611,20 @@ namespace Base
         {
             int t = this.calendar3.ViewEnd.Day;
             t++;
+            if (t <= 1)
+            {
+                MessageBox.Show("You can not make this");
+                t = 1;
+            }
+            else if (t >= 31)
+            {
+                MessageBox.Show("You can not make this");
+                t = 31;
+            }
+            
             this.calendar3.ViewEnd = new System.DateTime(2016, 1, t, 23, 59, 59, 0);
         }
+
+        
     }
 }

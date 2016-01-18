@@ -28,28 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.Calendar.CalendarHighlightRange calendarHighlightRange21 = new System.Windows.Forms.Calendar.CalendarHighlightRange();
-            System.Windows.Forms.Calendar.CalendarHighlightRange calendarHighlightRange22 = new System.Windows.Forms.Calendar.CalendarHighlightRange();
-            System.Windows.Forms.Calendar.CalendarHighlightRange calendarHighlightRange23 = new System.Windows.Forms.Calendar.CalendarHighlightRange();
-            System.Windows.Forms.Calendar.CalendarHighlightRange calendarHighlightRange24 = new System.Windows.Forms.Calendar.CalendarHighlightRange();
-            System.Windows.Forms.Calendar.CalendarHighlightRange calendarHighlightRange25 = new System.Windows.Forms.Calendar.CalendarHighlightRange();
-            System.Windows.Forms.Calendar.CalendarHighlightRange calendarHighlightRange26 = new System.Windows.Forms.Calendar.CalendarHighlightRange();
-            System.Windows.Forms.Calendar.CalendarHighlightRange calendarHighlightRange27 = new System.Windows.Forms.Calendar.CalendarHighlightRange();
-            System.Windows.Forms.Calendar.CalendarHighlightRange calendarHighlightRange28 = new System.Windows.Forms.Calendar.CalendarHighlightRange();
-            System.Windows.Forms.Calendar.CalendarHighlightRange calendarHighlightRange29 = new System.Windows.Forms.Calendar.CalendarHighlightRange();
-            System.Windows.Forms.Calendar.CalendarHighlightRange calendarHighlightRange30 = new System.Windows.Forms.Calendar.CalendarHighlightRange();
-            System.Windows.Forms.Calendar.CalendarHighlightRange calendarHighlightRange16 = new System.Windows.Forms.Calendar.CalendarHighlightRange();
-            System.Windows.Forms.Calendar.CalendarHighlightRange calendarHighlightRange17 = new System.Windows.Forms.Calendar.CalendarHighlightRange();
-            System.Windows.Forms.Calendar.CalendarHighlightRange calendarHighlightRange18 = new System.Windows.Forms.Calendar.CalendarHighlightRange();
-            System.Windows.Forms.Calendar.CalendarHighlightRange calendarHighlightRange19 = new System.Windows.Forms.Calendar.CalendarHighlightRange();
-            System.Windows.Forms.Calendar.CalendarHighlightRange calendarHighlightRange20 = new System.Windows.Forms.Calendar.CalendarHighlightRange();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SchoolIn));
+            System.Windows.Forms.Calendar.CalendarHighlightRange calendarHighlightRange1 = new System.Windows.Forms.Calendar.CalendarHighlightRange();
+            System.Windows.Forms.Calendar.CalendarHighlightRange calendarHighlightRange2 = new System.Windows.Forms.Calendar.CalendarHighlightRange();
+            System.Windows.Forms.Calendar.CalendarHighlightRange calendarHighlightRange3 = new System.Windows.Forms.Calendar.CalendarHighlightRange();
+            System.Windows.Forms.Calendar.CalendarHighlightRange calendarHighlightRange4 = new System.Windows.Forms.Calendar.CalendarHighlightRange();
+            System.Windows.Forms.Calendar.CalendarHighlightRange calendarHighlightRange5 = new System.Windows.Forms.Calendar.CalendarHighlightRange();
+            System.Windows.Forms.Calendar.CalendarHighlightRange calendarHighlightRange6 = new System.Windows.Forms.Calendar.CalendarHighlightRange();
+            System.Windows.Forms.Calendar.CalendarHighlightRange calendarHighlightRange7 = new System.Windows.Forms.Calendar.CalendarHighlightRange();
+            System.Windows.Forms.Calendar.CalendarHighlightRange calendarHighlightRange8 = new System.Windows.Forms.Calendar.CalendarHighlightRange();
+            System.Windows.Forms.Calendar.CalendarHighlightRange calendarHighlightRange9 = new System.Windows.Forms.Calendar.CalendarHighlightRange();
+            System.Windows.Forms.Calendar.CalendarHighlightRange calendarHighlightRange10 = new System.Windows.Forms.Calendar.CalendarHighlightRange();
+            System.Windows.Forms.Calendar.CalendarHighlightRange calendarHighlightRange11 = new System.Windows.Forms.Calendar.CalendarHighlightRange();
+            System.Windows.Forms.Calendar.CalendarHighlightRange calendarHighlightRange12 = new System.Windows.Forms.Calendar.CalendarHighlightRange();
+            System.Windows.Forms.Calendar.CalendarHighlightRange calendarHighlightRange13 = new System.Windows.Forms.Calendar.CalendarHighlightRange();
+            System.Windows.Forms.Calendar.CalendarHighlightRange calendarHighlightRange14 = new System.Windows.Forms.Calendar.CalendarHighlightRange();
+            System.Windows.Forms.Calendar.CalendarHighlightRange calendarHighlightRange15 = new System.Windows.Forms.Calendar.CalendarHighlightRange();
             this.tabControl_Classroom = new System.Windows.Forms.TabControl();
             this.page_promotion = new System.Windows.Forms.TabPage();
+            this.promotion_page1 = new Base.Promotion_page();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.teacher_page1 = new Base.Teacher_page();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.students_page1 = new Base.Students_page();
             this.Classroom_page = new System.Windows.Forms.TabPage();
+            this.classroomPage1 = new Base.ClassroomPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.labelDay = new System.Windows.Forms.Label();
+            this.buttonCourt = new System.Windows.Forms.Button();
+            this.buttonMore = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox_Classroom = new System.Windows.Forms.ComboBox();
             this.Promotionlist_lbl = new System.Windows.Forms.Label();
@@ -58,6 +65,9 @@
             this.Listbox_Teacher = new System.Windows.Forms.ListBox();
             this.calendar1 = new System.Windows.Forms.Calendar.Calendar();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.labelDay1 = new System.Windows.Forms.Label();
+            this.buttonCourt1 = new System.Windows.Forms.Button();
+            this.buttonMore1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.comboBox_promotion = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -66,6 +76,9 @@
             this.listBox_Teacher2 = new System.Windows.Forms.ListBox();
             this.calendar2 = new System.Windows.Forms.Calendar.Calendar();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.labelDay2 = new System.Windows.Forms.Label();
+            this.buttonCourt2 = new System.Windows.Forms.Button();
+            this.buttonMore2 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.comboBox_teacher = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -73,20 +86,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.listBox_Classroom2 = new System.Windows.Forms.ListBox();
             this.calendar3 = new System.Windows.Forms.Calendar.Calendar();
-            this.buttonMore = new System.Windows.Forms.Button();
-            this.buttonCourt = new System.Windows.Forms.Button();
-            this.labelDay = new System.Windows.Forms.Label();
             this.header1 = new Base.Header();
-            this.promotion_page1 = new Base.Promotion_page();
-            this.teacher_page1 = new Base.Teacher_page();
-            this.students_page1 = new Base.Students_page();
-            this.classroomPage1 = new Base.ClassroomPage();
-            this.labelDay1 = new System.Windows.Forms.Label();
-            this.buttonCourt1 = new System.Windows.Forms.Button();
-            this.buttonMore1 = new System.Windows.Forms.Button();
-            this.labelDay2 = new System.Windows.Forms.Label();
-            this.buttonCourt2 = new System.Windows.Forms.Button();
-            this.buttonMore2 = new System.Windows.Forms.Button();
             this.tabControl_Classroom.SuspendLayout();
             this.page_promotion.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -127,6 +127,17 @@
             this.page_promotion.Text = "Promotion";
             this.page_promotion.UseVisualStyleBackColor = true;
             // 
+            // promotion_page1
+            // 
+            this.promotion_page1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("promotion_page1.BackgroundImage")));
+            this.promotion_page1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.promotion_page1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.promotion_page1.Location = new System.Drawing.Point(3, 3);
+            this.promotion_page1.Margin = new System.Windows.Forms.Padding(4);
+            this.promotion_page1.Name = "promotion_page1";
+            this.promotion_page1.Size = new System.Drawing.Size(741, 370);
+            this.promotion_page1.TabIndex = 0;
+            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.teacher_page1);
@@ -137,6 +148,17 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Teachers";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // teacher_page1
+            // 
+            this.teacher_page1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("teacher_page1.BackgroundImage")));
+            this.teacher_page1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.teacher_page1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.teacher_page1.Location = new System.Drawing.Point(3, 3);
+            this.teacher_page1.Margin = new System.Windows.Forms.Padding(4);
+            this.teacher_page1.Name = "teacher_page1";
+            this.teacher_page1.Size = new System.Drawing.Size(741, 370);
+            this.teacher_page1.TabIndex = 0;
             // 
             // tabPage1
             // 
@@ -149,6 +171,17 @@
             this.tabPage1.Text = "Students";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // students_page1
+            // 
+            this.students_page1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("students_page1.BackgroundImage")));
+            this.students_page1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.students_page1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.students_page1.Location = new System.Drawing.Point(3, 3);
+            this.students_page1.Margin = new System.Windows.Forms.Padding(4);
+            this.students_page1.Name = "students_page1";
+            this.students_page1.Size = new System.Drawing.Size(741, 370);
+            this.students_page1.TabIndex = 0;
+            // 
             // Classroom_page
             // 
             this.Classroom_page.Controls.Add(this.classroomPage1);
@@ -159,6 +192,17 @@
             this.Classroom_page.TabIndex = 3;
             this.Classroom_page.Text = "Classrooms";
             this.Classroom_page.UseVisualStyleBackColor = true;
+            // 
+            // classroomPage1
+            // 
+            this.classroomPage1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("classroomPage1.BackgroundImage")));
+            this.classroomPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.classroomPage1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.classroomPage1.Location = new System.Drawing.Point(3, 3);
+            this.classroomPage1.Margin = new System.Windows.Forms.Padding(4);
+            this.classroomPage1.Name = "classroomPage1";
+            this.classroomPage1.Size = new System.Drawing.Size(741, 370);
+            this.classroomPage1.TabIndex = 0;
             // 
             // tabPage3
             // 
@@ -179,6 +223,35 @@
             this.tabPage3.TabIndex = 4;
             this.tabPage3.Text = "Classroom Calendar";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // labelDay
+            // 
+            this.labelDay.AutoSize = true;
+            this.labelDay.Location = new System.Drawing.Point(385, 48);
+            this.labelDay.Name = "labelDay";
+            this.labelDay.Size = new System.Drawing.Size(32, 13);
+            this.labelDay.TabIndex = 13;
+            this.labelDay.Text = "Day :";
+            // 
+            // buttonCourt
+            // 
+            this.buttonCourt.Location = new System.Drawing.Point(452, 48);
+            this.buttonCourt.Name = "buttonCourt";
+            this.buttonCourt.Size = new System.Drawing.Size(36, 23);
+            this.buttonCourt.TabIndex = 12;
+            this.buttonCourt.Text = "-";
+            this.buttonCourt.UseVisualStyleBackColor = true;
+            this.buttonCourt.Click += new System.EventHandler(this.buttonCourt_Click);
+            // 
+            // buttonMore
+            // 
+            this.buttonMore.Location = new System.Drawing.Point(494, 48);
+            this.buttonMore.Name = "buttonMore";
+            this.buttonMore.Size = new System.Drawing.Size(38, 23);
+            this.buttonMore.TabIndex = 11;
+            this.buttonMore.Text = "+";
+            this.buttonMore.UseVisualStyleBackColor = true;
+            this.buttonMore.Click += new System.EventHandler(this.buttonMore_Click);
             // 
             // label1
             // 
@@ -246,27 +319,27 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.calendar1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            calendarHighlightRange21.DayOfWeek = System.DayOfWeek.Monday;
-            calendarHighlightRange21.EndTime = System.TimeSpan.Parse("17:00:00");
-            calendarHighlightRange21.StartTime = System.TimeSpan.Parse("08:00:00");
-            calendarHighlightRange22.DayOfWeek = System.DayOfWeek.Tuesday;
-            calendarHighlightRange22.EndTime = System.TimeSpan.Parse("17:00:00");
-            calendarHighlightRange22.StartTime = System.TimeSpan.Parse("08:00:00");
-            calendarHighlightRange23.DayOfWeek = System.DayOfWeek.Wednesday;
-            calendarHighlightRange23.EndTime = System.TimeSpan.Parse("17:00:00");
-            calendarHighlightRange23.StartTime = System.TimeSpan.Parse("08:00:00");
-            calendarHighlightRange24.DayOfWeek = System.DayOfWeek.Thursday;
-            calendarHighlightRange24.EndTime = System.TimeSpan.Parse("17:00:00");
-            calendarHighlightRange24.StartTime = System.TimeSpan.Parse("08:00:00");
-            calendarHighlightRange25.DayOfWeek = System.DayOfWeek.Friday;
-            calendarHighlightRange25.EndTime = System.TimeSpan.Parse("17:00:00");
-            calendarHighlightRange25.StartTime = System.TimeSpan.Parse("08:00:00");
+            calendarHighlightRange1.DayOfWeek = System.DayOfWeek.Monday;
+            calendarHighlightRange1.EndTime = System.TimeSpan.Parse("17:00:00");
+            calendarHighlightRange1.StartTime = System.TimeSpan.Parse("08:00:00");
+            calendarHighlightRange2.DayOfWeek = System.DayOfWeek.Tuesday;
+            calendarHighlightRange2.EndTime = System.TimeSpan.Parse("17:00:00");
+            calendarHighlightRange2.StartTime = System.TimeSpan.Parse("08:00:00");
+            calendarHighlightRange3.DayOfWeek = System.DayOfWeek.Wednesday;
+            calendarHighlightRange3.EndTime = System.TimeSpan.Parse("17:00:00");
+            calendarHighlightRange3.StartTime = System.TimeSpan.Parse("08:00:00");
+            calendarHighlightRange4.DayOfWeek = System.DayOfWeek.Thursday;
+            calendarHighlightRange4.EndTime = System.TimeSpan.Parse("17:00:00");
+            calendarHighlightRange4.StartTime = System.TimeSpan.Parse("08:00:00");
+            calendarHighlightRange5.DayOfWeek = System.DayOfWeek.Friday;
+            calendarHighlightRange5.EndTime = System.TimeSpan.Parse("17:00:00");
+            calendarHighlightRange5.StartTime = System.TimeSpan.Parse("08:00:00");
             this.calendar1.HighlightRanges = new System.Windows.Forms.Calendar.CalendarHighlightRange[] {
-        calendarHighlightRange21,
-        calendarHighlightRange22,
-        calendarHighlightRange23,
-        calendarHighlightRange24,
-        calendarHighlightRange25};
+        calendarHighlightRange1,
+        calendarHighlightRange2,
+        calendarHighlightRange3,
+        calendarHighlightRange4,
+        calendarHighlightRange5};
             this.calendar1.Location = new System.Drawing.Point(6, 158);
             this.calendar1.Name = "calendar1";
             this.calendar1.Size = new System.Drawing.Size(735, 212);
@@ -296,6 +369,35 @@
             this.tabPage4.TabIndex = 5;
             this.tabPage4.Text = "Promotion Calendar";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // labelDay1
+            // 
+            this.labelDay1.AutoSize = true;
+            this.labelDay1.Location = new System.Drawing.Point(385, 56);
+            this.labelDay1.Name = "labelDay1";
+            this.labelDay1.Size = new System.Drawing.Size(32, 13);
+            this.labelDay1.TabIndex = 20;
+            this.labelDay1.Text = "Day :";
+            // 
+            // buttonCourt1
+            // 
+            this.buttonCourt1.Location = new System.Drawing.Point(452, 56);
+            this.buttonCourt1.Name = "buttonCourt1";
+            this.buttonCourt1.Size = new System.Drawing.Size(36, 23);
+            this.buttonCourt1.TabIndex = 19;
+            this.buttonCourt1.Text = "-";
+            this.buttonCourt1.UseVisualStyleBackColor = true;
+            this.buttonCourt1.Click += new System.EventHandler(this.buttonCourt1_Click);
+            // 
+            // buttonMore1
+            // 
+            this.buttonMore1.Location = new System.Drawing.Point(494, 56);
+            this.buttonMore1.Name = "buttonMore1";
+            this.buttonMore1.Size = new System.Drawing.Size(38, 23);
+            this.buttonMore1.TabIndex = 18;
+            this.buttonMore1.Text = "+";
+            this.buttonMore1.UseVisualStyleBackColor = true;
+            this.buttonMore1.Click += new System.EventHandler(this.buttonMore1_Click);
             // 
             // label2
             // 
@@ -364,27 +466,27 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.calendar2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            calendarHighlightRange26.DayOfWeek = System.DayOfWeek.Monday;
-            calendarHighlightRange26.EndTime = System.TimeSpan.Parse("17:00:00");
-            calendarHighlightRange26.StartTime = System.TimeSpan.Parse("08:00:00");
-            calendarHighlightRange27.DayOfWeek = System.DayOfWeek.Tuesday;
-            calendarHighlightRange27.EndTime = System.TimeSpan.Parse("17:00:00");
-            calendarHighlightRange27.StartTime = System.TimeSpan.Parse("08:00:00");
-            calendarHighlightRange28.DayOfWeek = System.DayOfWeek.Wednesday;
-            calendarHighlightRange28.EndTime = System.TimeSpan.Parse("17:00:00");
-            calendarHighlightRange28.StartTime = System.TimeSpan.Parse("08:00:00");
-            calendarHighlightRange29.DayOfWeek = System.DayOfWeek.Thursday;
-            calendarHighlightRange29.EndTime = System.TimeSpan.Parse("17:00:00");
-            calendarHighlightRange29.StartTime = System.TimeSpan.Parse("08:00:00");
-            calendarHighlightRange30.DayOfWeek = System.DayOfWeek.Friday;
-            calendarHighlightRange30.EndTime = System.TimeSpan.Parse("17:00:00");
-            calendarHighlightRange30.StartTime = System.TimeSpan.Parse("08:00:00");
+            calendarHighlightRange6.DayOfWeek = System.DayOfWeek.Monday;
+            calendarHighlightRange6.EndTime = System.TimeSpan.Parse("17:00:00");
+            calendarHighlightRange6.StartTime = System.TimeSpan.Parse("08:00:00");
+            calendarHighlightRange7.DayOfWeek = System.DayOfWeek.Tuesday;
+            calendarHighlightRange7.EndTime = System.TimeSpan.Parse("17:00:00");
+            calendarHighlightRange7.StartTime = System.TimeSpan.Parse("08:00:00");
+            calendarHighlightRange8.DayOfWeek = System.DayOfWeek.Wednesday;
+            calendarHighlightRange8.EndTime = System.TimeSpan.Parse("17:00:00");
+            calendarHighlightRange8.StartTime = System.TimeSpan.Parse("08:00:00");
+            calendarHighlightRange9.DayOfWeek = System.DayOfWeek.Thursday;
+            calendarHighlightRange9.EndTime = System.TimeSpan.Parse("17:00:00");
+            calendarHighlightRange9.StartTime = System.TimeSpan.Parse("08:00:00");
+            calendarHighlightRange10.DayOfWeek = System.DayOfWeek.Friday;
+            calendarHighlightRange10.EndTime = System.TimeSpan.Parse("17:00:00");
+            calendarHighlightRange10.StartTime = System.TimeSpan.Parse("08:00:00");
             this.calendar2.HighlightRanges = new System.Windows.Forms.Calendar.CalendarHighlightRange[] {
-        calendarHighlightRange26,
-        calendarHighlightRange27,
-        calendarHighlightRange28,
-        calendarHighlightRange29,
-        calendarHighlightRange30};
+        calendarHighlightRange6,
+        calendarHighlightRange7,
+        calendarHighlightRange8,
+        calendarHighlightRange9,
+        calendarHighlightRange10};
             this.calendar2.Location = new System.Drawing.Point(6, 153);
             this.calendar2.Name = "calendar2";
             this.calendar2.Size = new System.Drawing.Size(735, 212);
@@ -414,6 +516,35 @@
             this.tabPage5.TabIndex = 6;
             this.tabPage5.Text = "Teacher Calendar";
             this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // labelDay2
+            // 
+            this.labelDay2.AutoSize = true;
+            this.labelDay2.Location = new System.Drawing.Point(385, 55);
+            this.labelDay2.Name = "labelDay2";
+            this.labelDay2.Size = new System.Drawing.Size(32, 13);
+            this.labelDay2.TabIndex = 23;
+            this.labelDay2.Text = "Day :";
+            // 
+            // buttonCourt2
+            // 
+            this.buttonCourt2.Location = new System.Drawing.Point(452, 55);
+            this.buttonCourt2.Name = "buttonCourt2";
+            this.buttonCourt2.Size = new System.Drawing.Size(36, 23);
+            this.buttonCourt2.TabIndex = 22;
+            this.buttonCourt2.Text = "-";
+            this.buttonCourt2.UseVisualStyleBackColor = true;
+            this.buttonCourt2.Click += new System.EventHandler(this.buttonCourt2_Click);
+            // 
+            // buttonMore2
+            // 
+            this.buttonMore2.Location = new System.Drawing.Point(494, 55);
+            this.buttonMore2.Name = "buttonMore2";
+            this.buttonMore2.Size = new System.Drawing.Size(38, 23);
+            this.buttonMore2.TabIndex = 21;
+            this.buttonMore2.Text = "+";
+            this.buttonMore2.UseVisualStyleBackColor = true;
+            this.buttonMore2.Click += new System.EventHandler(this.buttonMore2_Click);
             // 
             // label5
             // 
@@ -481,27 +612,27 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.calendar3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            calendarHighlightRange16.DayOfWeek = System.DayOfWeek.Monday;
-            calendarHighlightRange16.EndTime = System.TimeSpan.Parse("17:00:00");
-            calendarHighlightRange16.StartTime = System.TimeSpan.Parse("08:00:00");
-            calendarHighlightRange17.DayOfWeek = System.DayOfWeek.Tuesday;
-            calendarHighlightRange17.EndTime = System.TimeSpan.Parse("17:00:00");
-            calendarHighlightRange17.StartTime = System.TimeSpan.Parse("08:00:00");
-            calendarHighlightRange18.DayOfWeek = System.DayOfWeek.Wednesday;
-            calendarHighlightRange18.EndTime = System.TimeSpan.Parse("17:00:00");
-            calendarHighlightRange18.StartTime = System.TimeSpan.Parse("08:00:00");
-            calendarHighlightRange19.DayOfWeek = System.DayOfWeek.Thursday;
-            calendarHighlightRange19.EndTime = System.TimeSpan.Parse("17:00:00");
-            calendarHighlightRange19.StartTime = System.TimeSpan.Parse("08:00:00");
-            calendarHighlightRange20.DayOfWeek = System.DayOfWeek.Friday;
-            calendarHighlightRange20.EndTime = System.TimeSpan.Parse("17:00:00");
-            calendarHighlightRange20.StartTime = System.TimeSpan.Parse("08:00:00");
+            calendarHighlightRange11.DayOfWeek = System.DayOfWeek.Monday;
+            calendarHighlightRange11.EndTime = System.TimeSpan.Parse("17:00:00");
+            calendarHighlightRange11.StartTime = System.TimeSpan.Parse("08:00:00");
+            calendarHighlightRange12.DayOfWeek = System.DayOfWeek.Tuesday;
+            calendarHighlightRange12.EndTime = System.TimeSpan.Parse("17:00:00");
+            calendarHighlightRange12.StartTime = System.TimeSpan.Parse("08:00:00");
+            calendarHighlightRange13.DayOfWeek = System.DayOfWeek.Wednesday;
+            calendarHighlightRange13.EndTime = System.TimeSpan.Parse("17:00:00");
+            calendarHighlightRange13.StartTime = System.TimeSpan.Parse("08:00:00");
+            calendarHighlightRange14.DayOfWeek = System.DayOfWeek.Thursday;
+            calendarHighlightRange14.EndTime = System.TimeSpan.Parse("17:00:00");
+            calendarHighlightRange14.StartTime = System.TimeSpan.Parse("08:00:00");
+            calendarHighlightRange15.DayOfWeek = System.DayOfWeek.Friday;
+            calendarHighlightRange15.EndTime = System.TimeSpan.Parse("17:00:00");
+            calendarHighlightRange15.StartTime = System.TimeSpan.Parse("08:00:00");
             this.calendar3.HighlightRanges = new System.Windows.Forms.Calendar.CalendarHighlightRange[] {
-        calendarHighlightRange16,
-        calendarHighlightRange17,
-        calendarHighlightRange18,
-        calendarHighlightRange19,
-        calendarHighlightRange20};
+        calendarHighlightRange11,
+        calendarHighlightRange12,
+        calendarHighlightRange13,
+        calendarHighlightRange14,
+        calendarHighlightRange15};
             this.calendar3.Location = new System.Drawing.Point(6, 153);
             this.calendar3.Name = "calendar3";
             this.calendar3.Size = new System.Drawing.Size(735, 212);
@@ -512,35 +643,6 @@
             this.calendar3.DragDrop += new System.Windows.Forms.DragEventHandler(this.calendar3_DragDrop);
             this.calendar3.DragOver += new System.Windows.Forms.DragEventHandler(this.calendar3_DragOver_1);
             // 
-            // buttonMore
-            // 
-            this.buttonMore.Location = new System.Drawing.Point(494, 48);
-            this.buttonMore.Name = "buttonMore";
-            this.buttonMore.Size = new System.Drawing.Size(38, 23);
-            this.buttonMore.TabIndex = 11;
-            this.buttonMore.Text = "+";
-            this.buttonMore.UseVisualStyleBackColor = true;
-            this.buttonMore.Click += new System.EventHandler(this.buttonMore_Click);
-            // 
-            // buttonCourt
-            // 
-            this.buttonCourt.Location = new System.Drawing.Point(452, 48);
-            this.buttonCourt.Name = "buttonCourt";
-            this.buttonCourt.Size = new System.Drawing.Size(36, 23);
-            this.buttonCourt.TabIndex = 12;
-            this.buttonCourt.Text = "-";
-            this.buttonCourt.UseVisualStyleBackColor = true;
-            this.buttonCourt.Click += new System.EventHandler(this.buttonCourt_Click);
-            // 
-            // labelDay
-            // 
-            this.labelDay.AutoSize = true;
-            this.labelDay.Location = new System.Drawing.Point(385, 48);
-            this.labelDay.Name = "labelDay";
-            this.labelDay.Size = new System.Drawing.Size(32, 13);
-            this.labelDay.TabIndex = 13;
-            this.labelDay.Text = "Day :";
-            // 
             // header1
             // 
             this.header1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("header1.BackgroundImage")));
@@ -549,108 +651,6 @@
             this.header1.Name = "header1";
             this.header1.Size = new System.Drawing.Size(755, 99);
             this.header1.TabIndex = 2;
-            // 
-            // promotion_page1
-            // 
-            this.promotion_page1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("promotion_page1.BackgroundImage")));
-            this.promotion_page1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.promotion_page1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.promotion_page1.Location = new System.Drawing.Point(3, 3);
-            this.promotion_page1.Margin = new System.Windows.Forms.Padding(4);
-            this.promotion_page1.Name = "promotion_page1";
-            this.promotion_page1.Size = new System.Drawing.Size(741, 370);
-            this.promotion_page1.TabIndex = 0;
-            // 
-            // teacher_page1
-            // 
-            this.teacher_page1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("teacher_page1.BackgroundImage")));
-            this.teacher_page1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.teacher_page1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.teacher_page1.Location = new System.Drawing.Point(3, 3);
-            this.teacher_page1.Margin = new System.Windows.Forms.Padding(4);
-            this.teacher_page1.Name = "teacher_page1";
-            this.teacher_page1.Size = new System.Drawing.Size(741, 370);
-            this.teacher_page1.TabIndex = 0;
-            // 
-            // students_page1
-            // 
-            this.students_page1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("students_page1.BackgroundImage")));
-            this.students_page1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.students_page1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.students_page1.Location = new System.Drawing.Point(3, 3);
-            this.students_page1.Margin = new System.Windows.Forms.Padding(4);
-            this.students_page1.Name = "students_page1";
-            this.students_page1.Size = new System.Drawing.Size(741, 370);
-            this.students_page1.TabIndex = 0;
-            // 
-            // classroomPage1
-            // 
-            this.classroomPage1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("classroomPage1.BackgroundImage")));
-            this.classroomPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.classroomPage1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.classroomPage1.Location = new System.Drawing.Point(3, 3);
-            this.classroomPage1.Margin = new System.Windows.Forms.Padding(4);
-            this.classroomPage1.Name = "classroomPage1";
-            this.classroomPage1.Size = new System.Drawing.Size(741, 370);
-            this.classroomPage1.TabIndex = 0;
-            // 
-            // labelDay1
-            // 
-            this.labelDay1.AutoSize = true;
-            this.labelDay1.Location = new System.Drawing.Point(385, 56);
-            this.labelDay1.Name = "labelDay1";
-            this.labelDay1.Size = new System.Drawing.Size(32, 13);
-            this.labelDay1.TabIndex = 20;
-            this.labelDay1.Text = "Day :";
-            // 
-            // buttonCourt1
-            // 
-            this.buttonCourt1.Location = new System.Drawing.Point(452, 56);
-            this.buttonCourt1.Name = "buttonCourt1";
-            this.buttonCourt1.Size = new System.Drawing.Size(36, 23);
-            this.buttonCourt1.TabIndex = 19;
-            this.buttonCourt1.Text = "-";
-            this.buttonCourt1.UseVisualStyleBackColor = true;
-            this.buttonCourt1.Click += new System.EventHandler(this.buttonCourt1_Click);
-            // 
-            // buttonMore1
-            // 
-            this.buttonMore1.Location = new System.Drawing.Point(494, 56);
-            this.buttonMore1.Name = "buttonMore1";
-            this.buttonMore1.Size = new System.Drawing.Size(38, 23);
-            this.buttonMore1.TabIndex = 18;
-            this.buttonMore1.Text = "+";
-            this.buttonMore1.UseVisualStyleBackColor = true;
-            this.buttonMore1.Click += new System.EventHandler(this.buttonMore1_Click);
-            // 
-            // labelDay2
-            // 
-            this.labelDay2.AutoSize = true;
-            this.labelDay2.Location = new System.Drawing.Point(385, 55);
-            this.labelDay2.Name = "labelDay2";
-            this.labelDay2.Size = new System.Drawing.Size(32, 13);
-            this.labelDay2.TabIndex = 23;
-            this.labelDay2.Text = "Day :";
-            // 
-            // buttonCourt2
-            // 
-            this.buttonCourt2.Location = new System.Drawing.Point(452, 55);
-            this.buttonCourt2.Name = "buttonCourt2";
-            this.buttonCourt2.Size = new System.Drawing.Size(36, 23);
-            this.buttonCourt2.TabIndex = 22;
-            this.buttonCourt2.Text = "-";
-            this.buttonCourt2.UseVisualStyleBackColor = true;
-            this.buttonCourt2.Click += new System.EventHandler(this.buttonCourt2_Click);
-            // 
-            // buttonMore2
-            // 
-            this.buttonMore2.Location = new System.Drawing.Point(494, 55);
-            this.buttonMore2.Name = "buttonMore2";
-            this.buttonMore2.Size = new System.Drawing.Size(38, 23);
-            this.buttonMore2.TabIndex = 21;
-            this.buttonMore2.Text = "+";
-            this.buttonMore2.UseVisualStyleBackColor = true;
-            this.buttonMore2.Click += new System.EventHandler(this.buttonMore2_Click);
             // 
             // SchoolIn
             // 
