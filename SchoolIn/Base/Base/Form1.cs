@@ -516,5 +516,51 @@ namespace Base
         {
             e.Effect = DragDropEffects.Copy;
         }
+
+        private void buttonMore_Click(object sender, EventArgs e)
+        {
+            //this.calendar1.ViewEnd = new System.DateTime(2016, 1,21, 23, 59, 59, 0);
+            ////int day = this.calendar1.Days.Date.Day;
+            int t = this.calendar1.ViewEnd.Day;
+            t++;
+            this.calendar1.ViewEnd = new System.DateTime(2016, 1, t, 23, 59, 59, 0);
+
+
+        }
+
+        private void buttonCourt_Click(object sender, EventArgs e)
+        {
+            int t = this.calendar1.ViewStart.Day;
+            t--;
+            this.calendar1.ViewStart = new System.DateTime(2016, 1, t, 0, 0, 0, 0);
+        }
+
+        private void buttonCourt1_Click(object sender, EventArgs e)
+        {
+            int t = this.calendar2.ViewStart.Day;
+            t--;
+            this.calendar2.ViewStart = new System.DateTime(2016, 1, t, 0, 0, 0, 0);
+        }
+
+        private void buttonMore1_Click(object sender, EventArgs e)
+        {
+            int t = this.calendar2.ViewEnd.Day;
+            t++;
+            this.calendar2.ViewEnd = new System.DateTime(2016, 1, t, 23, 59, 59, 0);
+        }
+
+        private void buttonCourt2_Click(object sender, EventArgs e)
+        {
+            int t = this.calendar3.ViewStart.Day;
+            t--;
+            this.calendar3.ViewStart = new System.DateTime(2016, 1, t, 0, 0, 0, 0);
+        }
+
+        private void buttonMore2_Click(object sender, EventArgs e)
+        {
+            int t = this.calendar3.ViewEnd.Day;
+            t++;
+            this.calendar3.ViewEnd = new System.DateTime(2016, 1, t, 23, 59, 59, 0);
+        }
     }
 }
